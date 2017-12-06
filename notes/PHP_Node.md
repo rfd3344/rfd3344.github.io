@@ -49,6 +49,8 @@ echo "SCRIPT_NAME: \n". $_SERVER['SCRIPT_NAME'];
 收集form的数据
 ### POST
 ### GET
+
+
 ### FILES
 ### ENV
 ### COOKIE
@@ -161,8 +163,11 @@ else echo 'no';
 ```
 
 # Form 
-## Get
-    $_Get
+##  $_Get
+### Give Variable on URL
+```
+$MyGet=$_GET;$MyGet['type']='all'; echo http_build_query($MyGet);
+```
 
 # Others 
 Data()
