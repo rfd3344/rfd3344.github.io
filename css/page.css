@@ -56,12 +56,10 @@
    height: 150px;
 }
 #ContactMe form input[type=submit]{
-   padding: 10px;
-   background-color:#ffd645;
-   border: 0;
-   width: 200px;
-   display: block;
-   margin: 20px auto;
+      padding: 10px;
+      width: 200px;
+      display: block;
+      margin: 20px auto;
 }
 #ContactMe #Phone{
    width: 39%;
