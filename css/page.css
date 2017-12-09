@@ -58,11 +58,7 @@
       margin: 20px auto;
 }
 #ContactMe #Phone{
-   width: 39%;
-   display: inline-block;
-   vertical-align: top;
-   position: relative;
-   top: 100px;
+   display: block;
    text-align: center;
 }
 #ContactMe #Phone{
