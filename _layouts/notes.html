@@ -19,10 +19,10 @@ $(document).ready(function(){
     $(".notes nav h1").click(function() {
 	
     	let Nav_Title = $(this).text();
-    	let SelectedTag =$(".notes.content h1:contains("+Nav_Title+")");
-	    console.log(SelectedTag );
+    	let SelectedTag =$(".notes.content h1#element");
+	    console.log(SelectedTag.offset().top );
     	$('html, body').animate({
-    		scrollTop: ( SelectedTag.offset())
+    		scrollTop: ( SelectedTag.offset().top)
 		},500);
      });
      $(".notes nav div").click(function() {
