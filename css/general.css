@@ -6,36 +6,35 @@
 
 
 section{
-   max-width: 900px;
-   margin: auto;
+   	max-width: 900px;
+   	margin: auto;
 }
 
 /***************  Header ***************/
 .masthead a img{
-   display: inline-block;
-   width: 60px;
-   border: 3px solid #e0dfcc;
-   border-radius: 15px;
+   	display: inline-block;
+   	width: 60px;
+   	border: 3px solid #e0dfcc;
+   	border-radius: 15px;
 }
 .masthead nav{
-   float: right;
-   vertical-align: middle;
-   line-height: 60px;
-   font-size: 20px;
+   	float: right;
+   	vertical-align: middle;
+   	line-height: 60px;
+   	font-size: 20px;
 }
 .masthead nav a{
-    text-decoration: none;
-    font-family: 'Sniglet', cursive;
-    background: #ffd645;
-    padding: 8px 14px;
-    border-radius: 4px;
-    color: black;
+    	text-decoration: none;
+    	font-family: 'Sniglet', cursive;
+      	color:white;
+	background: #b79e45;
+    	padding: 8px 14px;
+    	border-radius: 4px;
 }
 .masthead nav a:hover{
-   position:relative;
-   top:-5px;
-   transition:all 0.8s ease;
-   background:#fcc43a;
+	transition:all 0.8s ease;
+   	background: #f9b80b;
+    	color: black;
 }
 
 
