@@ -19,11 +19,7 @@ $(document).ready(function(){
     $(".notes nav h1").click(function() {
 	
     	let Nav_Title = $(this).text();
-    	let SelectedTag =$(".notes .content h1#element");
-	    console.log(SelectedTag.offset() );
-	    console.log(   $(".notes .content h1#element")  );
-	   
-	    console.log($(".notes .content h1#element").offset() );
+    	let SelectedTag =$(".notes .content h1:contains("+Nav_Title+")");
     	$('html, body').animate({
     		scrollTop: ( SelectedTag.offset().top)
 		},500);
@@ -34,6 +30,6 @@ $(document).ready(function(){
 	     
      });
 	
-
 });
 </script>
+
