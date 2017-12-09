@@ -3,10 +3,11 @@ layout: notes
 
 ---
 
+
+# Basic Knowledge 
 ```
 <script type="text/javascript" src="./templates/jquery-1.12.4.js"></script>
 ```
-# Basic Knowledge 
 ## Logic
 break               //跳出循环
 continue            //跳过本次循环
