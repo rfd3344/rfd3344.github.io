@@ -32,15 +32,5 @@ $(document).ready(function(){
      });
     // left navigation continues shown 
 
-  	$(document).on( 'scroll', function(){
-    	console.log( $(window).height() ) ;
-    	console.log( document.body.clientHeight);
-    	if( self.pageYOffset+document.body.clientHeight  > $('.notes nav').height()  ){
-    		$('.notes nav').css({'position':'fixed', 'bottom':'0'});
-    	}else{
-    		$('.notes nav').css({'position':'absolute', 'bottom':'unset'});
-    	}
-	});
-
 });
 </script>
