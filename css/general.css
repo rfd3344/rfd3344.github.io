@@ -42,17 +42,10 @@ section{
 
 /************  Footer *************/
 footer{
-    clear:both;
-    background: #193a52;
-    color: white;
-    height: 200px;
-    margin: auto;
-    padding-top: 30px;
-}
-footer .FooterBlock{
-    width:32%;
-    display:inline-block;
-    vertical-align: top;
+    	background: #193a52;
+    	color: white;
+    	height: 200px;
+    	padding-top: 30px;
 }
 
 footer ul li{
@@ -64,7 +57,8 @@ footer ul li a{
 	color: white;
 }
 footer ul li a:hover{
-    text-decoration: underline;
+    	text-decoration: underline;
+	color: white;
 }
 
 	
