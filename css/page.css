@@ -82,6 +82,7 @@
    display: inline-block;
    height: 400px;
    border-radius: 10px;
+   word-wrap: break-word;
 }
 #BlogPage article:nth-child(6n+1){
    background: #7473ce; 
