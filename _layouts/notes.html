@@ -21,6 +21,7 @@ $(document).ready(function(){
     	let Nav_Title = $(this).text();
     	let SelectedTag =$(".notes.content h1#element");
 	    console.log(SelectedTag.offset() );
+	    console.log($(".notes.content h1#element").offset() );
     	$('html, body').animate({
     		scrollTop: ( SelectedTag.offset().top)
 		},500);
