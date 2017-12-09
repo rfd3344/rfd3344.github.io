@@ -40,9 +40,6 @@
    background:#fcc43a;
 }
 
-#ContactMe div{
-   display: inline-block;
-}
 #ContactMe form input,
 #ContactMe form textarea{
    width:47%;
