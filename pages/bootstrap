@@ -1,0 +1,80 @@
+
+<h1>Grid  Col </h1>
+<div class="container">
+    <div class="row">
+        <div class="col"> 1 of 2 </div>
+        <div class="col"> 2 of 2 </div>
+    </div>
+    <div class="row">
+        <div class="col"> 1 of 3 </div>
+        <div class="col"> 2 of 3 </div>
+        <div class="col"> 3 of 3 </div>
+    </div>
+</div>
+<h1> Vertical Align   </h1>
+<div class="container" >
+    <div class="row"  style ="height:400px;"  > 
+        <div class="col align-self-start"> 1 of 3 columns </div>
+        <div class="col align-self-center"> 1 of 3 columns </div>
+        <div class="col align-self-end"> 1 of 3 columns </div>
+    </div>
+</div>
+<h1> Justify Content </h1> 
+<div class="container">
+    <div class="row justify-content-start">
+        <div class="col-4"> 1 of 2 </div>
+        <div class="col-4"> 1 of 2 columns </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-4"> 1 of 2 columns </div>
+        <div class="col-4"> 1 of 2 columns </div>
+    </div>
+    <div class="row justify-content-end">
+        <div class="col-4"> 1 of 2 columns </div>
+        <div class="col-4"> 1 of 2 columns </div>
+    </div>
+    <div class="row justify-content-around">
+        <div class="col-4"> 1 of 2 columns </div>
+        <div class="col-4"> 1 of 2 columns </div>
+    </div>
+    <div class="row justify-content-between">
+        <div class="col-4"> 1 of 2 columns </div>
+        <div class="col-4"> 1 of 2 columns </div>
+    </div>
+</div>
+
+
+<h1> Mobile Version Memu </h1>
+<div class="pos-f-t">
+    <nav class="navbar navbar-dark bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </nav>
+    <div class="collapse" id="navbarToggleExternalContent">
+        <div class="bg-dark p-4">
+            <h4 class="text-white">Collapsed content</h4>
+            <span class="text-muted">Toggleable via the navbar brand.</span>
+        </div>
+    </div>
+</div>
+
+<h1> Card </h1>
+<div class="card" style="width: 20rem;">
+    <img class="card-img-top" src="https://rfd3344.github.io/images/img.png">
+    <div class="card-body">
+        <h4 class="card-title">Card title</h4>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
