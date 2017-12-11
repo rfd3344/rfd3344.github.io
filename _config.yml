@@ -78,3 +78,12 @@ exclude:
   - LICENSE
   - README.md
   - CNAME
+  
+  
+[*.{js,jsx,html,sass,scss,css}]
+charset = utf-8
+indent_style = space
+indent_size = 4
+trim_trailing_whitespace = true
+  
+  
