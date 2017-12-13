@@ -59,10 +59,9 @@ body{
   	counter-increment: H_One;
   	content: counter(H_One) ' ';
 }
-.notes  h1:hover:after{
+.notes div h1:hover:after{
 	content:'\f149';	
 	font-family: fontawesome;
-	
     	padding-left: 20px;
 }
 .notes h2:before {
