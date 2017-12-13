@@ -62,8 +62,8 @@ body{
 .notes  h1:hover:after{
 	content:'\f149';	
 	font-family: fontawesome;
-	float: right;
-    	padding-right: 20px;
+	
+    	padding-left: 20px;
 }
 .notes h2:before {
 	counter-increment: H_Two;
