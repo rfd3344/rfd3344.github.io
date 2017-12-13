@@ -59,10 +59,12 @@ body{
   	counter-increment: H_One;
   	content: counter(H_One) ' ';
 }
-.notes div h1:hover:after{
+.notes nav h1:hover:after{
 	content:'\f149';	
 	font-family: fontawesome;
     	padding-left: 20px;
+ 	position: absolute; 
+    	font-size: 30px;
 }
 .notes h2:before {
 	counter-increment: H_Two;
