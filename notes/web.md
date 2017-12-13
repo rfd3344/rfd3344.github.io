@@ -5,9 +5,9 @@ layout: notes
 
 #   HTML 
 ##  Input 
-'''
+```
 <input class="form-control col-sm-2" type="text"  name="filter[CardNo]" maxlength="4"  id="pin"  pattern="\d{4}"   >
-'''
+```
 ### Min Max 
 ```
 min="1" 
