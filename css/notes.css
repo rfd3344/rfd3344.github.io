@@ -60,7 +60,8 @@ body{
   	content: counter(H_One) ' ';
 }
 .notes  h1:hover:after{
-	content:'1111';	
+	content:'f149';	
+	font-family: fontawesome;
 }
 .notes h2:before {
 	counter-increment: H_Two;
