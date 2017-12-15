@@ -58,7 +58,7 @@ body{
   	counter-increment: H_One;
   	content: counter(H_One) ' ';
 }
-.notes nav h1:hover:after{
+.notes nav h1:after{
 	content:'\f149';	
 	font-family: fontawesome;
     	padding-left: 20px;
