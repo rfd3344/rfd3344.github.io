@@ -240,64 +240,97 @@ if(in_array('administrator', $current_user->roles )){
 <?php echo get_home_url(); ?>  
 ```
 
-# Laravel
+
+
+#   Laravel 
+##  Routes 
+
+##  Blade 模版引擎
+
+##  Controller 
+app/Http/Controller 
+
+##  Model
+php artisan make:model Car --migration
+
+## Middleware 
+验证用户的身份认证
+
+##  View
+引入变量
+```
+$articles = Article::all();
+return view('articles.index',compact('articles'));
+```
+
+##  Session
+file - 将 Session 保存在 storage/framework/sessions 中
+cookie - Session 保存在安全加密的 Cookie 中
+database - Session 保存在关系型数据库中
+memcached / redis - Sessions 保存在其中一个快速且基于缓存的存储系统中
+array - Sessions 保存在 PHP 数组中，不会被持久化
+$data = $request->session()->all();
+session([‘httpcode’ => $httpcode]);
+###  Show All Data
+$data = $request->session()->all();
+### Clear All Data
+$request->session()->flush();
+###  Put One Data
+session( ['localcode' => $localcode]  );
+### Get One Data 
+$value = $request->session()->get('key');
+
+## Request
+use Illuminate\Http\Request;
+获取当前路由 1 $uri = $request->path(); 2 $uri = $request->url(); 3 $uri = $request->fullUrl(); 4 $input = $request->all(); $method = $request->method(); // GET
+if ($request->has(‘name’)) {}  //name 是否存在
+##  Database
+### get "'ip_address"  column 
+$users  = DB::table('login_details')
+->where('ip_address', $_SERVER['REMOTE_ADDR'] )
+->get();  
+### get "'ip_address"  first
+$users  = DB::table('login_details')
+->where('ip_address', $_SERVER['REMOTE_ADDR'] )
+->first();  
+
 ## Command
- npm run dev  
- npm run watch
-### artisan
-1. Show all Routes:
+npm run dev
+npm run watch
+###  Artisan
+Show all Routes: 
 php artisan route:list
 
-## Controller
 
-## Session 
-1. file - 将 Session 保存在 storage/framework/sessions 中
-2. cookie - Session 保存在安全加密的 Cookie 中
-3. database - Session 保存在关系型数据库中
-4.  memcached / redis - Sessions 保存在其中一个快速且基于缓存的存储系统中
-5.  array - Sessions 保存在 PHP 数组中，不会被持久化
+## Mix 
+mix.js('resources/assets/js/app.js', 'public/js');
+mix.sass('resources/assets/sass/app.scss', 'public/css');
+mix.copy('public/js/app.js', '../temp/js/app.js');
 
 
+## Vue in Laravel
+###    Import Vue  in app.js
+Vue.component('example', require('./components/example.vue'));
+window.onload = function () {
+    const example = new Vue({
+        el:'#example'
+    });
+    const app = new Vue({
+        el:'#app',
+        components: {
+        example,
+        }
+    });
+}
 
-$data = $request->session()->all();
+## Form 
+$submitted = Input::get('from');
+$submitted = Input::all();
 
-session(['httpcode' => $httpcode]);
-
-
-
-## Request 
-use Illuminate\Http\Request;
-
-1. 获取当前路由
-	1 $uri = $request->path();
-	2 $uri = $request->url();
-	3 $uri = $request->fullUrl();
-	4 $input = $request->all();     
-$method = $request->method();  // GET
-
-
-if ($request->has('name')) {}  //name 是否存在
-
-
-
-
-
-
-
+##  Example
+Posts Page：
+全部Posts 
+单个Post
+https://www.codecasts.com/blog/post/programming-with-laravel-5-model-controller-view-basic-workflow
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-# Node.js
-回调函数     异步传输
