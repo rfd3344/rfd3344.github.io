@@ -59,7 +59,7 @@ body{
   	content: counter(H_One) ' ';
 }
 .notes nav h1:after{
-	content:'\f149';	
+	content:'\f2dc';	
 	font-family: fontawesome;
     	padding-left: 20px;
  	position: absolute; 
