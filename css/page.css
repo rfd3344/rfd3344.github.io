@@ -1,5 +1,6 @@
-
-
+.page{
+    min-height: calc(100vh - 200px);
+}
 /******************  Home Page *************************/
 #Links a{
    margin:5px 0;
