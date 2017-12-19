@@ -64,10 +64,10 @@ $	匹配字符串的结束
 ### numbers only
 ```
 <script>
-	var str = "asd1234";
-	var patt1 = /[0-9]+/;
-	document.write(str.match(patt1));
-  // 1234
+var str = "asd1234";
+var patt1 = /[0-9]+/;
+document.write(str.match(patt1));
+// 1234
 </script>
 ```
 
