@@ -59,3 +59,16 @@ $	匹配字符串的结束
 [^x]	匹配除了x以外的任意字符
 [^aeiou]	匹配除了aeiou这几个字母以外的任意字符
 ```
+
+## Examples
+### numbers only
+```
+<script>
+	var str = "asd1234";
+	var patt1 = /[0-9]+/;
+	document.write(str.match(patt1));
+  // 1234
+</script>
+```
+
+
