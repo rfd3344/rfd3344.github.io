@@ -71,4 +71,9 @@ document.write(str.match(patt1));
 </script>
 ```
 
+```
+'abc12345#$*%3423432343423234342'.replace(/(.{4})/g,"$1_SPACE_");   
+//  Add "_SPACE_"  to each 4 words 
+```
+
 
