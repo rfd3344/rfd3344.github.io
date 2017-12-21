@@ -199,7 +199,11 @@ filter: grayscale(100%);
 :before{
 	content: '\f041';
 	font-family: fontawesome;
+	content: 'alarm';
+     	font-family: 'Material Icons';
 }
+  	
+
 ```
 ##### 100%宽 自适应高度
 ```
