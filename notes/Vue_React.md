@@ -285,7 +285,20 @@ export default connect(
 
 
 # Vue 
-    <script src="https://unpkg.com/vue"></script>
+```
+<script src="https://unpkg.com/vue/dist/vue.js"></script>
+<div id="app">
+	<p>{{ message }}</p>
+</div>
+<script>
+	new Vue({
+  		el: '#app',
+  		data: {
+    			message: 'Hello Vue.js!'
+  		}
+	})
+</script>
+```
 
 ## Basic 
 ```
