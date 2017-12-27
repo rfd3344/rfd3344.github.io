@@ -314,7 +314,7 @@ new Vue({
 
 ```
 <div id="app">
-  {{message}} 
+  { {message} } 
   <p>computed_Message转换：{{ computedMessage }}</p>
   <p>methods_Message转换：{{ methodsMessage() }} </p>
 </div>
