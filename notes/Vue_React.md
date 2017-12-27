@@ -1,6 +1,5 @@
 ---
 layout: notes
-published: true
 ---
 
 <img src= "../zPhoto/Frontend_Diagram.png" />
