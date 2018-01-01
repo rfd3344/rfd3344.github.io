@@ -185,25 +185,19 @@ filter: grayscale(100%);
 <i class="material-icons">cloud</i>
 <i class="material-icons" style="font-size:48px;">cloud</i>
 <i class="material-icons" style="font-size:60px;color:red;">cloud</i>
+:before{
+	content: 'alarm';
+     	font-family: 'Material Icons';	
+}
 ```
 ## Awesome Icon 
 ```
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <i class="fa fa-cloud"></i>
-<i class="fa fa-heart"></i>
-<i class="fa fa-car"></i>
-<i class="fa fa-file"></i>
-<i class="fa fa-bars"></i>
-```
-```
 :before{
 	content: '\f041';
 	font-family: fontawesome;
-	content: 'alarm';
-     	font-family: 'Material Icons';
 }
-  	
-
 ```
 ##### 100%宽 自适应高度
 ```
