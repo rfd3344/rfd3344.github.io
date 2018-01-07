@@ -1,0 +1,37 @@
+---
+layout: default
+---
+
+
+<style>
+	#InputArea{
+		height: 100%;
+		width:49%;
+		display: inline-block;
+		font-size: 20px;
+	}
+	#Result{
+		width: 49%;
+    	display: inline-block;
+    	vertical-align: top;
+	}
+</style>
+<textarea id="InputArea">a = 10 
+b = a* 2</textarea>
+<div id="Result"> </div>
+<script type="text/javascript">
+$( "#InputArea" ).keydown(function(){
+	var code = $('#InputArea').val()
+	var code = code.split(String.fromCharCode(10));
+	$('#Result').empty()
+	for(let key in code){
+		if( code[key]){
+			try{
+			let varable = code[key].split('=')[0]
+			$('#Result').append( varable + ' = ' +
+			 	eval(code[key]) + '<br>' );
+		}catch (e) {}
+		}
+	}
+})
+</script>
