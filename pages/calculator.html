@@ -19,7 +19,7 @@ $( "#InputArea" ).keydown(function(){
 	var code = code.split(String.fromCharCode(10));
 	$('#Result').empty()
 	for(let key in code){
-		if( code[key]){
+		if( code[key].trim() ){
 			try{
 			let varable = code[key].split('=')[0]
 			$('#Result').append( varable + ' = ' +  eval(code[key]) + '<br>' )
