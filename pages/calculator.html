@@ -1,7 +1,29 @@
 ---
-layout: default
+layout: page
 ---
 
+<section class="container">
+	<textarea id="InputArea">a = 10 
+	b = a* 2</textarea>
+	<div id="Result"> </div>
+</section>
+
+
+<script type="text/javascript">
+$( "#InputArea" ).keydown(function(){
+	var code = $('#InputArea').val()
+	var code = code.split(String.fromCharCode(10));
+	$('#Result').empty()
+	for(let key in code){
+		if( code[key]){
+			try{
+			let varable = code[key].split('=')[0]
+			$('#Result').append( varable + ' = ' +  eval(code[key]) + '<br>' )
+		}catch (e) {}
+		}
+	}
+})
+</script>
 
 <style>
 	#InputArea{
@@ -16,22 +38,3 @@ layout: default
     	vertical-align: top;
 	}
 </style>
-<textarea id="InputArea">a = 10 
-b = a* 2</textarea>
-<div id="Result"> </div>
-<script type="text/javascript">
-$( "#InputArea" ).keydown(function(){
-	var code = $('#InputArea').val()
-	var code = code.split(String.fromCharCode(10));
-	$('#Result').empty()
-	for(let key in code){
-		if( code[key]){
-			try{
-			let varable = code[key].split('=')[0]
-			$('#Result').append( varable + ' = ' +
-			 	eval(code[key]) + '<br>' );
-		}catch (e) {}
-		}
-	}
-})
-</script>
