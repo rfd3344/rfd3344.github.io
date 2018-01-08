@@ -3,10 +3,12 @@ layout: page
 ---
 
 <section class="container">
-	<textarea id="InputArea">a = 10 </textarea>
-	<div class="row alert alert-success ">  
-		<h1 class="col align-self-center" > Results </h1>
-		<div id="Result"> </div>
+	<div class="row">  
+		<textarea class="col justify-content-around" id="InputArea">a = 10 </textarea>
+		<div  class="col justify-content-around alert alert-success  " >
+			<h1> Results </h1>
+			<div id="Result"> </div>
+		</div>
 	</div>
 </section>
 
@@ -31,12 +33,10 @@ $( "#InputArea" ).keydown(function(){
 	#InputArea{
 		height: 70vh;
 		width:49%;
-		display: inline-block;
 		font-size: 20px;
 	}
 	#Result{
 		width: 49%;
-    	display: inline-block;
-    	vertical-align: top;
+    		vertical-align: top;
 	}
 </style>
