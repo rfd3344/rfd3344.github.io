@@ -22,11 +22,7 @@ $reflector = new ReflectionClass( 'ObjectName' );
 echo $reflector->getFileName();    
 ```
 
-
-
-
 ## Variable 变量
-###### var_dump()  //返回    数据类型  和值
 ```
 $x = 5985;
 var_dump($x);   // int(5985) 
@@ -35,18 +31,16 @@ echo PHP_EOL;     //   \n  换行符号
 
 ### local
 ### global 
+```
     global $x,$y; 
     $GLOBALS['x'];  // 
+```
 ### static  
-    static x = 0;
-    //每次调用该函数时，变量保留函数前一次值
-parameter
+```
+static x = 0;
+//每次调用该函数时，变量保留函数前一次值
+```
 
-## String
-echo strlen("Hello World!");  // 12   字符串长度
-echo strpos("Hello world!","world");
-	// 6  查找字符
-a.b    //连接两个字符
 ## 超级全局变量
 ### GLOBALS
 ```
@@ -75,6 +69,7 @@ echo "SCRIPT_NAME: \n". $_SERVER['SCRIPT_NAME'];
 ### FILES
 ### ENV
 ### COOKIE
+
 ### SESSION
 
 ## PHP预定义常量
@@ -183,6 +178,11 @@ echo "exist";
 else echo 'no';
 ```
 
+# String
+echo strlen("Hello World!");  // 12   字符串长度
+echo strpos("Hello world!","world");
+	// 6  查找字符
+a.b    //连接两个字符
 # Form 
 ##  $_Get
 ### Give Variable on URL
