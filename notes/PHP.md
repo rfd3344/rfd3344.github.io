@@ -3,7 +3,28 @@ layout: notes
 published: true
 ---
 
-# PHP 
+# PHP General 
+## Testing 
+### Print out
+```
+echo '<pre>';
+var_dump() 
+echo '</pre>';
+```
+### Show all Errors 
+```
+error_reporting(E_ALL);
+ini_set('display_errors', '1');
+```
+### Show Class Path 
+```
+$reflector = new ReflectionClass( 'ObjectName' );
+echo $reflector->getFileName();    
+```
+
+
+
+
 ## Variable 变量
 ###### var_dump()  //返回    数据类型  和值
 ```
