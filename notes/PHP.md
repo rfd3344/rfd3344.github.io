@@ -202,7 +202,12 @@ date("Y-m-d");
 include 'header.php';
 ```
 Require:  Error  错误发生后停止执行，较常使用
-
+## json_encode 
+### json_decode 
+```
+$CartInfo_decode = stripslashes($_COOKIE['CartInfo']);
+$CartInfo_decode = json_decode( $CartInfo_decode  , true );
+```
 ## Email 
 mail(to,subject,message,headers,parameters)
 to	必需 规定 email 接收者。
