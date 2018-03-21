@@ -12,7 +12,6 @@ var_dump( $postfields );
 echo '</pre>';
 
 echo print_r($postfields,1);
-
 ```
 ### Show all Errors 
 ```
@@ -67,19 +66,15 @@ echo "SCRIPT_NAME: \n". $_SERVER['SCRIPT_NAME'];
 收集form的数据
 ### POST
 ### GET
-
-
 ### FILES
 ### ENV
 ### COOKIE
+```
 print_r(  $_COOKIE ); 
-###  Set Cookie 
 setcookie("user", "1111111111111" , time() + (86400 ), "/"); 
-### Delete Cookie 
 setcookie("user", NUll, time() + (86400), "/"); 
-
+```
 ### SESSION
-
 ## PHP预定义常量
 ```    
 __LINE__      // 第几行
@@ -108,19 +103,19 @@ class MyHelloWorld extends Base {
 $o = new MyHelloWorld();
 $o->sayHello();
 ```
-### Method
+```
 __METHOD__
-### Namespace
 __NAMESPACE__
+```
 
-## Array数组
-###### count()	//获取数组长度
+# Array数组
+## count()	//获取数组长度
 ```
 $cars=array("AAA","BBB","CCC");
 echo count($cars);    //  3
 ```
 
-### array_values
+## array_values()
 显示array中第一个值
 array_values($array)[0]
 
@@ -146,16 +141,8 @@ arsort() - 根据数组的值，降序排列
 krsort() - 根据数组的键，降序排列
 
 
-## Email 
-mail(to,subject,message,headers,parameters)
-to	必需 规定 email 接收者。
-subject 必需 规定 email 的主题。注释：该参数不能包含任何新行字符。
-message 必需 定义要发送的消息。应使用 LF (\n) 来分隔各行。每行应该限制在 70 个字符内。
-headers 可选 规定附加的标题，比如 From、Cc 和 Bcc。应当使用 CRLF (\r\n) 分隔附加的标题。
-parameters	可选。对邮件发送程序规定额外的参数。
 
-
-##Examples
+## Examples
 ### URl exist 
 ```
 function urlExists($url=NULL)  {  
@@ -198,12 +185,15 @@ date("Y-m-d");
 ##### Include:  Warning错误发生后继续执行，及时包含文件丢失
     include 'header.php';
 Require:  Error  错误发生后停止执行，较常使用
-## Cocckie 
-```
-setcookie(name, value, expire, path, domain);
-$_COOKIE
-$_COOKIE["user"];
-```
+
+## Email 
+mail(to,subject,message,headers,parameters)
+to	必需 规定 email 接收者。
+subject 必需 规定 email 的主题。注释：该参数不能包含任何新行字符。
+message 必需 定义要发送的消息。应使用 LF (\n) 来分隔各行。每行应该限制在 70 个字符内。
+headers 可选 规定附加的标题，比如 From、Cc 和 Bcc。应当使用 CRLF (\r\n) 分隔附加的标题。
+parameters	可选。对邮件发送程序规定额外的参数。
+
 ## Define 自定义常量 
 define ( string $name , mixed $value [, bool $case_insensitive = false ] )
 case_insensitive   // 可选，为true时大小写不敏感
