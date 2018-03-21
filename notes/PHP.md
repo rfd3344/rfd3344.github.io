@@ -107,6 +107,21 @@ $o->sayHello();
 __METHOD__
 __NAMESPACE__
 ```
+## Define 自定义常量 
+define ( string $name , mixed $value [, bool $case_insensitive = false ] )
+case_insensitive   // 可选，为true时大小写不敏感
+
+```
+define("ABCDEF ", "BBBBBBBBB");  
+echo ABCDEF;    	// BBBBBBBBB
+define("ABCDEF ", " BBBBBBBBB ", true);  // 大小写不敏感
+echo abcdef;    // BBBBBBBBB
+```
+
+
+
+
+
 
 # Array数组
 ## count()	//获取数组长度
@@ -178,12 +193,14 @@ $MyGet=$_GET;$MyGet['type']='all'; echo http_build_query($MyGet);
 ```
 
 # Others 
-Data()
+## Data()
 date("Y-m-d");
 
 ## Include, Require 
 ##### Include:  Warning错误发生后继续执行，及时包含文件丢失
-    include 'header.php';
+```
+include 'header.php';
+```
 Require:  Error  错误发生后停止执行，较常使用
 
 ## Email 
@@ -193,18 +210,6 @@ subject 必需 规定 email 的主题。注释：该参数不能包含任何新�
 message 必需 定义要发送的消息。应使用 LF (\n) 来分隔各行。每行应该限制在 70 个字符内。
 headers 可选 规定附加的标题，比如 From、Cc 和 Bcc。应当使用 CRLF (\r\n) 分隔附加的标题。
 parameters	可选。对邮件发送程序规定额外的参数。
-
-## Define 自定义常量 
-define ( string $name , mixed $value [, bool $case_insensitive = false ] )
-case_insensitive   // 可选，为true时大小写不敏感
-
-```
-define("ABCDEF ", "BBBBBBBBB");  
-echo ABCDEF;    	// BBBBBBBBB
-define("ABCDEF ", " BBBBBBBBB ", true);  // 大小写不敏感
-echo abcdef;    // BBBBBBBBB
-```
-
 
 # WordPress 
 ###### pprint_r function 显示Object中全部内容
