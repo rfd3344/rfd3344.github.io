@@ -8,8 +8,11 @@ published: true
 ### Print out
 ```
 echo '<pre>';
-var_dump() 
+var_dump( $postfields );
 echo '</pre>';
+
+echo print_r($postfields,1);
+
 ```
 ### Show all Errors 
 ```
@@ -69,27 +72,24 @@ echo "SCRIPT_NAME: \n". $_SERVER['SCRIPT_NAME'];
 ### FILES
 ### ENV
 ### COOKIE
+print_r(  $_COOKIE ); 
+###  Set Cookie 
+setcookie("user", "1111111111111" , time() + (86400 ), "/"); 
+### Delete Cookie 
+setcookie("user", NUll, time() + (86400), "/"); 
 
 ### SESSION
 
 ## PHP预定义常量
-### LINE
 ```    
-__LINE__
-echo '这是第 " '  . __LINE__ . ' " 行';
+__LINE__      // 第几行
+__FILE__       // 
+__DIR__
+__FUNCTION__  //函数名
+__CLASS__
+__TRAIT__ 
 ```
-### FILE
-    __FILE__		
-### DIR
-    __DIR__
-### Function
-    __FUNCTION__	//函数名
-### Class
-
-    __CLASS__
-    __TRAIT__
-### Trait
-    __TRAIT__ 
+    
 ```   	
 class Base {
     public function sayHello() {
