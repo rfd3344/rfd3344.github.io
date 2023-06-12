@@ -1,18 +1,12 @@
-import React, { useState } from 'react';
+import React from 'react';
 import _ from 'lodash';
-import { useNavigate } from 'react-router-dom';
-import { useTheme } from '@mui/system';
 import {
   AppBar as AppBarMui,
   IconButton,
   Toolbar,
-  Typography,
   Container,
   Grid,
-  MenuItem,
   Avatar,
-  Box,
-  Link,
 } from '@mui/material';
 
 import {
@@ -22,7 +16,7 @@ import {
 } from 'src/core/Icons';
 
 import { openBlankLink } from 'src/utils/browserUtils';
-
+import { LinkButton } from 'src/common/dataDisplay';
 
 export default function AppBar({
   height = 90,
@@ -34,15 +28,15 @@ export default function AppBar({
       <Container disableGutters>
         <Toolbar>
           <Grid container flexGrow={1} >
-            <LinkIcon
+            <LinkButton
               link="/calculator.html"
               children={<CalculateIcon />}
             />
-            <LinkIcon
+            <LinkButton
               link="https://github.com/rfd3344/staticJH"
               children={<SourceIcon />}
             />
-            <LinkIcon
+            <LinkButton
               link="/colorTable.html"
               children={<ColorIcon />}
             />
@@ -63,10 +57,10 @@ export default function AppBar({
   );
 }
 
-const LinkIcon = ({ link, ...props }) => <IconButton
-  color="inherit"
-  mr={1}
-  onClick={() => openBlankLink(link)}
-  sx={{ '& .MuiSvgIcon-root': { fontSize: '2rem' } }}
-  {...props}
-/>;
+// const LinkIcon = ({ link, ...props }) => <IconButton
+//   color="inherit"
+//   mr={1}
+//   onClick={() => openBlankLink(link)}
+//   sx={{ '& .MuiSvgIcon-root': { fontSize: '2rem' } }}
+//   {...props}
+// />;

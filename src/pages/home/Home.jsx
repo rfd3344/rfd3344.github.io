@@ -7,8 +7,8 @@ import {
   Container,
   Button,
 } from '@mui/material';
-import { useDispatch } from 'react-redux';
 
+import { LinkButton } from 'src/common/dataDisplay';
 
 import { openBlankLink } from 'src/utils/browserUtils';
 
@@ -34,6 +34,18 @@ export default function Test() {
         test
       </Button>
 
+      <LinkButton
+        link="/calculator.html"
+        text="calculator"
+      />
+      <LinkButton
+        link="https://github.com/rfd3344/staticJH"
+        text="staticJH"
+      />
+      <LinkButton
+        link="/colorTable.html"
+        text="ColorTable"
+      />
 
 
       <Box my={2}>
