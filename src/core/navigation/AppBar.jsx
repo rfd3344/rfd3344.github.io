@@ -15,8 +15,11 @@ import {
   Link,
 } from '@mui/material';
 
-import SourceIcon from '@mui/icons-material/Source';
-import CalculateIcon from '@mui/icons-material/Calculate';
+import {
+  SourceIcon,
+  CalculateIcon,
+  ColorIcon,
+} from 'src/core/Icons';
 
 import { openBlankLink } from 'src/utils/browserUtils';
 
@@ -25,9 +28,6 @@ export default function AppBar({
   height = 90,
 }) {
 
-  const handleAvatar = () => {
-    openBlankLink('https://github.com/rfd3344w/rfd3344w.github.io');
-  };
 
   return (
     <AppBarMui position="static">
@@ -38,6 +38,14 @@ export default function AppBar({
               link="/calculator.html"
               children={<CalculateIcon />}
             />
+            <LinkIcon
+              link="https://github.com/rfd3344/staticJH"
+              children={<SourceIcon />}
+            />
+            <LinkIcon
+              link="/colorTable.html"
+              children={<ColorIcon />}
+            />
 
 
           </Grid>
@@ -45,7 +53,7 @@ export default function AppBar({
 
           <IconButton
             color="inherit"
-            onClick={() => openBlankLink('https://github.com/rfd3344/staticJH')}
+            onClick={() => openBlankLink('https://github.com/rfd3344/rfd3344.github.io')}
           >
             <Avatar alt="" src="/fish1.png" />
           </IconButton>
@@ -61,4 +69,4 @@ const LinkIcon = ({ link, ...props }) => <IconButton
   onClick={() => openBlankLink(link)}
   sx={{ '& .MuiSvgIcon-root': { fontSize: '2rem' } }}
   {...props}
-/>;;;
+/>;

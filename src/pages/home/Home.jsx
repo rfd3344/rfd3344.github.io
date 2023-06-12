@@ -37,7 +37,7 @@ export default function Test() {
 
 
       <Box my={2}>
-        <img src="https://github.com/rfd3344/staticJH/blob/master/images/bao/bao3.jpg?raw=true" />
+        <img src="https://github.com/rfd3344/staticJH/blob/master/images/bao/bao3.jpg?raw=true" width="100%" />
       </Box>
 
     </Container>
