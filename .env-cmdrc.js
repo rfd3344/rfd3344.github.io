@@ -6,6 +6,8 @@ module.exports = {
     // REACT_EDITOR: 'none',
     GENERATE_SOURCEMAP: false, // diabled create source map
     BUILD_PATH: './docs',
+    REACT_APP_BUILD_TIME: Date(),
+
   },
 
   // for Facebook and Google Login
