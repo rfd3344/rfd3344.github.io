@@ -9,8 +9,6 @@ import Test from 'src/pages/test/Test';
 export default function Router() {
 
 
-  // useInitiator();
-
   return (
     <Routes>
 

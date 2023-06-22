@@ -27,7 +27,7 @@ export default function Test() {
   const handleClick = () => {
 
     // dispatch(openSnackBar({ error: false }));
-    dispatch(openSnackBar('test 1111'));
+    // dispatch(openSnackBar('test 1111'));
   };
 
 
