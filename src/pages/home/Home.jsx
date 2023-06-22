@@ -8,18 +8,10 @@ import {
   Button,
 } from '@mui/material';
 
-import { LinkButton } from 'src/common/dataDisplay';
+import { env } from 'src/core/envManager';
 
-import { openBlankLink } from 'src/utils/browserUtils';
-
-
-export default function Test() {
+export default function Home() {
   const nav = useNavigate();
-  // const dispatch = useDispatch();
-  // const [data, setData] = useState({});
-
-
-
 
 
   return (
@@ -64,16 +56,17 @@ export default function Test() {
             onClick={() => nav('/colorTable.html')}
           >ColorTable</Button>
         </Grid>
+
+        <Grid item>
+          <Button
+            variant="contained"
+            onClick={() => nav('/images')}
+          >Images</Button>
+        </Grid>
       </Grid>
 
 
 
-      <Box my={2} width={200}>
-        <img
-          src="https://github.com/rfd3344/staticJH/blob/master/images/bao/bao3.jpg?raw=true"
-          width="100%"
-        />
-      </Box>
 
     </Container>
 

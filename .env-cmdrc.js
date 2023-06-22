@@ -7,6 +7,7 @@ module.exports = {
     GENERATE_SOURCEMAP: false, // diabled create source map
     BUILD_PATH: './docs',
     REACT_APP_BUILD_TIME: Date(),
+    REACT_APP_STATICJH: 'https://github.com/rfd3344/staticJH/raw/master',
 
   },
 
@@ -18,13 +19,11 @@ module.exports = {
   },
   dev: {
     REACT_APP_STAGE: 'dev',
-    REACT_APP_STATIC_JH: 'https://github.com/rfd3344/staticJH/blob/master',
   },
 
   prod: {
     REACT_APP_STAGE: 'prod',
     GENERATE_SOURCEMAP: false, // diabled create source map
-    REACT_APP_STATIC_JH: 'https://github.com/rfd3344/staticJH/blob/master',
 
   },
 };
