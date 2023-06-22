@@ -5,9 +5,7 @@ module.exports = {
     // BROWSER: 'none',
     // REACT_EDITOR: 'none',
     GENERATE_SOURCEMAP: false, // diabled create source map
-
     BUILD_PATH: './docs',
-
   },
 
   // for Facebook and Google Login
@@ -18,11 +16,13 @@ module.exports = {
   },
   dev: {
     REACT_APP_STAGE: 'dev',
+    REACT_APP_STATIC_JH: 'https://github.com/rfd3344/staticJH/blob/master',
   },
 
   prod: {
     REACT_APP_STAGE: 'prod',
     GENERATE_SOURCEMAP: false, // diabled create source map
+    REACT_APP_STATIC_JH: 'https://github.com/rfd3344/staticJH/blob/master',
 
   },
 };

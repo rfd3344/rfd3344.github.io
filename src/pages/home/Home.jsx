@@ -25,31 +25,54 @@ export default function Test() {
   return (
     <Container>
       <Typography variant="h5"> home page </Typography>
+      <Grid container spacing={2}>
+        <Grid item>
+          <Button
+            variant="contained"
+            onClick={() => nav('/test')}
+          >
+            test
+          </Button>
+        </Grid>
+
+        <Grid item>
+          <Button
+            variant="contained"
+            onClick={() => nav('/calculator.html')}
+          >
+            Calculator
+          </Button>
+        </Grid>
+
+        <Grid item>
+          <Button
+            variant="contained"
+            onClick={() => window.location.replace('https://github.com/rfd3344/staticJH')}
+          >staticJH</Button>
+        </Grid>
+
+        <Grid item>
+          <Button
+            variant="contained"
+            onClick={() => nav('/calculator.html')}
+          >Calculator</Button>
+        </Grid>
+
+        <Grid item>
+          <Button
+            variant="contained"
+            onClick={() => nav('/colorTable.html')}
+          >ColorTable</Button>
+        </Grid>
+      </Grid>
 
 
-      <Button
-        variant="contained"
-        onClick={() => openBlankLink('')}
-      >
-        test
-      </Button>
 
-      <LinkButton
-        link="/calculator.html"
-        text="calculator"
-      />
-      <LinkButton
-        link="https://github.com/rfd3344/staticJH"
-        text="staticJH"
-      />
-      <LinkButton
-        link="/colorTable.html"
-        text="ColorTable"
-      />
-
-
-      <Box my={2}>
-        <img src="https://github.com/rfd3344/staticJH/blob/master/images/bao/bao3.jpg?raw=true" width="100%" />
+      <Box my={2} width={200}>
+        <img
+          src="https://github.com/rfd3344/staticJH/blob/master/images/bao/bao3.jpg?raw=true"
+          width="100%"
+        />
       </Box>
 
     </Container>
