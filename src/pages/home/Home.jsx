@@ -8,7 +8,7 @@ import {
   Button,
 } from '@mui/material';
 
-import { env } from 'src/core/envManager';
+import { openLink } from 'src/utils/browserUtils';
 
 export default function Home() {
   const nav = useNavigate();
@@ -23,23 +23,17 @@ export default function Home() {
         <Grid item>
           <Button
             variant="contained"
-            onClick={() => window.location.assign('/calculator.html')}
+            onClick={() => openLink('/calculator.html')}
           >
             Calculator
           </Button>
         </Grid>
 
-        <Grid item>
-          <Button
-            variant="contained"
-            onClick={() => window.location.assign('https://github.com/rfd3344/staticJH')}
-          >staticJH</Button>
-        </Grid>
 
         <Grid item>
           <Button
             variant="contained"
-            onClick={() => window.location.assign('/colorTable.html')}
+            onClick={() => openLink('/colorTable.html')}
           >ColorTable</Button>
         </Grid>
 
@@ -50,6 +44,19 @@ export default function Home() {
           >Images</Button>
         </Grid>
 
+        <Grid item>
+          <Button
+            variant="contained"
+            onClick={() => openLink('https://github.com/rfd3344/staticJH')}
+          > Git: staticJH</Button>
+        </Grid>
+
+        <Grid item>
+          <Button
+            variant="contained"
+            onClick={() => openLink('https://github.com/rfd3344/rfd3344.github.io')}
+          >Git: rfd3344.github.io</Button>
+        </Grid>
 
         <Grid item>
           <Button

@@ -3,6 +3,6 @@ import _ from 'lodash';
 // browser level utilities
 
 
-export const openBlankLink = (link = '') => {
-  window.open(link, '_blank');
+export const openLink = (link = '', blank = false) => {
+  window.open(link, blank ? '_blank' : '_self');
 };

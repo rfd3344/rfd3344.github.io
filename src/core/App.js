@@ -9,7 +9,7 @@ import { theme } from './theme';
 import { store } from './store';
 import Router from './Router';
 
-import AppBar from './navigation/AppBar';
+import Header from './navigation/Header';
 
 
 export default function App() {
@@ -23,7 +23,7 @@ export default function App() {
           <CssBaseline />
 
           <HashRouter >
-            <AppBar />
+            <Header />
             <Router />
           </HashRouter >
 

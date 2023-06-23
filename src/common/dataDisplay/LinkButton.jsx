@@ -17,16 +17,17 @@ export default function LinkButton({
   ...props
 }) {
 
-  return (
-    <IconButton
-      color="inherit"
-      mr={1}
-      onClick={() => openBlankLink(link)}
-      sx={{ '& .MuiSvgIcon-root': { fontSize: '2rem' } }}
-      {...props}
-    >
-      {text && <Box> {text}</Box>}
-      {children}
-    </IconButton>
-  );
+  return null;
+  // return (
+  //   <IconButton
+  //     color="inherit"
+  //     mr={1}
+  //     onClick={() => openBlankLink(link)}
+  //     sx={{ '& .MuiSvgIcon-root': { fontSize: '2rem' } }}
+  //     {...props}
+  //   >
+  //     {text && <Box> {text}</Box>}
+  //     {children}
+  //   </IconButton>
+  // );
 };
