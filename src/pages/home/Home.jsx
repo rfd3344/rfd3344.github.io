@@ -49,16 +49,18 @@ export default function Home() {
             onClick={() => nav('/images')}
           >Images</Button>
         </Grid>
-      </Grid>
 
-      <Grid item>
-        <Button
-          color="secondary"
-          variant="contained"
-          onClick={() => nav('/test')}
-        >
-          test
-        </Button>
+
+        <Grid item>
+          <Button
+            color="secondary"
+            variant="contained"
+            onClick={() => nav('/test')}
+          >
+            test
+          </Button>
+        </Grid>
+
       </Grid>
 
 

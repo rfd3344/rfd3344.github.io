@@ -8,6 +8,9 @@ import {
 } from '@mui/material';
 import { useDispatch } from 'react-redux';
 
+import {
+  getDevInfo
+} from 'src/utils/devUtils';
 
 export default function Test() {
   const dispatch = useDispatch();
@@ -33,6 +36,8 @@ export default function Test() {
 
   return (
     <Box>
+      <Typography variant='h6'>{getDevInfo()}</Typography>
+
       <Button
         onClick={handleClick}
       >
