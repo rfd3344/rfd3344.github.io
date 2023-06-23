@@ -20,7 +20,7 @@ const showVersion = () => {
   const { REACT_APP_STAGE, REACT_APP_BUILD_TIME } = process.env;
 
   const info = `env: ${REACT_APP_STAGE}, version: ${packageJson.version}, buildTime: ${REACT_APP_BUILD_TIME} `;
-  const style = 'color:DarkCyan; font-size: 14px; font-weight: bold;';
+  const style = 'color:DodgerBlue; font-size: 14px; font-weight: bold;';
   console.log(`%c${info}`, style);
 };
 
