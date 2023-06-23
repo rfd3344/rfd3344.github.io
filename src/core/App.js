@@ -1,6 +1,6 @@
 import React from 'react';
 import { Provider } from 'react-redux';
-import { HashRouter } from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
 import CssBaseline from '@mui/material/CssBaseline';
 import { ThemeProvider } from '@mui/material/styles';
 
@@ -22,10 +22,10 @@ export default function App() {
         <ThemeProvider theme={theme}>
           <CssBaseline />
 
-          <HashRouter >
+          <BrowserRouter>
             <AppBar />
             <Router />
-          </HashRouter >
+          </BrowserRouter>
 
 
         </ThemeProvider>
