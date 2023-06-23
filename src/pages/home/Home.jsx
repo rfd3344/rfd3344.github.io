@@ -18,19 +18,12 @@ export default function Home() {
     <Container>
       <Typography variant="h5"> home page </Typography>
       <Grid container spacing={2}>
-        <Grid item>
-          <Button
-            variant="contained"
-            onClick={() => nav('/test')}
-          >
-            test
-          </Button>
-        </Grid>
+
 
         <Grid item>
           <Button
             variant="contained"
-            onClick={() => nav('/calculator.html')}
+            onClick={() => window.location.assign('/calculator.html')}
           >
             Calculator
           </Button>
@@ -39,21 +32,14 @@ export default function Home() {
         <Grid item>
           <Button
             variant="contained"
-            onClick={() => window.location.replace('https://github.com/rfd3344/staticJH')}
+            onClick={() => window.location.assign('https://github.com/rfd3344/staticJH')}
           >staticJH</Button>
         </Grid>
 
         <Grid item>
           <Button
             variant="contained"
-            onClick={() => nav('/calculator.html')}
-          >Calculator</Button>
-        </Grid>
-
-        <Grid item>
-          <Button
-            variant="contained"
-            onClick={() => nav('/colorTable.html')}
+            onClick={() => window.location.assign('/colorTable.html')}
           >ColorTable</Button>
         </Grid>
 
@@ -65,6 +51,15 @@ export default function Home() {
         </Grid>
       </Grid>
 
+      <Grid item>
+        <Button
+          color="secondary"
+          variant="contained"
+          onClick={() => nav('/test')}
+        >
+          test
+        </Button>
+      </Grid>
 
 
 
