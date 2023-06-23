@@ -17,6 +17,8 @@ export default function Router() {
       <Route path="/images" element={<Images />} />
       <Route path="/test" element={<Test />} />
 
+      <Route path="*" element={<Test />} />
+
 
     </Routes>
 
