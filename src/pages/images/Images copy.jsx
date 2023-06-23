@@ -23,8 +23,6 @@ export default function Images() {
         />
       </Box>
 
-      get folder structure
-      https://api.github.com/repos/rfd3344/staticJH/git/trees/master?recursive=1
     </Container>
 
   );
