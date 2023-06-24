@@ -16,10 +16,10 @@ export const isImageFile = (fileName = '') => {
 };
 
 export const blobToImage = (blob) => {
-  return blobToBase64(blob);
-  if (!blob) return;
-  return URL.createObjectURL(blob);
-  // return 'data:image/bmp;base64,' + Base64.encode(blob);
+  // return blobToBase64(blob);
+  // if (!blob) return;
+  // return URL.createObjectURL(blob);
+  return 'data:image/bmp;base64,' + blob;
 };
 
 function blobToBase64(blob) {
@@ -28,4 +28,19 @@ function blobToBase64(blob) {
     reader.onloadend = () => resolve(reader.result);
     reader.readAsDataURL(blob);
   });
+}
+
+export const openFile = (blob) => {
+  // var fileURL = window.URL.createObjectURL(blob);
+  const decode = base64ToBytes(blob)
+  var fileURL = window.URL.createObjectURL(new Blob(decode, {type: "image/png"}));
+  window.open(fileURL, '_blank');
+  // let tab = window.open();
+  // tab.location.href = fileURL;
+};
+
+
+function base64ToBytes(base64) {
+  const binString = atob(base64);
+  return Uint8Array.from(binString, (m) => m.codePointAt(0));
 }

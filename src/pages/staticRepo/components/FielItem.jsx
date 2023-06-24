@@ -6,7 +6,8 @@ import {
   Typography,
   Container,
   Button,
-  Paper
+  Paper,
+  CardMedia
 } from '@mui/material';
 
 import {
@@ -16,6 +17,7 @@ import {
   getResource,
 } from 'src/api/gitStatic';
 import {
+  openFile,
   isImageFile,
   blobToImage,
 } from 'src/utils/fileUtils';
@@ -32,22 +34,32 @@ export default function FielItem({
   useEffect(() => {
     // if (!isImage(filename)) return;
 
-    getResource(url).then(resp => {
-      console.warn(resp);
-      setBlobData(resp.content);
-    });
+    // getResource(url).then(resp => {
+    //   console.warn('resp', resp);
+    //   setBlobData(resp.content);
+    // });
 
   }, [filename]);
 
   const handleClick = () => {
+    // window.open("data:application/pdf," + encodeURI(blobData));
 
+
+
+    openFile(blobData);
   };
-  console.warn(blobData)
+  console.warn(blobData);
+
   return (
-    <Box onClick={handleClick} textAlign="center">
+    <Box
+      textAlign="center"
+      sx={{ cursor: "pointer" }}
+      onClick={handleClick}
+    >
       {isImage &&
         <img
           src={blobToImage(blobData)}
+          width="100%"
         />
       }
       {!isImage &&
