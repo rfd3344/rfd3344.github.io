@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useDispatch } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
 import {
   Box,
   Grid,
@@ -14,10 +14,14 @@ import {
   fetchMasterTree,
 } from './staticRepoSlice';
 
-
+import GitFolder from './components/GitFolder';
 
 export default function StaticRepo() {
   const dispatch = useDispatch();
+
+  const {
+    masterTree = {},
+  } = useSelector(state => state.staticRepo);
 
   useEffect(() => {
     dispatch(fetchMasterTree());
@@ -25,7 +29,10 @@ export default function StaticRepo() {
 
   return (
     <Container>
+      <GitFolder
 
+
+      />
       <Typography variant="h6">/images/bao</Typography>
       <Box my={2} width={100}>
         <img
