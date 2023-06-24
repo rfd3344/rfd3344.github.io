@@ -2,14 +2,17 @@
 import {
   Source,
   Calculate,
-  ColorLens
+  ColorLens,
+  Folder,
+  FolderOpen,
+  Description,
+
 } from '@mui/icons-material';
-
-
-
-
 
 
 export const SourceIcon = Source;
 export const CalculateIcon = Calculate;
 export const ColorIcon = ColorLens;
+export const FolderIcon = Folder;
+export const FolderOpenIcon = FolderOpen;
+export const DescriptionIcon = Description;

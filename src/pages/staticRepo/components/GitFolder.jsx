@@ -1,41 +1,53 @@
 import React, { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
 import {
   Box,
   Grid,
-  Typography,
-  Container,
-  Button,
-  Accordion,
-  AccordionSummary,
-  AccordionDetails
+  Paper
 } from '@mui/material';
 
 
-import TreeItem from './TreeItem';
+
+import FolderItem from './FolderItem';
+import FielItem from './FielItem';
+import { GitFileType } from '../staticRepoConst';
 
 
-export default function GitFolder() {
+export default function GitFolder({
+  parentPath = "",
+  tree = [],
+}) {
 
-  const [expanded, setExpanded] = React.useState('panel1');
 
-  const handleChange = (panel) => (event, newExpanded) => {
-    setExpanded(newExpanded ? panel : false);
-  };
+  const folders = tree.filter(item => item.type === GitFileType.tree);
+  const files = tree.filter(item => item.type !== GitFileType.tree);
 
   return (
-    <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
-      <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
-        <Typography>Collapsible Group Item #1</Typography>
-      </AccordionSummary>
-      <AccordionDetails>
-        <Typography>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-          malesuada lacus ex, sit amet blandit leo lobortis eget. Lorem ipsum dolor
-          sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
-          sit amet blandit leo lobortis eget.
-        </Typography>
-      </AccordionDetails>
-    </Accordion>
+    <Box>
+      <Box>
+        {folders.map(item =>
+          <FolderItem
+            parentPath={parentPath}
+            path={item.path}
+            type={item.type}
+            url={item.url}
+          />
+        )}
+      </Box>
+      {!_.isEmpty(files) && (
+        <Paper elevation={3} sx={{ py: 2, pl: 2 }} >
+          <Grid container spacing={2}>
+            {files.map(item =>
+              <Grid item xs={4} md={2}>
+                <FielItem
+                  filename={item.path}
+                  url={item.url}
+                />
+              </Grid>
+            )}
+          </Grid>
+        </Paper>
+      )}
+
+    </Box>
   );
 }

@@ -32,8 +32,10 @@ const slice = createSlice({
   },
   extraReducers: ({ addCase }) => {
     addCase(fetchMasterTree.fulfilled, (state, action) => {
-      const { payload = {} } = action;
-      state.users = payload ;
+      const {
+        payload = {}
+      } = action;
+      state.masterTree = payload;
     });
   },
 });

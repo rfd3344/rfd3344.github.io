@@ -4,9 +4,9 @@ import _ from 'lodash';
 import { env } from 'src/core/envManager';
 
 
-const createInstance = (config) => {
+export const createInstance = (config) => {
   const instance = axios.create({
-    timeout: 10000, // default timeout: 5000,
+    timeout: 10000, // default timeout: 5 seconds
     ...config,
   });
 
@@ -17,7 +17,7 @@ const createInstance = (config) => {
 };
 
 
-export const gitStaticApi = () => {
+export const gitStaticApi = (config) => {
 
   const instance = createInstance({
     baseURL: env().REACT_APP_STATIC_GIT_API,

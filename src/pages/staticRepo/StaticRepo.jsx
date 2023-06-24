@@ -20,19 +20,28 @@ export default function StaticRepo() {
   const dispatch = useDispatch();
 
   const {
-    masterTree = {},
-  } = useSelector(state => state.staticRepo);
+    tree = [],
+  } = useSelector(state => state.staticRepo.masterTree);
 
   useEffect(() => {
+    if (!_.isEmpty(tree)) return;
+
     dispatch(fetchMasterTree());
   }, []);
 
   return (
     <Container>
+      <Box my={1} textAlign="center">
+        <Typography variant="h6">https://github.com/rfd3344/staticJH</Typography>
+      </Box>
+
       <GitFolder
-
-
+        parentPath=""
+        tree={tree}
       />
+
+
+
       <Typography variant="h6">/images/bao</Typography>
       <Box my={2} width={100}>
         <img

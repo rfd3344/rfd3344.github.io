@@ -1,29 +1,29 @@
 import { createTheme } from '@mui/material/styles';
 
-// import '@fontsource/roboto/300.css';
-// import '@fontsource/roboto/400.css';
-// import '@fontsource/roboto/500.css';
-// import '@fontsource/roboto/700.css';
+import '@fontsource/roboto/300.css';
+import '@fontsource/roboto/400.css';
+import '@fontsource/roboto/500.css';
+import '@fontsource/roboto/700.css';
 
 const commonColours = {
-  jackyJacarnda: '#A491C5',
-  vivvyViolet: '#38287E',
-  lightViolet: '#f6f4fb',
-  darkViolet: '#a491c533',
-  sallySalmon: '#F46036',
-  millyMustard: '#FFA500',
-  gillyGreen: '#1B998B',
-  allyAqua: '#7AD6BC',
-  white: '#ffffff',
-  textBlue: '#153642',
+  // jackyJacarnda: '#A491C5',
+  // vivvyViolet: '#38287E',
+  // lightViolet: '#f6f4fb',
+  // darkViolet: '#a491c533',
+  // sallySalmon: '#F46036',
+  // millyMustard: '#FFA500',
+  // gillyGreen: '#1B998B',
+  // allyAqua: '#7AD6BC',
+  // white: '#ffffff',
+  // textBlue: '#153642',
 };
 
 export const theme = createTheme({
   typography: {
-    fontSize: 16,
-    // fontFamily: [
-    //   'Roboto',
-    // ].join(','),
+    fontSize: 14,
+    fontFamily: [
+      'Roboto',
+    ].join(','),
 
     // h1: {
     //   fontSize: '52px', // 52px
