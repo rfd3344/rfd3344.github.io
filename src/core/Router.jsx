@@ -4,7 +4,7 @@ import { Container } from '@mui/material';
 
 
 import Home from 'src/pages/home/Home';
-import Images from 'src/pages/images/Images';
+import StaticRepo from 'src/pages/staticRepo/StaticRepo';
 import Test from 'src/pages/test/Test';
 
 export default function Router() {
@@ -14,7 +14,7 @@ export default function Router() {
     <Routes>
 
       <Route path="/" element={<Home />} />
-      <Route path="/images" element={<Images />} />
+      <Route path="/images/*" element={<StaticRepo />} />
       <Route path="/test" element={<Test />} />
 
       <Route path="*" element={<Test />} />

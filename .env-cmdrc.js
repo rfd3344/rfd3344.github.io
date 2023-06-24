@@ -8,6 +8,10 @@ module.exports = {
     BUILD_PATH: './docs',
     REACT_APP_BUILD_TIME: Date(),
     REACT_APP_STATICJH: 'https://github.com/rfd3344/staticJH/raw/master',
+    REACT_APP_STATIC_GIT_API: 'https://api.github.com/repos/rfd3344/staticJH/git',
+
+
+
 
   },
 
