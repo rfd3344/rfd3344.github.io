@@ -8,71 +8,55 @@ import {
   Button,
 } from '@mui/material';
 
-import { openLink } from 'src/utils/browserUtils';
+import Section from './components/Section';
+import LinkButton from './components/LinkButton';
+
 
 export default function Home() {
-  const nav = useNavigate();
+
 
 
   return (
     <Container>
-      <Typography variant="h5"> home page </Typography>
-      <Grid container spacing={2}>
+      <Section title="Tools">
+        <LinkButton to='/calculator.html' text='Calculator' external />
+
+        <LinkButton to='/colorTable.html' text='ColorTable' external />
+
+        <LinkButton to='/images' text='Images' />
 
 
-        <Grid item>
-          <Button
-            variant="contained"
-            onClick={() => openLink('/calculator.html')}
-          >
-            Calculator
-          </Button>
-        </Grid>
+      </Section>
+
+      <Section title="Exterior">
+
+        <LinkButton to='https://www.gaituya.com' text='改图鸭' />
+
+        <LinkButton to='https://www.toolfk.com' text='toolfk:devTools' />
+
+      </Section>
+      <Section title="Others">
+
+        <LinkButton to='https://keep.google.com/' text='GoogleKeep' external />
+        <LinkButton
+          to='https://drive.google.com/drive/folders/1XA8VemDb4wW-kstLImPOuOEW9Qi6g02J'
+          text='DriveNotes'
+        />
+        <LinkButton
+          to='https://github.com/rfd3344/staticJH'
+          text='staticJHGit'
+        />
+
+        <LinkButton
+          to='https://github.com/rfd3344/rfd3344.github.io'
+          text='rfd3344GitPage'
+        />
+        <LinkButton to='/test' text='test' color="secondary" />
+
+      </Section>
 
 
-        <Grid item>
-          <Button
-            variant="contained"
-            onClick={() => openLink('/colorTable.html')}
-          >ColorTable</Button>
-        </Grid>
-
-        <Grid item>
-          <Button
-            variant="contained"
-            onClick={() => nav('/images')}
-          >Images</Button>
-        </Grid>
-
-        <Grid item>
-          <Button
-            variant="contained"
-            onClick={() => openLink('https://github.com/rfd3344/staticJH')}
-          > Git: staticJH</Button>
-        </Grid>
-
-        <Grid item>
-          <Button
-            variant="contained"
-            onClick={() => openLink('https://github.com/rfd3344/rfd3344.github.io')}
-          >Git: rfd3344.github.io</Button>
-        </Grid>
-
-        <Grid item>
-          <Button
-            color="secondary"
-            variant="contained"
-            onClick={() => nav('/test')}
-          >
-            test
-          </Button>
-        </Grid>
-
-      </Grid>
-
-
-
-    </Container>
+    </Container >
 
   );
 }

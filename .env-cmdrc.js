@@ -2,8 +2,11 @@ module.exports = {
   base: {
     // this is a common envrioment variables shared between all env
     // https://create-react-app.dev/docs/advanced-configuration/
-    // BROWSER: 'none',
+
+    PORT: 6,
+    BROWSER: 'none',
     // REACT_EDITOR: 'none',
+
     GENERATE_SOURCEMAP: false, // diabled create source map
     BUILD_PATH: './docs',
     REACT_APP_BUILD_TIME: Date(),
@@ -19,7 +22,7 @@ module.exports = {
   // Dev only, https://localhost:3001/
   https: {
     HTTPS: true,
-    PORT: 3001,
+    PORT: 9,
   },
   dev: {
     REACT_APP_STAGE: 'dev',
