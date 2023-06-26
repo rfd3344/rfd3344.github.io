@@ -13,6 +13,7 @@ export const getMasterTree = async () => {
 
 
 export const getResource= async (url = '') => {
+  return {}
   const resp = await createInstance({ baseURL: url }).get();
   return resp;
 };
