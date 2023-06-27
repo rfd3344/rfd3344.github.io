@@ -49,7 +49,12 @@ export default function Home() {
 
         <LinkButton
           to='https://github.com/rfd3344/rfd3344.github.io'
-          text='rfd3344GitPage'
+          text='GitPage'
+        />
+
+        <LinkButton
+          to='https://rfd3344w.github.io'
+          text='Storybook'
         />
         <LinkButton to='/test' text='test' color="secondary" />
 
