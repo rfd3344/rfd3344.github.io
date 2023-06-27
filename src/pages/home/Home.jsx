@@ -20,24 +20,21 @@ export default function Home() {
     <Container>
       <Section title="Tools">
         <LinkButton to='/calculator.html' text='Calculator' external />
-
         <LinkButton to='/colorTable.html' text='ColorTable' external />
-
         <LinkButton to='/images' text='Images' />
-
+        <LinkButton to='https://rfd3344w.github.io' text='Storybook' />
 
       </Section>
 
-      <Section title="Exterior">
-
+      <Section title="Exterior Tools">
         <LinkButton to='https://www.gaituya.com' text='改图鸭' />
-
         <LinkButton to='https://www.toolfk.com' text='toolfk:devTools' />
 
       </Section>
-      <Section title="Others">
 
-        <LinkButton to='https://keep.google.com/' text='GoogleKeep' external />
+
+      <Section title="Others">
+        <LinkButton to='https://keep.google.com/' text='GoogleKeep' />
         <LinkButton
           to='https://drive.google.com/drive/folders/1XA8VemDb4wW-kstLImPOuOEW9Qi6g02J'
           text='DriveNotes'
@@ -46,15 +43,9 @@ export default function Home() {
           to='https://github.com/rfd3344/staticJH'
           text='staticJHGit'
         />
-
         <LinkButton
           to='https://github.com/rfd3344/rfd3344.github.io'
           text='GitPage'
-        />
-
-        <LinkButton
-          to='https://rfd3344w.github.io'
-          text='Storybook'
         />
         <LinkButton to='/test' text='test' color="secondary" />
 
