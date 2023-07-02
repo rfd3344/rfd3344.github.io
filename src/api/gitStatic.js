@@ -10,7 +10,7 @@ import { masterMock } from './gitStaticMock';
 
 export const getMasterTree = async () => {
   return masterMock;
-  const resp = await gitStaticApi().get('trees/master');
+  const resp = await gitStaticApi().get('trees/master?recursive=1');
   return resp;
 };
 
