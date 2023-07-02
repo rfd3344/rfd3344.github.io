@@ -13,24 +13,24 @@ import {
 import {
   DescriptionIcon,
 } from 'src/core/Icons';
+
+import { env } from 'src/core/envManager';
 import {
-  getResource,
-} from 'src/api/gitStatic';
-import {
-  openFile,
+  // openFile,
   isImageFile,
-  blobToImage,
+  // blobToImage,
 } from 'src/utils/fileUtils';
 
 
 export default function FielItem({
-  filename = "",
-  url = '',
+  filePath = "",
+  // url = '',
 }) {
 
 
-  const [blobData, setBlobData] = useState('');
-  const isImage = isImageFile(filename);
+  // const [blobData, setBlobData] = useState('');
+  const isImage = isImageFile(filePath);
+  const fileRaw = `${env().REACT_APP_STATICJH}/${filePath}`;
   useEffect(() => {
     // if (!isImage(filename)) return;
 
@@ -39,16 +39,16 @@ export default function FielItem({
     //   setBlobData(resp.content);
     // });
 
-  }, [filename]);
+  }, [filePath]);
 
   const handleClick = () => {
     // window.open("data:application/pdf," + encodeURI(blobData));
 
+    window.open(fileRaw)
 
-
-    openFile(blobData);
+    // openFile(blobData);
   };
-  console.warn(blobData);
+  // console.warn('filepath', filePath);
 
   return (
     <Box
@@ -58,7 +58,7 @@ export default function FielItem({
     >
       {isImage &&
         <img
-          src={blobToImage(blobData)}
+          src={fileRaw}
           width="100%"
         />
       }
@@ -69,7 +69,7 @@ export default function FielItem({
       }
 
       <Typography variant="body1">
-        {filename}
+        {filePath}
       </Typography>
     </Box>
 

@@ -39,8 +39,9 @@ export default function GitFolder({
             {files.map(item =>
               <Grid item xs={4} md={2}>
                 <FielItem
-                  filename={item.path}
-                  url={item.url}
+
+                  filePath={item.path}
+                  // url={item.url}
                 />
               </Grid>
             )}

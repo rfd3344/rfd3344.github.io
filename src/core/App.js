@@ -24,7 +24,9 @@ export default function App() {
 
           <HashRouter >
             <Header />
+
             <Router />
+
           </HashRouter >
 
 

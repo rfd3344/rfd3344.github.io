@@ -49,7 +49,7 @@ export default function StaticRepo() {
           width="100%"
         />
       </Box>
-
+    {`${env().REACT_APP_STATICJH}/images/bao/bao3.jpg`}
       get folder structure
       https://api.github.com/repos/rfd3344/staticJH/git/trees/master?recursive=1
     </Container>
