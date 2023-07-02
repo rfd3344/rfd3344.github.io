@@ -6,7 +6,7 @@ import {
   Typography,
   Container,
   Button,
-  Paper,
+  Link,
   CardMedia
 } from '@mui/material';
 
@@ -15,63 +15,50 @@ import {
 } from 'src/core/Icons';
 
 import { env } from 'src/core/envManager';
-import {
-  // openFile,
-  isImageFile,
-  // blobToImage,
-} from 'src/utils/fileUtils';
-
+import { getFileTyle } from 'src/utils/fileUtils';
+import { FileTypeEnum } from 'src/constants/fileConst';
 
 export default function FielItem({
   filePath = "",
   // url = '',
 }) {
 
+  const fileRawUrl = `${env().REACT_APP_STATICJH}/${filePath}`;
+  const fileType = getFileTyle(filePath);
+  const isImage = fileType === FileTypeEnum.image;
 
-  // const [blobData, setBlobData] = useState('');
-  const isImage = isImageFile(filePath);
-  const fileRaw = `${env().REACT_APP_STATICJH}/${filePath}`;
-  useEffect(() => {
-    // if (!isImage(filename)) return;
-
-    // getResource(url).then(resp => {
-    //   console.warn('resp', resp);
-    //   setBlobData(resp.content);
-    // });
-
-  }, [filePath]);
-
-  const handleClick = () => {
-    // window.open("data:application/pdf," + encodeURI(blobData));
-
-    window.open(fileRaw)
-
-    // openFile(blobData);
-  };
-  // console.warn('filepath', filePath);
 
   return (
-    <Box
-      textAlign="center"
-      sx={{ cursor: "pointer" }}
-      onClick={handleClick}
-    >
-      {isImage &&
-        <img
-          src={fileRaw}
-          width="100%"
-        />
-      }
-      {!isImage &&
-        <DescriptionIcon
-          fontSize='large'
-        />
-      }
+    <Grid container textAlign="center" flexDirection="column" height="100%" >
+      <Grid item width="100%">
+        <Link
+          target="_blank"
+          href={fileRawUrl}
+        >
 
-      <Typography variant="body1">
-        {filePath}
-      </Typography>
-    </Box>
+          {isImage &&
+            <img
+              src={fileRawUrl}
+              width="100%"
+            />
+          }
+          {!isImage &&
+            <DescriptionIcon fontSize="large" />
+
+          }
+        </Link>
+
+      </Grid>
+
+      {/* <Grid item flexGrow={1} /> */}
+
+      <Grid item width="100%">
+        <Typography variant="body1" sx={{ wordWrap: 'break-word' }} >
+          {filePath}
+        </Typography>
+      </Grid>
+
+    </Grid>
 
 
 

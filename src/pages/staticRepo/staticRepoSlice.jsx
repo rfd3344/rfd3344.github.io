@@ -35,6 +35,7 @@ const slice = createSlice({
       const {
         payload = {}
       } = action;
+
       state.masterTree = payload;
     });
   },

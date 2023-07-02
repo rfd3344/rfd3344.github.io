@@ -19,7 +19,7 @@ import {
   FolderOpenIcon,
 } from 'src/core/Icons';
 
-import GitFolder from './GitFolder';
+import GitFolder from './GitTree';
 
 
 export default function FolderItem({
