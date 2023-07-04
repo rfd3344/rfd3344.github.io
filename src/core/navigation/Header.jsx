@@ -33,7 +33,7 @@ export default function Header({
               color="inherit"
               onClick={() => openLink('/')}
             >
-              <Avatar alt="" src="/fish1.png" />
+              <Avatar alt="" src="/workingDog.jpg" />
             </IconButton>
           </Box>
 

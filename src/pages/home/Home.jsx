@@ -27,8 +27,10 @@ export default function Home() {
       </Section>
 
       <Section title="Exterior Tools">
-        <LinkButton to='https://www.gaituya.com' text='改图鸭' />
+        <LinkButton to='https://photoshop.adobe.com' text="Photoshop Online" />
+
         <LinkButton to='https://www.toolfk.com' text='toolfk:devTools' />
+        <LinkButton to='https://www.online-convert.com' text='File Convert' />
 
       </Section>
 
