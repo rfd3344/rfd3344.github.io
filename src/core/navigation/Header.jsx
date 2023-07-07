@@ -16,13 +16,14 @@ import {
   ColorIcon,
 } from 'src/core/Icons';
 
+import { useNavigate } from 'react-router-dom';
 import { openLink } from 'src/utils/browserUtils';
 // import { LinkButton } from 'src/common/dataDisplay';
 
 export default function Header({
   height = 90,
 }) {
-
+  const nav = useNavigate();
 
   return (
     <AppBar position="static">
@@ -31,7 +32,7 @@ export default function Header({
           <Box >
             <IconButton
               color="inherit"
-              onClick={() => openLink('/')}
+              onClick={() => nav('/')}
             >
               <Avatar alt="" src="/workingDog.jpg" />
             </IconButton>

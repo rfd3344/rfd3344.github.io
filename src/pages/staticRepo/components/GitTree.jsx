@@ -24,12 +24,11 @@ export default function GitTree() {
 
   const accordionFiles = files.reduce((acc, item) => {
     const pathArr = _.split(item.path, '/');
+    const rootFolder = pathArr.length > 1 ? pathArr[0] : '/';
 
-    const topFolder = pathArr.length > 1 ? pathArr[0] : '/';
-
-    if (!acc[topFolder]) acc[topFolder] = [];
-    acc[topFolder] = [
-      ...acc[topFolder],
+    if (!acc[rootFolder]) acc[rootFolder] = [];
+    acc[rootFolder] = [
+      ...acc[rootFolder],
       item.path,
     ];
 

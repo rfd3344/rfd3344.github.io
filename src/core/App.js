@@ -23,17 +23,16 @@ export default function App() {
         <ThemeProvider theme={theme}>
           <CssBaseline />
           <Box display="flex" flexDirection="column" minHeight="100vh">
-            <Header />
-            <Box flexGrow={1}>
-              <HashRouter >
+            <HashRouter >
+              <Header />
+
+              <Box flexGrow={1}>
                 <Router />
-              </HashRouter >
-            </Box>
+              </Box>
 
-            <Footer />
+              <Footer />
+            </HashRouter >
           </Box>
-
-
         </ThemeProvider>
       }
     />
