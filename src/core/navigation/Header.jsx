@@ -57,11 +57,3 @@ export default function Header({
     </AppBar >
   );
 }
-
-// const LinkIcon = ({ link, ...props }) => <IconButton
-//   color="inherit"
-//   mr={1}
-//   onClick={() => openBlankLink(link)}
-//   sx={{ '& .MuiSvgIcon-root': { fontSize: '2rem' } }}
-//   {...props}
-// />;

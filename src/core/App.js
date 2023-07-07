@@ -1,15 +1,16 @@
 import React from 'react';
 import { Provider } from 'react-redux';
-import { HashRouter  } from 'react-router-dom';
+import { HashRouter } from 'react-router-dom';
 import CssBaseline from '@mui/material/CssBaseline';
 import { ThemeProvider } from '@mui/material/styles';
-
+import { Box } from '@mui/material';
 
 import { theme } from './theme';
 import { store } from './store';
 import Router from './Router';
 
 import Header from './navigation/Header';
+import Footer from './navigation/Footer';
 
 
 export default function App() {
@@ -21,13 +22,16 @@ export default function App() {
       children={
         <ThemeProvider theme={theme}>
           <CssBaseline />
-
-          <HashRouter >
+          <Box display="flex" flexDirection="column" minHeight="100vh">
             <Header />
+            <Box flexGrow={1}>
+              <HashRouter >
+                <Router />
+              </HashRouter >
+            </Box>
 
-            <Router />
-
-          </HashRouter >
+            <Footer />
+          </Box>
 
 
         </ThemeProvider>
