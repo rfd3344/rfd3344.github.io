@@ -36,23 +36,11 @@ export default function Header({
               color="inherit"
               onClick={() => nav('/')}
             >
-              <Avatar alt="" src="/workingDog.jpg" />
+              <Avatar alt="" src="./image/bear9.png" />
             </IconButton>
           </Box>
 
           <Grid container justifyContent="flex-end">
-            {/* <IconButton
-              color="inherit"
-              onClick={() => openLink('/calculator.html')}
-              children={<CalculateIcon />}
-            />
-            <IconButton
-              color="inherit"
-              onClick={() => openLink("/colorTable.html")}
-              children={<ColorIcon />}
-            /> */}
-
-
             <Clock />
           </Grid>
 

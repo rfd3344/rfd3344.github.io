@@ -11,7 +11,10 @@ import {
   Avatar,
 } from '@mui/material';
 
-import { CalendarIcon } from 'src/core/Icons';
+import {
+  CalendarIcon,
+  ClockIcon,
+} from 'src/core/Icons';
 
 
 export default function Clock() {
@@ -32,7 +35,11 @@ export default function Clock() {
         icon={<CalendarIcon />}
         label={currentTime?.toDateString()}
       />
-      <Typography sx={{ fontSize: 18 }}> {currentTime?.toLocaleTimeString()}</Typography>
+
+      <Typography variant="h6">
+        <ClockIcon />{' '}
+        {currentTime?.toLocaleTimeString()}
+      </Typography>
 
     </Box>
 
