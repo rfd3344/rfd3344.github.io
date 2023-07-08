@@ -11,7 +11,7 @@ import {
 import { env } from 'src/core/envManager';
 
 
-import GitTree from './components/GitTree';
+import GitTree from './ui/GitTree';
 
 export default function StaticRepo() {
 

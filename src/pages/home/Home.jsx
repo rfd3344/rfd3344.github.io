@@ -8,8 +8,8 @@ import {
   Button,
 } from '@mui/material';
 
-import Section from './components/Section';
-import LinkButton from './components/LinkButton';
+import Section from './ui/Section';
+import LinkButton from './ui/LinkButton';
 
 
 export default function Home() {
