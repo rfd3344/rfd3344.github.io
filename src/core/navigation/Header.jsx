@@ -31,17 +31,19 @@ export default function Header({
     <AppBar position="static">
       <Container disableGutters>
         <Toolbar>
-          <Box >
-            <IconButton
-              color="inherit"
-              onClick={() => nav('/')}
-            >
-              <Avatar alt="" src="./image/bear9.png" />
-            </IconButton>
-          </Box>
+          <Grid container justifyContent="space-between">
+            <Grid item >
+              <Clock />
+            </Grid>
 
-          <Grid container justifyContent="flex-end">
-            <Clock />
+            <Grid item >
+              <IconButton
+                color="inherit"
+                onClick={() => nav('/')}
+              >
+                <Avatar alt="" src="./image/bear9.png" />
+              </IconButton>
+            </Grid>
           </Grid>
 
 
