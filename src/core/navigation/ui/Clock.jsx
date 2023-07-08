@@ -37,7 +37,6 @@ export default function Clock() {
       />
 
       <Typography variant="h6">
-        <ClockIcon />{' '}
         {currentTime?.toLocaleTimeString()}
       </Typography>
 
