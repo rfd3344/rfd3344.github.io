@@ -1,5 +1,6 @@
 import React from 'react';
 import _ from 'lodash';
+import { useNavigate } from 'react-router-dom';
 import {
   AppBar,
   IconButton,
@@ -11,14 +12,15 @@ import {
 } from '@mui/material';
 
 import {
-  SourceIcon,
   CalculateIcon,
   ColorIcon,
 } from 'src/core/Icons';
-
-import { useNavigate } from 'react-router-dom';
 import { openLink } from 'src/utils/browserUtils';
-// import { LinkButton } from 'src/common/dataDisplay';
+
+
+import Clock from './ui/Clock';
+
+
 
 export default function Header({
   height = 90,
@@ -39,7 +41,7 @@ export default function Header({
           </Box>
 
           <Grid container justifyContent="flex-end">
-            <IconButton
+            {/* <IconButton
               color="inherit"
               onClick={() => openLink('/calculator.html')}
               children={<CalculateIcon />}
@@ -48,8 +50,10 @@ export default function Header({
               color="inherit"
               onClick={() => openLink("/colorTable.html")}
               children={<ColorIcon />}
-            />
+            /> */}
 
+
+            <Clock />
           </Grid>
 
 

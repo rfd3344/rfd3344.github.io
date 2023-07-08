@@ -7,7 +7,7 @@ import {
   Paper
 } from '@mui/material';
 
-import { Accordion } from 'src/common/dataDisplay';
+import { Accordion } from 'src/components/dataDisplay';
 
 import FielItem from './FielItem';
 import { GitFileType } from '../staticRepoConst';

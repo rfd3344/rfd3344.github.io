@@ -12,10 +12,8 @@ import Section from './ui/Section';
 import LinkButton from './ui/LinkButton';
 
 
+
 export default function Home() {
-
-
-
   return (
     <Container>
       <Section title="Tools">
@@ -52,7 +50,6 @@ export default function Home() {
         <LinkButton to='/test' text='test' color="secondary" />
 
       </Section>
-
 
     </Container >
 
