@@ -25,6 +25,7 @@ import LinkButton from './ui/LinkButton';
 export default function Home() {
   return (
     <Container >
+
       <Section title="Tools">
         <LinkButton icon={<CalculateIcon />} to='/calculator.html' text='Calculator' external />
         <LinkButton icon={<ColorIcon />} to='/colorTable.html' text='ColorTable' external />
@@ -55,15 +56,15 @@ export default function Home() {
           to='https://github.com/rfd3344/staticJH'
           text='staticJH'
         />
-
         <LinkButton icon={<ImageFolderIcon />} to='/images' text='Images' />
         <LinkButton
           icon={<img src="./image/storybook.png" height="20" />}
           to='https://rfd3344w.github.io'
           text='Storybook'
         />
-
       </Section>
+
+
       <Section title="Web">
         <LinkButton icon={<LinkIcon />} to='https://www.toolfk.com' text='toolfk:devTools' />
         <LinkButton
@@ -74,10 +75,9 @@ export default function Home() {
 
 
       <Section title="Others">
-
         <LinkButton to='/test' text='test' color="secondary" />
       </Section>
-    </Container >
 
+    </Container >
   );
 }
