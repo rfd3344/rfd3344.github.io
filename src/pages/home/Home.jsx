@@ -56,7 +56,7 @@ export default function Home() {
           to='https://github.com/rfd3344/staticJH'
           text='staticJH'
         />
-        <LinkButton icon={<ImageFolderIcon />} to='/images' text='Images' />
+        <LinkButton icon={<ImageFolderIcon />} to='/images' text='staticFiles' />
         <LinkButton
           icon={<img src="./image/storybook.png" height="20" />}
           to='https://rfd3344w.github.io'
