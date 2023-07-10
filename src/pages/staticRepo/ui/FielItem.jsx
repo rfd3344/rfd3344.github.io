@@ -25,7 +25,7 @@ export default function FielItem({
 
   const fileRawUrl = `${env().REACT_APP_STATICJH}/${filePath}`;
   const fileType = getFileTyle(filePath);
-  const isImage = fileType === FileTypeEnum.image;
+  // const isImage = fileType === FileTypeEnum.image;
 
 
   return (
@@ -36,15 +36,20 @@ export default function FielItem({
           href={fileRawUrl}
         >
 
-          {isImage &&
+          {fileType === FileTypeEnum.image &&
             <img
               src={fileRawUrl}
               width="100%"
             />
           }
-          {!isImage &&
-            <DescriptionIcon fontSize="large" />
-
+          {fileType === FileTypeEnum.pdf &&
+            <img src="./fileType/pdfIcon.png" height="50" />
+          }
+          {fileType === FileTypeEnum.md &&
+            <img src="./fileType/markdownIcon.jpg" height="50" />
+          }
+          {fileType === FileTypeEnum.others &&
+            <DescriptionIcon sx={{ fontSize: 50 }} />
           }
         </Link>
 

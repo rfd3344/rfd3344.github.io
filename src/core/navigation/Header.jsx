@@ -1,5 +1,6 @@
 import React from 'react';
 import _ from 'lodash';
+import { useNavigate } from 'react-router-dom';
 import {
   AppBar,
   IconButton,
@@ -11,44 +12,38 @@ import {
 } from '@mui/material';
 
 import {
-  SourceIcon,
   CalculateIcon,
   ColorIcon,
 } from 'src/core/Icons';
-
 import { openLink } from 'src/utils/browserUtils';
-// import { LinkButton } from 'src/common/dataDisplay';
+
+
+import Clock from './ui/Clock';
+
+
 
 export default function Header({
   height = 90,
 }) {
-
+  const nav = useNavigate();
 
   return (
     <AppBar position="static">
       <Container disableGutters>
         <Toolbar>
-          <Box >
-            <IconButton
-              color="inherit"
-              onClick={() => openLink('/')}
-            >
-              <Avatar alt="" src="/workingDog.jpg" />
-            </IconButton>
-          </Box>
+          <Grid container justifyContent="space-between">
+            <Grid item >
+              <Clock />
+            </Grid>
 
-          <Grid container justifyContent="flex-end">
-            <IconButton
-              color="inherit"
-              onClick={() => openLink('/calculator.html')}
-              children={<CalculateIcon />}
-            />
-            <IconButton
-              color="inherit"
-              onClick={() => openLink("/colorTable.html")}
-              children={<ColorIcon />}
-            />
-
+            <Grid item >
+              <IconButton
+                color="inherit"
+                onClick={() => nav('/')}
+              >
+                <Avatar alt="" src="./image/bear9.png" />
+              </IconButton>
+            </Grid>
           </Grid>
 
 
@@ -57,11 +52,3 @@ export default function Header({
     </AppBar >
   );
 }
-
-// const LinkIcon = ({ link, ...props }) => <IconButton
-//   color="inherit"
-//   mr={1}
-//   onClick={() => openBlankLink(link)}
-//   sx={{ '& .MuiSvgIcon-root': { fontSize: '2rem' } }}
-//   {...props}
-// />;

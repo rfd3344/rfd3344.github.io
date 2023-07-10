@@ -15,6 +15,7 @@ export default function LinkButton({
   to = '',
   text = '',
   external = false,
+  icon = null,
   ...rest
 }) {
   const nav = useNavigate();
@@ -34,6 +35,7 @@ export default function LinkButton({
       <Button
         variant="contained"
         onClick={handleClick}
+        startIcon={icon}
         {...rest}
       >{text}</Button>
     </Grid>
