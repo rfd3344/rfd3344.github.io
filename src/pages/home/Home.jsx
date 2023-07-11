@@ -18,6 +18,8 @@ import {
   ImageFolderIcon,
 } from 'src/core/Icons';
 
+import { PagePath } from 'src/constants/routerConst';
+
 import Section from './ui/Section';
 import LinkButton from './ui/LinkButton';
 
@@ -56,7 +58,7 @@ export default function Home() {
           to='https://github.com/rfd3344/staticJH'
           text='staticJH'
         />
-        <LinkButton icon={<ImageFolderIcon />} to='/images' text='staticFiles' />
+        <LinkButton icon={<ImageFolderIcon />} to={PagePath.repo} text='staticFiles' />
         <LinkButton
           icon={<img src="./image/storybook.png" height="20" />}
           to='https://rfd3344w.github.io'
@@ -75,7 +77,8 @@ export default function Home() {
 
 
       <Section title="Others">
-        <LinkButton to='/test' text='test' color="secondary" />
+        <LinkButton to={PagePath.test} text='test' color="secondary" />
+        <LinkButton to={PagePath.webpage} text='webpage' color="secondary" />
       </Section>
 
     </Container >

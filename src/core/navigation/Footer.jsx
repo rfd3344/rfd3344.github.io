@@ -23,7 +23,7 @@ export default function Footer() {
 
 
   return (
-    <Box mt={2} py={1} bgcolor='primary.main'>
+    <Box py={1} bgcolor='primary.main'>
 
     </Box>
   );
