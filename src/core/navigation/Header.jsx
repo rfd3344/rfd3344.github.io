@@ -29,26 +29,30 @@ export default function Header({
 
   return (
     <AppBar position="static">
-      <Container disableGutters>
-        <Toolbar>
-          <Grid container justifyContent="space-between">
-            <Grid item >
-              <Clock />
-            </Grid>
-
-            <Grid item >
-              <IconButton
-                color="inherit"
-                onClick={() => nav('/')}
-              >
-                <Avatar alt="" src="./image/bear9.png" />
-              </IconButton>
-            </Grid>
+      {/* <Container disableGutters> */}
+      <Toolbar>
+        <Grid container justifyContent="space-between" alignItems="center">
+          <Grid item >
+            <Clock />
           </Grid>
 
+          <Grid>
+            Some middle
+          </Grid>
+          <Grid item mr={10}>
+            <IconButton
+              color="inherit"
+              onClick={() => nav('/')}
+            >
+              <Avatar alt="" src="./image/bear9.png" />
+            </IconButton>
+          </Grid>
 
-        </Toolbar>
-      </Container>
+        </Grid>
+
+
+      </Toolbar>
+      {/* </Container> */}
     </AppBar >
   );
 }
