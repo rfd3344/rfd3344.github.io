@@ -14,19 +14,21 @@ import { openLink } from 'src/utils/browserUtils';
 export default function LinkButton({
   to = '',
   text = '',
-  external = false,
+  // external = false,
   icon = null,
   ...rest
 }) {
   const nav = useNavigate();
 
   const handleClick = () => {
-    if (external || !_.startsWith(to, '/')) {
+    if (_.endsWith(to, '.html')) {
       openLink(to);
-      return;
+    } else if (_.startsWith(to, '/')) {
+      nav(to);
+    } else {
+      openLink(to, true);
     }
 
-    nav(to);
   };
 
 

@@ -29,8 +29,8 @@ export default function Home() {
     <Container >
 
       <Section title="Tools">
-        <LinkButton icon={<CalculateIcon />} to='/calculator.html' text='Calculator' external />
-        <LinkButton icon={<ColorIcon />} to='/colorTable.html' text='ColorTable' external />
+        <LinkButton icon={<CalculateIcon />} to={PagePath.calculator} text='Calculator' />
+        <LinkButton icon={<ColorIcon />} to={PagePath.colorTable} text='ColorTable' />
         <LinkButton icon={<LinkIcon />} to='https://photoshop.adobe.com' text="Photoshop Online" />
 
         <LinkButton icon={<LinkIcon />} to='https://www.online-convert.com' text='File Convert' />
