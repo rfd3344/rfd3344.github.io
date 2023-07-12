@@ -34,50 +34,49 @@ export default function Home() {
   return (
     <Container >
       <Section title="Tools">
-        <LinkButton icon={<CalculateIcon />} to={PagePath.calculator} text='Calculator' />
-        <LinkButton icon={<ColorIcon />} to={PagePath.colorTable} text='ColorTable' />
-        <LinkButton icon={<LinkIcon />} to='https://photoshop.adobe.com' text="Photoshop Online" />
+        <LinkButton text='Calculator' to={PagePath.calculator} icon={<CalculateIcon />} />
+        <LinkButton text='ColorTable' to={PagePath.colorTable} icon={<ColorIcon />} />
+        <LinkButton text="Photoshop Online" to='https://photoshop.adobe.com' icon={<LinkIcon />} />
 
-        <LinkButton icon={<LinkIcon />} to='https://www.online-convert.com' text='File Convert' />
+        <LinkButton text='File Convert' to='https://www.online-convert.com' icon={<LinkIcon />} />
       </Section>
 
 
       <Section title="Cloud">
         <LinkButton
-          icon={<NoteIcon />}
-          to='https://keep.google.com/'
           text='GoogleKeep'
+          to='https://keep.google.com/'
+          icon={<NoteIcon />}
         />
         <LinkButton
-          icon={<DriveIcon />}
-          to='https://drive.google.com/drive/folders/1XA8VemDb4wW-kstLImPOuOEW9Qi6g02J'
           text='DriveNotes'
+          to='https://drive.google.com/drive/folders/1XA8VemDb4wW-kstLImPOuOEW9Qi6g02J'
+          icon={<DriveIcon />}
         />
+        <LinkButton text='staticFiles' to={PagePath.repo} icon={<ImageFolderIcon />} />
         <LinkButton
-          icon={<GitHubIcon />}
-          to='https://github.com/rfd3344/rfd3344.github.io'
           text='GitPage'
-        />
-        <LinkButton
+          to='https://github.com/rfd3344/rfd3344.github.io'
           icon={<GitHubIcon />}
-          to='https://github.com/rfd3344/staticJH'
-          text='staticJH'
         />
-        <LinkButton icon={<ImageFolderIcon />} to={PagePath.repo} text='staticFiles' />
         <LinkButton
-          icon={<img src="./image/storybook.png" height="20" />}
-          to='https://rfd3344w.github.io'
+          text='staticJH'
+          to='https://github.com/rfd3344/staticJH'
+          icon={<GitHubIcon />}
+        />
+
+        <LinkButton
           text='Storybook'
+          to='https://rfd3344w.github.io'
+          icon={<img src="./image/storybook.png" height="20" />}
         />
       </Section>
 
 
       <Section title="Web">
-        <LinkButton icon={<LinkIcon />} to='https://www.toolfk.com' text='toolfk:devTools' />
-        <LinkButton
-          to='https://github.com/youngyangyang04/leetcode-master/tree/master/problems'
-          text="算法总结"
-        />
+        <LinkButton text='dbdiagram' to='https://dbdiagram.io/d/5e2790869e76504e0ef083ac' />
+        <LinkButton text='toolfk:devTools' to='https://www.toolfk.com' icon={<LinkIcon />} />
+        <LinkButton text="算法总结" to='https://github.com/youngyangyang04/leetcode-master/tree/master/problems' />
       </Section>
 
 
