@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import {
   Box,
@@ -9,24 +10,22 @@ import {
 } from '@mui/material';
 
 import { env } from 'src/core/envManager';
-
+import { updateNavTitle } from 'src/core/coreSlice';
 
 import GitTree from './ui/GitTree';
 
 export default function StaticRepo() {
+  const dispatch = useDispatch();
 
+  useEffect(() => {
+    dispatch(updateNavTitle('https://github.com/rfd3344/staticJH'));
+  }, []);
 
 
   return (
-    <Container>
-      <Box my={2} textAlign="center">
-        <Typography variant="h6">https://github.com/rfd3344/staticJH</Typography>
-      </Box>
-
+    <Container sx={{ py: 1 }} >
       <GitTree />
-
-
-    </Container>
+    </ Container>
 
   );
 }

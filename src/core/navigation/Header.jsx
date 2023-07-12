@@ -1,5 +1,6 @@
 import React from 'react';
 import _ from 'lodash';
+import { useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import {
   AppBar,
@@ -9,6 +10,7 @@ import {
   Container,
   Grid,
   Avatar,
+  Typography,
 } from '@mui/material';
 
 import {
@@ -26,20 +28,25 @@ export default function Header({
   height = 90,
 }) {
   const nav = useNavigate();
+  const {
+    navTitle = '',
+  } = useSelector(state => state.core);
 
   return (
     <AppBar position="static">
       {/* <Container disableGutters> */}
       <Toolbar>
-        <Grid container justifyContent="space-between" alignItems="center">
-          <Grid item >
+        <Grid container justifyContent="space-between" alignItems="center" flexWrap="nowrap">
+          <Grid item  >
             <Clock />
           </Grid>
 
-          <Grid>
-            Some middle
+          <Grid sx={{ wordBreak: "break-all" }}>
+            <Typography variant="subtitle1">
+              {navTitle}
+            </Typography>
           </Grid>
-          <Grid item mr={10}>
+          <Grid item sx={{ mr: { xs: 0, md: 10 } }}>
             <IconButton
               color="inherit"
               onClick={() => nav('/')}

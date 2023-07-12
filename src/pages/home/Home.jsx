@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import {
   Box,
@@ -8,6 +9,8 @@ import {
   Button,
 } from '@mui/material';
 
+import { updateNavTitle } from 'src/core/coreSlice';
+import { PagePath } from 'src/constants/routerConst';
 import {
   LinkIcon,
   CalculateIcon,
@@ -18,16 +21,18 @@ import {
   ImageFolderIcon,
 } from 'src/core/Icons';
 
-import { PagePath } from 'src/constants/routerConst';
-
 import Section from './ui/Section';
 import LinkButton from './ui/LinkButton';
 
 
 export default function Home() {
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(updateNavTitle(''));
+  }, []);
+
   return (
     <Container >
-
       <Section title="Tools">
         <LinkButton icon={<CalculateIcon />} to={PagePath.calculator} text='Calculator' />
         <LinkButton icon={<ColorIcon />} to={PagePath.colorTable} text='ColorTable' />

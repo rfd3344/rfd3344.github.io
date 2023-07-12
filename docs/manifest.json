@@ -1,9 +1,9 @@
 {
-  "short_name": "rfd3344w",
-  "name": "rfd3344w.github.io",
+  "short_name": "rfd3344",
+  "name": "rfd3344.github.io",
   "icons": [
     {
-      "src": "workingDog.jpg",
+      "src": "image/bear8.jpg",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     }

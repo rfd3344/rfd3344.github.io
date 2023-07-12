@@ -9,16 +9,25 @@ import _ from 'lodash';
 // );
 
 const initialState = {
-  country: {},
+  navTitle: '',
   snackBar: {},
+
 };
 const slice = createSlice({
   name: 'core',
   initialState,
-  reducers: {},
-  extraReducers: ({ addCase }) => {},
+  reducers: {
+    updateNavTitle: (state, action) => {
+      const title = action.payload;
+      state.navTitle = title;
+
+    },
+  },
+  extraReducers: ({ addCase }) => { },
 });
 
-export const {} = slice.actions;
+export const {
+  updateNavTitle,
+} = slice.actions;
 
 export default slice.reducer;
