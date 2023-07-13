@@ -88,7 +88,7 @@ export default function Home() {
 
       <Section title="Others">
 
-        <LinkButton text='test' to={PagePath.test}  color="secondary" />
+        <LinkButton text='test' to={PagePath.test} color="secondary" />
         {/* <LinkButton to={PagePath.webpage} text='webpage' color="secondary" /> */}
       </Section>
 
