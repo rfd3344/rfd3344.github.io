@@ -76,17 +76,19 @@ export default function Home() {
 
 
       <Section title="Web">
+        <LinkButton text='chatGPT' to=' https://chat.openai.com' />
         <LinkButton text='dbdiagram' to='https://dbdiagram.io/d/5e2790869e76504e0ef083ac' />
+        <LinkButton text='aws-cheat-sheets' to='https://digitalcloud.training/aws-cheat-sheets/' />
         <LinkButton text='toolfk:devTools' to='https://www.toolfk.com' icon={<LinkIcon />} />
         <LinkButton text="算法总结" to='https://github.com/youngyangyang04/leetcode-master/tree/master/problems' />
-        <LinkButton to='https://digitalcloud.training/aws-cheat-sheets/' text='aws-cheat-sheets' />
+
 
       </Section>
 
 
       <Section title="Others">
 
-        <LinkButton to={PagePath.test} text='test' color="secondary" />
+        <LinkButton text='test' to={PagePath.test}  color="secondary" />
         {/* <LinkButton to={PagePath.webpage} text='webpage' color="secondary" /> */}
       </Section>
 

@@ -7,5 +7,5 @@ export const PagePath = {
   repo: '/repo',
   webpage : '/webpage',
 
-  test: 'test',
+  test: '/test',
 };
