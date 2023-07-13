@@ -23,6 +23,7 @@ import {
 
 import Section from './ui/Section';
 import LinkButton from './ui/LinkButton';
+import ImgIcon from './ui/ImgIcon';
 
 
 export default function Home() {
@@ -54,6 +55,7 @@ export default function Home() {
           icon={<DriveIcon />}
         />
         <LinkButton text='staticFiles' to={PagePath.repo} icon={<ImageFolderIcon />} />
+        <LinkButton text='Skype' to="https://web.skype.com" icon={<ImgIcon src="./icons/skype.svg" />} />
         <LinkButton
           text='GitPage'
           to='https://github.com/rfd3344/rfd3344.github.io'
@@ -68,7 +70,7 @@ export default function Home() {
         <LinkButton
           text='Storybook'
           to='https://rfd3344w.github.io'
-          icon={<img src="./image/storybook.png" height="20" />}
+          icon={<ImgIcon src="./icons/storybook.png" />}
         />
       </Section>
 

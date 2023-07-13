@@ -34,7 +34,6 @@ export default function Header({
 
   return (
     <AppBar position="static">
-      {/* <Container disableGutters> */}
       <Toolbar>
         <Grid container justifyContent="space-between" alignItems="center" flexWrap="nowrap">
           <Grid item  >
@@ -54,12 +53,8 @@ export default function Header({
               <Avatar alt="" src="./image/bear9.png" />
             </IconButton>
           </Grid>
-
         </Grid>
-
-
       </Toolbar>
-      {/* </Container> */}
     </AppBar >
   );
 }
