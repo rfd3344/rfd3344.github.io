@@ -10,19 +10,19 @@ import {
 import { Accordion } from 'src/components/dataDisplay';
 
 import FielItem from './FielItem';
-import { groupByRoot } from '../staticRepoUtils';
-import { GitFileType } from '../staticRepoConst';
-import { fetchMasterTree } from '../staticRepoSlice';
+import { groupByRoot } from '../githubRepoUtils';
+import { GitFileType } from '../githubRepoConst';
+import { fetchMasterTree } from '../githubRepoSlice';
 
 export default function GitTree() {
   const dispatch = useDispatch();
 
   const {
     repoPath = '',
-  } = useSelector(state => state.staticRepo);
+  } = useSelector(state => state.githubRepo);
   const {
     tree = [],
-  } = useSelector(state => state.staticRepo.masterTree);
+  } = useSelector(state => state.githubRepo.masterTree);
 
   const files = tree.filter(item => item.type !== GitFileType.tree);
 

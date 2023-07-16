@@ -1,10 +1,10 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import _ from 'lodash';
 
-import { getMasterTree } from 'src/api/gitStatic';
+import { getMasterTree } from 'src/api/githubRepo';
 
 export const fetchMasterTree = createAsyncThunk(
-  'staticRepo/fetchMasterTree',
+  'githubRepo/fetchMasterTree',
   (data) => getMasterTree(data)
 );
 
@@ -25,9 +25,6 @@ const slice = createSlice({
         ...payload,
       };
     },
-
-
-
   },
   extraReducers: ({ addCase }) => {
     addCase(fetchMasterTree.fulfilled, (state, action) => {

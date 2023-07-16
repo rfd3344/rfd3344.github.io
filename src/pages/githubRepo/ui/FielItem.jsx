@@ -20,7 +20,7 @@ import { FileTypeEnum } from 'src/constants/fileConst';
 import {
   omitRoot,
   getFileRawUrl,
-} from '../staticRepoUtils';
+} from '../githubRepoUtils';
 
 export default function FielItem({
   file = {},
@@ -29,7 +29,7 @@ export default function FielItem({
 
   const {
     repoPath = '',
-  } = useSelector(state => state.staticRepo);
+  } = useSelector(state => state.githubRepo);
 
   const fileRawUrl = getFileRawUrl(repoPath, file.path);
   const fileType = getFileTyle(file.path);

@@ -9,18 +9,16 @@ import {
   Button,
 } from '@mui/material';
 
-import { env } from 'src/core/envManager';
 import { updateNavTitle } from 'src/core/coreSlice';
 
 import GitTree from './ui/GitTree';
 
-export default function StaticRepo() {
+export default function GithubRepo() {
   const dispatch = useDispatch();
 
   useEffect(() => {
     dispatch(updateNavTitle('https://github.com/rfd3344/staticJH'));
   }, []);
-
 
   return (
     <Container sx={{ py: 1 }} >
