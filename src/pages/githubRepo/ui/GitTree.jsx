@@ -30,9 +30,9 @@ export default function GitTree() {
 
 
   useEffect(() => {
-    if (!_.isEmpty(tree)) return;
+    // if (!_.isEmpty(tree)) return;
     dispatch(fetchMasterTree(repoPath));
-  }, []);
+  }, [repoPath]);
 
 
   return (

@@ -9,7 +9,6 @@ import {
   Button,
 } from '@mui/material';
 
-import { updateNavTitle } from 'src/core/coreSlice';
 import { PagePath } from 'src/constants/routerConst';
 import {
   LinkIcon,
@@ -27,10 +26,7 @@ import ImgIcon from './ui/ImgIcon';
 
 
 export default function Home() {
-  const dispatch = useDispatch();
-  useEffect(() => {
-    dispatch(updateNavTitle(''));
-  }, []);
+
 
   return (
     <Container >
@@ -41,7 +37,6 @@ export default function Home() {
 
         <LinkButton text='File Convert' to='https://www.online-convert.com' icon={<LinkIcon />} />
       </Section>
-
 
       <Section title="Cloud">
         <LinkButton

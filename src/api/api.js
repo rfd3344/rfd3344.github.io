@@ -12,5 +12,4 @@ export const createInstance = (config) => {
   instance.interceptors.response.use((resp) => resp.data);
 
   return instance;
-
 };

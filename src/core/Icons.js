@@ -13,6 +13,7 @@ import {
   AddToDrive,
   PermMedia,
   Link,
+  Warning
 } from '@mui/icons-material';
 
 
@@ -29,3 +30,4 @@ export const NoteIcon = EditNote;
 export const DriveIcon = AddToDrive;
 export const ImageFolderIcon = PermMedia;
 export const LinkIcon = Link;
+export const WarningIcon = Warning;

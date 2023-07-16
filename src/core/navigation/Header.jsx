@@ -1,6 +1,5 @@
 import React from 'react';
 import _ from 'lodash';
-import { useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import {
   AppBar,
@@ -13,37 +12,24 @@ import {
   Typography,
 } from '@mui/material';
 
-import {
-  CalculateIcon,
-  ColorIcon,
-} from 'src/core/Icons';
-import { openLink } from 'src/utils/browserUtils';
-
 
 import Clock from './ui/Clock';
+import NavTitle from './ui/NavTitle';
 
-
-
-export default function Header({
-  height = 90,
-}) {
+export default function Header() {
   const nav = useNavigate();
-  const {
-    navTitle = '',
-  } = useSelector(state => state.core);
 
   return (
     <AppBar position="static">
       <Toolbar>
         <Grid container justifyContent="space-between" alignItems="center" flexWrap="nowrap">
-          <Grid item  >
+          <Grid item>
             <Clock />
           </Grid>
 
-          <Grid sx={{ wordBreak: "break-all" }}>
-            <Typography variant="subtitle1">
-              {navTitle}
-            </Typography>
+          <Grid item>
+            <NavTitle />
+
           </Grid>
           <Grid item sx={{ mr: { xs: 0, md: 10 } }}>
             <IconButton

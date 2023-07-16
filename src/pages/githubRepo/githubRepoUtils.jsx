@@ -11,7 +11,6 @@ export const groupByRoot = (files = []) => {
   });
 
   return res;
-
 };
 
 
@@ -24,6 +23,5 @@ export const omitRoot = (filePath = '') => {
 
 
 export const getFileRawUrl = (repoPath = '', filePath = '') => {
-
   return `${env().REACT_APP_GITHUB_RAW}/${repoPath}/master/${filePath}`;
 };

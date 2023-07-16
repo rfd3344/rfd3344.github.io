@@ -1,14 +1,12 @@
 import _ from 'lodash';
 
-import { createInstance } from './api';
-
 import { env } from 'src/core/envManager';
+import { createInstance } from './api';
 
 export const gitStaticApi = (config) => {
   const instance = createInstance({
     baseURL: env().REACT_APP_GITHUB_API,
   });
-
 
   return instance;
 };
