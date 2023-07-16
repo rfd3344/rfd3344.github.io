@@ -1,5 +1,7 @@
 import _ from 'lodash';
 
+import { env } from 'src/core/envManager';
+
 export const groupByRoot = (files = []) => {
 
   const res = _.groupBy(files, (item) => {
@@ -18,4 +20,10 @@ export const omitRoot = (filePath = '') => {
   if (pathArr.length < 2) return pathArr[0];
 
   return _.slice(pathArr, 1).join('/');
+};
+
+
+export const getFileRawUrl = (repoPath = '', filePath = '') => {
+
+  return `${env().REACT_APP_GITHUB_RAW}/${repoPath}/master/${filePath}`;
 };

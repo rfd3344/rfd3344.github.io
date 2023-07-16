@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useSelector, useDispatch } from 'react-redux';
 import {
   Box,
   Grid,
@@ -14,17 +14,24 @@ import {
   DescriptionIcon,
 } from 'src/core/Icons';
 
-import { env } from 'src/core/envManager';
 import { getFileTyle } from 'src/utils/fileUtils';
 import { FileTypeEnum } from 'src/constants/fileConst';
 
-import { omitRoot } from '../staticRepoUtils';
+import {
+  omitRoot,
+  getFileRawUrl,
+} from '../staticRepoUtils';
 
 export default function FielItem({
   file = {},
 }) {
 
-  const fileRawUrl = `${env().REACT_APP_STATICJH}/${file.path}`;
+
+  const {
+    repoPath = '',
+  } = useSelector(state => state.staticRepo);
+
+  const fileRawUrl = getFileRawUrl(repoPath, file.path);
   const fileType = getFileTyle(file.path);
 
 

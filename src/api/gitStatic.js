@@ -14,7 +14,7 @@ export const gitStaticApi = (config) => {
 };
 
 
-export const getMasterTree = async (relativeUrl = '') => {
-  const resp = await gitStaticApi().get(`${relativeUrl}/git/trees/master?recursive=1`);
+export const getMasterTree = async (repoPath = '') => {
+  const resp = await gitStaticApi().get(`${repoPath}/git/trees/master?recursive=1`);
   return resp;
 };
