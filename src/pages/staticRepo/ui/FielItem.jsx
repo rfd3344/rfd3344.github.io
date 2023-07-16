@@ -18,14 +18,14 @@ import { env } from 'src/core/envManager';
 import { getFileTyle } from 'src/utils/fileUtils';
 import { FileTypeEnum } from 'src/constants/fileConst';
 
+import { omitRoot } from '../staticRepoUtils';
+
 export default function FielItem({
-  filePath = "",
-  // url = '',
+  file = {},
 }) {
 
-  const fileRawUrl = `${env().REACT_APP_STATICJH}/${filePath}`;
-  const fileType = getFileTyle(filePath);
-  // const isImage = fileType === FileTypeEnum.image;
+  const fileRawUrl = `${env().REACT_APP_STATICJH}/${file.path}`;
+  const fileType = getFileTyle(file.path);
 
 
   return (
@@ -52,14 +52,11 @@ export default function FielItem({
             <DescriptionIcon sx={{ fontSize: 50 }} />
           }
         </Link>
-
       </Grid>
-
-      {/* <Grid item flexGrow={1} /> */}
 
       <Grid item width="100%">
         <Typography variant="body1" sx={{ wordWrap: 'break-word' }} >
-          {filePath}
+          {omitRoot(file.path)}
         </Typography>
       </Grid>
 

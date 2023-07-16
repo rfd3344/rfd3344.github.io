@@ -5,27 +5,26 @@ import { getMasterTree } from 'src/api/gitStatic';
 
 export const fetchMasterTree = createAsyncThunk(
   'staticRepo/fetchMasterTree',
-  getMasterTree,
+  (data) => getMasterTree(data)
 );
 
 const initialState = {
+  repoPath: 'rfd3344/frontendJH',
+  // repoPath: 'rfd3344/staticJH',
   masterTree: {},
 };
 
 const slice = createSlice({
-  name: 'admin',
+  name: 'githubRepo',
   initialState,
   reducers: {
-    addUserList(state, action) {
+    updateGithubRepo: (state, action) => {
       const { payload } = action;
-      state.users.push(payload);
+      return {
+        ...state,
+        ...payload,
+      };
     },
-    updateUserList(state, action) {
-      const { payload } = action;
-      state.users.push(payload);
-    },
-
-
 
 
 
@@ -42,12 +41,7 @@ const slice = createSlice({
 });
 
 export const {
-  // updateSubscriptionSetup,
-  // updateVehicleInfo,
-  // updatePlans,
-  // updateSubscription,
-  addUserList,
-  updateUserList,
+  updateGithubRepo,
 } = slice.actions;
 
 export default slice.reducer;

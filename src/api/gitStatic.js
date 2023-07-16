@@ -1,22 +1,20 @@
 import _ from 'lodash';
 
-import {
-  createInstance,
-  gitStaticApi,
-} from './api';
+import { createInstance } from './api';
+
+import { env } from 'src/core/envManager';
+
+export const gitStaticApi = (config) => {
+  const instance = createInstance({
+    baseURL: env().REACT_APP_GITHUB_API,
+  });
 
 
-import { masterMock } from './gitStaticMock';
-
-export const getMasterTree = async () => {
-  // return masterMock;
-  const resp = await gitStaticApi().get('trees/master?recursive=1');
-  return resp;
+  return instance;
 };
 
 
-// export const getResource = async (url = '') => {
-//   return {};
-//   const resp = await createInstance({ baseURL: url }).get();
-//   return resp;
-// };
+export const getMasterTree = async (relativeUrl = '') => {
+  const resp = await gitStaticApi().get(`${relativeUrl}/git/trees/master?recursive=1`);
+  return resp;
+};

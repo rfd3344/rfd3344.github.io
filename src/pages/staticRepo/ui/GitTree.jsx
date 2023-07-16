@@ -10,6 +10,7 @@ import {
 import { Accordion } from 'src/components/dataDisplay';
 
 import FielItem from './FielItem';
+import { groupByRoot } from '../staticRepoUtils';
 import { GitFileType } from '../staticRepoConst';
 import { fetchMasterTree } from '../staticRepoSlice';
 
@@ -17,28 +18,20 @@ export default function GitTree() {
   const dispatch = useDispatch();
 
   const {
+    repoPath = '',
+  } = useSelector(state => state.staticRepo);
+  const {
     tree = [],
   } = useSelector(state => state.staticRepo.masterTree);
 
   const files = tree.filter(item => item.type !== GitFileType.tree);
 
-  const accordionFiles = files.reduce((acc, item) => {
-    const pathArr = _.split(item.path, '/');
-    const rootFolder = pathArr.length > 1 ? pathArr[0] : '/';
-
-    if (!acc[rootFolder]) acc[rootFolder] = [];
-    acc[rootFolder] = [
-      ...acc[rootFolder],
-      item.path,
-    ];
-
-    return acc;
-  }, {});
+  const groupFiles = groupByRoot(files);
 
 
   useEffect(() => {
     if (!_.isEmpty(tree)) return;
-    dispatch(fetchMasterTree());
+    dispatch(fetchMasterTree(repoPath));
   }, []);
 
 
@@ -46,13 +39,13 @@ export default function GitTree() {
     <Box>
       <Accordion
         defaultExpandIndex={0}
-        data={_.keys(accordionFiles).map(key => ({
+        data={_.keys(groupFiles).map(key => ({
           summary: key,
           details: <Grid container spacing={2}>
-            {accordionFiles[key].map(path =>
-              <Grid key={path} item xs={4} md={2} >
+            {groupFiles[key].map(file =>
+              <Grid key={file.path} item xs={4} md={2} >
                 <FielItem
-                  filePath={path}
+                  file={file}
                 />
               </Grid>
             )}
