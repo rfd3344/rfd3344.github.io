@@ -5,7 +5,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import {
   Box,
   Typography,
-  Chip,
+  Grid,
   Menu,
   InputBase,
   TextField,
@@ -64,25 +64,28 @@ const GithubRepoTitle = () => {
 
 
   return (
-    <Box display="flex" alignItems="center">
-      <Box>https://github.com/</Box>
-      <TextField
-        hiddenLabel
-        size="small"
-        color="warning"
-        sx={{
-          '& input': {
-            color: 'white',
-            px: 0.5
-          }
-        }}
-        InputProps={{
-          endAdornment: !isValidRepo && <WarningIcon color="warning" />
-        }}
-        defaultValue={repoPath}
-        onKeyUp={handleKeyUp}
-        onBlur={handleChange}
-      />
-    </Box>
+    <Grid container alignItems="center">
+      <Grid item>https://github.com/</Grid>
+      <Grid item>
+        <TextField
+          hiddenLabel
+          size="small"
+          color="warning"
+          sx={{
+            '& input': {
+              color: 'white',
+              px: 0.5
+            }
+          }}
+          // InputProps={{
+          //   endAdornment: !isValidRepo && <WarningIcon color="warning" />
+          // }}
+          defaultValue={repoPath}
+          onKeyUp={handleKeyUp}
+          onBlur={handleChange}
+        />
+      </Grid>
+
+    </Grid>
   );
 };

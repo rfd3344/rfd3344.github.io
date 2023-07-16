@@ -19,18 +19,14 @@ export default function GitTree() {
 
   const {
     repoPath = '',
+    masterFiles = [],
   } = useSelector(state => state.githubRepo);
-  const {
-    tree = [],
-  } = useSelector(state => state.githubRepo.masterTree);
 
-  const files = tree.filter(item => item.type !== GitFileType.tree);
-
+  const files = masterFiles.filter(item => item.type !== GitFileType.tree);
   const groupFiles = groupByRoot(files);
 
 
   useEffect(() => {
-    // if (!_.isEmpty(tree)) return;
     dispatch(fetchMasterTree(repoPath));
   }, [repoPath]);
 
@@ -52,7 +48,6 @@ export default function GitTree() {
           </Grid>
         }))}
       />
-
     </Box>
   );
 }

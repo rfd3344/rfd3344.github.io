@@ -26,7 +26,6 @@ export default function FielItem({
   file = {},
 }) {
 
-
   const {
     repoPath = '',
   } = useSelector(state => state.githubRepo);

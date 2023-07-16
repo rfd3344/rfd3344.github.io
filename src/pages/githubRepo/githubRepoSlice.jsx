@@ -9,9 +9,9 @@ export const fetchMasterTree = createAsyncThunk(
 );
 
 const initialState = {
-  repoPath: 'rfd3344/frontendJH',
+  repoPath: 'rfd3344/staticJH',
   isValidRepo: false,
-  masterTree: {},
+  masterFiles: [],
 };
 
 const slice = createSlice({
@@ -33,10 +33,11 @@ const slice = createSlice({
       } = action;
 
       state.isValidRepo = true;
-      state.masterTree = payload;
+      state.masterFiles = payload.tree || [];
     });
     addCase(fetchMasterTree.rejected, (state, action) => {
       state.isValidRepo = false;
+      state.masterFiles = [];
     });
   },
 });
