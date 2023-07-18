@@ -55,7 +55,10 @@ export default function Clock() {
       >
 
         <LocalizationProvider dateAdapter={AdapterDayjs}>
-          <DateCalendar />
+          <DateCalendar
+            showDaysOutsideCurrentMonth
+            fixedWeekNumber={6}
+          />
         </LocalizationProvider>
       </Menu>
 
