@@ -6,16 +6,10 @@ import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
 
 const commonColours = {
-  // jackyJacarnda: '#A491C5',
-  // vivvyViolet: '#38287E',
-  // lightViolet: '#f6f4fb',
-  // darkViolet: '#a491c533',
-  // sallySalmon: '#F46036',
-  // millyMustard: '#FFA500',
-  // gillyGreen: '#1B998B',
-  // allyAqua: '#7AD6BC',
-  // white: '#ffffff',
-  // textBlue: '#153642',
+  lightBlue: '#869fcb',
+  lightYellow: '#ffce7b',
+  darkYellow: '#ff9f30',
+
 };
 
 export const theme = createTheme({
