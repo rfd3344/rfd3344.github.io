@@ -9,35 +9,69 @@ import {
   Button,
 } from '@mui/material';
 
+import { PagePath } from 'src/constants/routerConst';
 import { openLink } from 'src/utils/browserUtils';
+import {
+  LinkIcon,
+  CalculateIcon,
+  ColorIcon,
+  GitHubIcon,
+  NoteIcon,
+  DriveIcon,
+  ImageFolderIcon,
+} from 'src/core/Icons';
+
+const LinkTypes = {
+  'html': 'html',
+  'singlePage': 'singlePage',
+  'external': 'external',
+};
+
+const getLinkType = (to) => {
+  if (_.startsWith(to, '/')) {
+    if (_.endsWith(to, '.html')) return LinkTypes.html;
+    return LinkTypes.singlePage;
+  }
+  return LinkTypes.external;
+};
+
+
 
 export default function LinkButton({
   to = '',
   text = '',
-  // external = false,
-  icon = null,
+  // icon = null,
   ...rest
 }) {
   const nav = useNavigate();
 
-  const handleClick = () => {
-    if (_.endsWith(to, '.html')) {
-      openLink(to);
-    } else if (_.startsWith(to, '/')) {
-      nav(to);
-    } else {
-      openLink(to, true);
-    }
+  const linkType = getLinkType(to);
 
+  const startIcon = (() => {
+
+    if (linkType === 'external') return <LinkIcon />;
+    if (to === PagePath.calculator) return <CalculateIcon />;
+    if (to === PagePath.colorTable) return <ColorIcon />;
+    if (to === PagePath.repo) return <ImageFolderIcon />;
+
+    return null;
+  })();
+
+
+  const handleClick = () => {
+    if (linkType === LinkTypes.html) openLink(to);
+    else if (linkType === LinkTypes.singlePage) nav(to);
+    else openLink(to, true);
   };
 
 
   return (
     <Grid item>
       <Button
+        color={linkType === LinkTypes.singlePage ? 'secondary' : 'primary'}
         variant="contained"
         onClick={handleClick}
-        startIcon={icon}
+        startIcon={startIcon}
         {...rest}
       >{text}</Button>
     </Grid>

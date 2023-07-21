@@ -23,6 +23,16 @@ import {
 import Section from './ui/Section';
 import LinkButton from './ui/LinkButton';
 import ImgIcon from './ui/ImgIcon';
+import LinksSection from './ui/LinksSection';
+
+import {
+  ToolsLinks,
+  CloudLinks,
+  GithubLinks,
+  WebLinks,
+  GameLinks,
+  OtherLinks,
+} from './HomeConst';
 
 
 export default function Home() {
@@ -30,6 +40,15 @@ export default function Home() {
 
   return (
     <Container >
+      <LinksSection title="Tools" linkMap={ToolsLinks} />
+      <LinksSection title="Cloud" linkMap={CloudLinks} />
+      <LinksSection title="Github" linkMap={GithubLinks} />
+      <LinksSection title="Web" linkMap={WebLinks} />
+      <LinksSection title="Game" linkMap={GameLinks} />
+      <LinksSection title="Other" linkMap={OtherLinks} />
+
+{/*
+      <hr />
       <Section title="Tools">
         <LinkButton text='Calculator' to={PagePath.calculator} icon={<CalculateIcon />} />
         <LinkButton text='ColorTable' to={PagePath.colorTable} icon={<ColorIcon />} />
@@ -95,10 +114,9 @@ export default function Home() {
 
 
       <Section title="Others">
-
         <LinkButton text='test' to={PagePath.test} color="secondary" />
-        {/* <LinkButton to={PagePath.webpage} text='webpage' color="secondary" /> */}
-      </Section>
+
+      </Section> */}
 
     </Container >
   );
