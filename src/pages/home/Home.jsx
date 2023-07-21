@@ -49,10 +49,15 @@ export default function Home() {
           to='https://drive.google.com/drive/folders/1XA8VemDb4wW-kstLImPOuOEW9Qi6g02J'
           icon={<DriveIcon />}
         />
-        <LinkButton text='staticFiles' to={PagePath.repo} icon={<ImageFolderIcon />} />
+
         <LinkButton text='Skype' to="https://web.skype.com" icon={<ImgIcon src="./icons/skype.svg" />} />
+
+      </Section>
+
+      <Section title="Github">
+        <LinkButton text='staticFiles' to={PagePath.repo} icon={<ImageFolderIcon />} />
         <LinkButton
-          text='GitPage'
+          text='pageCode'
           to='https://github.com/rfd3344/rfd3344.github.io'
           icon={<GitHubIcon />}
         />
@@ -69,7 +74,6 @@ export default function Home() {
         />
       </Section>
 
-
       <Section title="Web">
         <LinkButton text='chatGPT' to=' https://chat.openai.com' />
         <LinkButton text='dbdiagram' to='https://dbdiagram.io/d/5e2790869e76504e0ef083ac' />
@@ -79,6 +83,15 @@ export default function Home() {
 
 
       </Section>
+
+
+      <Section title="Others">
+
+        <LinkButton text='Genshin' to='https://wiki.biligame.com/ys' />
+        <LinkButton text='StarRail' to='https://wiki.biligame.com/sr' />
+
+      </Section>
+
 
 
       <Section title="Others">
