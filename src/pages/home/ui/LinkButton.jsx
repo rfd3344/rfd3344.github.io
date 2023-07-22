@@ -16,6 +16,7 @@ import {
   CalculateIcon,
   ColorIcon,
   GitHubIcon,
+  NoteIcon,
   DriveIcon,
   ImageFolderIcon,
 } from 'src/core/Icons';
@@ -48,7 +49,8 @@ export default function LinkButton({
   const linkType = getLinkType(to);
 
   const startIcon = (() => {
-    if (_.includes(to, 'google.com')) return <DriveIcon />;
+    if (_.includes(to, 'keep.google.com')) return <NoteIcon />;
+    if (_.includes(to, 'drive.google.com')) return <DriveIcon />;
     if (_.includes(to, 'skype.com')) return <ImgIcon src="./icons/skype.svg" />;
     if (_.includes(to, 'github.com')) return <GitHubIcon />;
     if (_.includes(to, 'rfd3344w.github.io')) return <ImgIcon src="./icons/storybook.png" />;
