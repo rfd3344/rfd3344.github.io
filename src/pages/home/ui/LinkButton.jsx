@@ -16,7 +16,6 @@ import {
   CalculateIcon,
   ColorIcon,
   GitHubIcon,
-  NoteIcon,
   DriveIcon,
   ImageFolderIcon,
 } from 'src/core/Icons';

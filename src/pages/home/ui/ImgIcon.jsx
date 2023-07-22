@@ -11,7 +11,6 @@ export default function ImgIcon({
 }) {
 
 
-
   return (
     <Box
       component="img"

@@ -23,7 +23,7 @@ export default function NavTitle() {
 
 
   const getTitle = () => {
-    console.warn('location', pathname);
+
     if (pathname === PagePath.home) return '';
     if (pathname === PagePath.repo) return <GithubRepoTitle />;
 
@@ -77,9 +77,6 @@ const GithubRepoTitle = () => {
               px: 0.5
             }
           }}
-          // InputProps={{
-          //   endAdornment: !isValidRepo && <WarningIcon color="warning" />
-          // }}
           defaultValue={repoPath}
           onKeyUp={handleKeyUp}
           onBlur={handleChange}
