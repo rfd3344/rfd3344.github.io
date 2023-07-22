@@ -1,9 +1,5 @@
 import { createTheme } from '@mui/material/styles';
 
-import '@fontsource/roboto/300.css';
-import '@fontsource/roboto/400.css';
-import '@fontsource/roboto/500.css';
-import '@fontsource/roboto/700.css';
 
 const commonColours = {
   lightBlue: '#869fcb',
@@ -16,9 +12,9 @@ export const theme = createTheme({
   typography: {
     fontSize: 14,
     fontFamily: [
-      'Roboto',
+      'Arial',
+      'sans-serif'
     ].join(','),
-
     // h1: {
     //   fontSize: '52px', // 52px
     //   fontWeight: 'bold',
