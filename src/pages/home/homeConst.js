@@ -33,6 +33,9 @@ export const WebLinks = {
 export const GameLinks = {
   'Genshin': 'https://wiki.biligame.com/ys',
   'StarRail': 'https://wiki.biligame.com/sr',
+  '爱壹帆': 'https://www.yfsp.tv',
+  'bilibili': 'https://www.bilibili.com',
+  
 };
 
 export const OtherLinks = {
