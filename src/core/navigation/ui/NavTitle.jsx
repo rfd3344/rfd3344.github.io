@@ -26,6 +26,7 @@ export default function NavTitle() {
 
     if (pathname === PagePath.home) return '';
     if (pathname === PagePath.repo) return <GithubRepoTitle />;
+    if (pathname === PagePath.webpage) return <GithubRepoTitle />;
 
   };
 

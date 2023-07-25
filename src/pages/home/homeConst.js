@@ -5,6 +5,7 @@ import { PagePath } from 'src/constants/routerConst';
 export const ToolsLinks = {
   'Calculator': PagePath.calculator,
   'ColorTable': PagePath.colorTable,
+  'webpage': PagePath.webpage,
   'Photoshop Online': 'https://photoshop.adobe.com',
   'File Convert': 'https://photoshop.adobe.com',
 };
@@ -35,7 +36,7 @@ export const GameLinks = {
   'StarRail': 'https://wiki.biligame.com/sr',
   '爱壹帆': 'https://www.yfsp.tv',
   'bilibili': 'https://www.bilibili.com',
-  
+
 };
 
 export const OtherLinks = {
