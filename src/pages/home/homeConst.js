@@ -31,6 +31,11 @@ export const WebLinks = {
   '算法总结': 'https://github.com/youngyangyang04/leetcode-master/tree/master/problems',
 };
 
+export const WorkLinks = {
+  'Doc': 'https://docs.google.com/document/d/1zXNje7E74rW9ICdVE4JMvw6e_6jHfdEsVCcqw8TzJnk/edit',
+
+};
+
 export const GameLinks = {
   'Genshin': 'https://wiki.biligame.com/ys',
   'StarRail': 'https://wiki.biligame.com/sr',

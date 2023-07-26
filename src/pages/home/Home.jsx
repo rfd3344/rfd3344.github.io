@@ -9,8 +9,10 @@ import {
   CloudLinks,
   GithubLinks,
   WebLinks,
+  WorkLinks,
   GameLinks,
   OtherLinks,
+
 } from './homeConst';
 
 
@@ -21,6 +23,7 @@ export default function Home() {
       <LinksSection title="Cloud" linkMap={CloudLinks} />
       <LinksSection title="Github" linkMap={GithubLinks} />
       <LinksSection title="Web" linkMap={WebLinks} />
+      <LinksSection title="Work" linkMap={WorkLinks} />
       <LinksSection title="Game" linkMap={GameLinks} />
       <LinksSection title="Other" linkMap={OtherLinks} />
     </Container >
