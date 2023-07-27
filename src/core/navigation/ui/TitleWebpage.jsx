@@ -45,9 +45,9 @@ export default function TitleWebpage() {
             onChange={(e, value) => handleChange('size', value)}
           />
         </Box>
-        <Typography variant='h6' ml={2}>
+        {/* <Typography variant='h6' ml={2}>
           {size / 10 - 1}
-        </Typography>
+        </Typography> */}
       </Grid>
       <Grid item display="flex">
         <ToggleButtonGroup
@@ -56,14 +56,24 @@ export default function TitleWebpage() {
           size="small"
           color="secondary"
           onChange={(e, value) => handleChange('alignment', value)}
+          sx={{ '& button': { px: 2 } }}
         >
+          <ToggleButton
+            disabled
+            value=""
+            sx={{ backgroundColor: 'secondary.main', color: 'white !important' }}
+          >
+            <Typography variant='h6'  >
+              {size / 10 - 1}
+            </Typography>
+          </ToggleButton>
           <ToggleButton value="left" >
             <FormatAlignLeftIcon />
           </ToggleButton>
-          <ToggleButton value="center">
+          <ToggleButton value="center" px={2}>
             <FormatAlignCenterIcon />
           </ToggleButton>
-          <ToggleButton value="right">
+          <ToggleButton value="right" px={2}>
             <FormatAlignRightIcon />
           </ToggleButton>
         </ToggleButtonGroup>
