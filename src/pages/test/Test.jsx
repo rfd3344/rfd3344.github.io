@@ -30,8 +30,6 @@ export default function Test() {
 
   const handleClick = () => {
 
-    // dispatch(openSnackBar({ error: false }));
-    // dispatch(openSnackBar('test 1111'));
   };
 
 
@@ -41,6 +39,21 @@ export default function Test() {
 
       <Button
         onClick={handleClick}
+
+      >
+        click
+      </Button>
+
+      <Button
+        onClick={handleClick}
+
+      >
+        click
+      </Button>
+
+      <Button
+        onClick={handleClick}
+
       >
         click
       </Button>

@@ -121,11 +121,13 @@ export const theme = createTheme({
       defaultProps: {
         color: 'primary',
         variant: 'contained',
+        size: 'large',
       },
       styleOverrides: {
         root: {
           textTransform: 'none',
           minWidth: 160,
+          // fontWeight: 'bold',
         },
       },
     },
