@@ -1,6 +1,6 @@
 import React from 'react';
 import _ from 'lodash';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 import {
   AppBar,
   IconButton,
@@ -12,12 +12,17 @@ import {
   Typography,
 } from '@mui/material';
 
+import { PagePath } from 'src/constants/routerConst';
 
 import Clock from './ui/Clock';
 import NavTitle from './ui/NavTitle';
 
 export default function Header() {
   const nav = useNavigate();
+  const { pathname } = useLocation();
+
+
+  if (pathname === PagePath.test) return '';
 
   return (
     <AppBar position="static">

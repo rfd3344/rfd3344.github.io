@@ -13,7 +13,8 @@ import {
   AddToDrive,
   PermMedia,
   Link,
-  Warning
+  Warning,
+  OpenInNew
 } from '@mui/icons-material';
 
 
@@ -31,3 +32,4 @@ export const DriveIcon = AddToDrive;
 export const ImageFolderIcon = PermMedia;
 export const LinkIcon = Link;
 export const WarningIcon = Warning;
+export const OpenInNewIcon = OpenInNew;

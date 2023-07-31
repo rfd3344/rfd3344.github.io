@@ -28,7 +28,7 @@ export const WebLinks = {
   'ChatGPT': 'https://chat.openai.com',
   'dbdiagram': 'https://dbdiagram.io/d/5e2790869e76504e0ef083ac',
   'aws-cheat-sheets': 'https://digitalcloud.training/aws-cheat-sheets',
-  'AWSCheatSheet.html': '/AWSCheatSheet.html',
+  'AWSCheatSheet': 'https://codingnconcepts.com/aws/aws-certified-solutions-architect-associate',
   'toolfk:devTools': 'https://www.toolfk.com',
   '算法总结': 'https://github.com/youngyangyang04/leetcode-master/tree/master/problems',
 };
