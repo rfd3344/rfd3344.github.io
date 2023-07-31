@@ -27,14 +27,14 @@ export const GithubLinks = {
 export const WebLinks = {
   'ChatGPT': 'https://chat.openai.com',
   'dbdiagram': 'https://dbdiagram.io/d/5e2790869e76504e0ef083ac',
-  'aws-cheat-sheets': 'https://digitalcloud.training/aws-cheat-sheets',
-  'AWSCheatSheet': 'https://codingnconcepts.com/aws/aws-certified-solutions-architect-associate',
+  'digitalcloudAWS': 'https://digitalcloud.training/aws-cheat-sheets',
+  'codingnconceptsAWS': 'https://codingnconcepts.com/aws/aws-certified-solutions-architect-associate',
   'toolfk:devTools': 'https://www.toolfk.com',
   '算法总结': 'https://github.com/youngyangyang04/leetcode-master/tree/master/problems',
 };
 
 export const WorkLinks = {
-  'Doc': 'https://docs.google.com/document/d/1zXNje7E74rW9ICdVE4JMvw6e_6jHfdEsVCcqw8TzJnk/edit',
+  'WDoc': 'https://docs.google.com/document/d/1zXNje7E74rW9ICdVE4JMvw6e_6jHfdEsVCcqw8TzJnk/edit',
 
 };
 
@@ -42,8 +42,7 @@ export const GameLinks = {
   'Genshin': 'https://wiki.biligame.com/ys',
   'StarRail': 'https://wiki.biligame.com/sr',
   '爱壹帆': 'https://www.yfsp.tv',
-  'bilibili': 'https://www.bilibili.com',
-
+  'Bilibili': 'https://www.bilibili.com',
 };
 
 export const OtherLinks = {
