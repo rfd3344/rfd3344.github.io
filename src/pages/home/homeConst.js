@@ -6,8 +6,9 @@ export const ToolsLinks = {
   'Calculator': PagePath.calculator,
   'ColorTable': PagePath.colorTable,
   'webpage': PagePath.webpage,
-  'Photoshop Online': 'https://photoshop.adobe.com',
-  'File Convert': 'https://photoshop.adobe.com',
+  'PhotoshopOnline': 'https://photoshop.adobe.com',
+  'FileConvert': 'https://photoshop.adobe.com',
+  'payCalculator': 'https://paycalculator.com.au',
 };
 
 export const CloudLinks = {
