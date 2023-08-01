@@ -45,7 +45,7 @@ export default function LinkButton({
   const nav = useNavigate();
 
   const linkType = getLinkType(to);
-  const startIcon = (() => {
+  const getStartIcon = () => {
     if (_.includes(to, 'keep.google.com')) return <NoteIcon />;
     if (_.includes(to, 'drive.google.com')) return <DriveIcon />;
     if (_.includes(to, 'github.com')) return <GitHubIcon />;
@@ -57,7 +57,7 @@ export default function LinkButton({
     if (to === PagePath.colorTable) return <ColorIcon />;
     if (to === PagePath.repo) return <ImageFolderIcon />;
     return null;
-  })();
+  };
 
 
   const handleClick = () => {
@@ -73,7 +73,7 @@ export default function LinkButton({
         color={linkType === LinkTypes.external ? 'primary' : 'secondary'}
         variant="contained"
         onClick={handleClick}
-        startIcon={startIcon}
+        startIcon={getStartIcon()}
         {...rest}
       >{text}</Button>
     </Grid>
