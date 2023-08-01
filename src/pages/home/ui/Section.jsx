@@ -8,7 +8,7 @@ import {
   Button,
 } from '@mui/material';
 
-import LinkButton from './LinkButton';
+import ButtonLink from './ButtonLink';
 
 export default function LinksSection({
   title = '',
@@ -23,7 +23,7 @@ export default function LinksSection({
       <Typography variant="h5"> {title} </Typography>
       <Grid container spacing={2}>
         {_.keys(linkMap).map(key => (
-          <LinkButton
+          <ButtonLink
             key={key}
             text={key}
             to={linkMap[key]}

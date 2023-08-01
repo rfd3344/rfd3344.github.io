@@ -3,7 +3,7 @@ import {
   Container,
 } from '@mui/material';
 
-import LinksSection from './ui/LinksSection';
+import Section from './ui/Section';
 import {
   ToolsLinks,
   CloudLinks,
@@ -19,13 +19,13 @@ import {
 export default function Home() {
   return (
     <Container >
-      <LinksSection title="Tools" linkMap={ToolsLinks} />
-      <LinksSection title="Cloud" linkMap={CloudLinks} />
-      <LinksSection title="Github" linkMap={GithubLinks} />
-      <LinksSection title="Web" linkMap={WebLinks} />
-      <LinksSection title="Work" linkMap={WorkLinks} />
-      <LinksSection title="Game" linkMap={GameLinks} />
-      <LinksSection title="Other" linkMap={OtherLinks} />
+      <Section title="Tools" linkMap={ToolsLinks} />
+      <Section title="Cloud" linkMap={CloudLinks} />
+      <Section title="Github" linkMap={GithubLinks} />
+      <Section title="Web" linkMap={WebLinks} />
+      <Section title="Work" linkMap={WorkLinks} />
+      <Section title="Game" linkMap={GameLinks} />
+      <Section title="Other" linkMap={OtherLinks} />
     </Container >
   );
 }
