@@ -5,7 +5,7 @@ import { PagePath } from 'src/constants/routerConst';
 export const ToolsLinks = {
   Calculator: PagePath.calculator,
   ColorTable: PagePath.colorTable,
-  Wwebpage: PagePath.webpage,
+  Webpage: PagePath.webpage,
   PhotoshopOnline: 'https://photoshop.adobe.com',
   FileConvert: 'https://photoshop.adobe.com',
   PayCalculator: 'https://paycalculator.com.au',
