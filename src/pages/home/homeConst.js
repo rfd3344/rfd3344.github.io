@@ -37,7 +37,8 @@ export const WorkLinks = {
   WDoc: 'https://docs.google.com/document/d/1zXNje7E74rW9ICdVE4JMvw6e_6jHfdEsVCcqw8TzJnk/edit',
   Console: 'https://ap-southeast-2.console.aws.amazon.com/console',
   PostmanJH: 'https://rfd3344.postman.co/workspace/JH~57a4fc2b-3943-4488-a483-ba3b6d21e6cd/overview',
-
+  MailGoogle: 'https://mail.google.com/mail/u/1/#inbox',
+  CalendarGoogle: 'https://calendar.google.com/calendar/u/1/r',
 };
 
 export const GameLinks = {
