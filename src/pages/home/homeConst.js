@@ -8,6 +8,7 @@ export const ToolsLinks = {
   Webpage: PagePath.webpage,
   PhotoshopOnline: 'https://photoshop.adobe.com',
   FileConvert: 'https://photoshop.adobe.com',
+  ILovePdf: 'https://www.ilovepdf.com',
   PayCalculator: 'https://paycalculator.com.au',
 };
 
