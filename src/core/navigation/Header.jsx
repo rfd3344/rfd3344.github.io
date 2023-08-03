@@ -41,7 +41,9 @@ export default function Header() {
               color="inherit"
               onClick={() => nav('/')}
             >
-              <Avatar alt="" src="./image/bear9.png" />
+              <Avatar alt="" src="./image/zhongli3.png" />
+              {/* <Avatar alt="" src="https://raw.githubusercontent.com/rfd3344/staticJH/master/starRail/qingque1.jpeg" /> */}
+
             </IconButton>
           </Grid>
         </Grid>
