@@ -1,18 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import ReactMarkdown from 'react-markdown';
-// import rehypeRaw from 'rehype-raw';
 
 import markdownPath from './test.md';
 
-const input = `<div class="note">
 
-Some *emphasis* and <strong>strong</strong>!
-
-</div>`;
-
-
-
-export default function Test() {
+export default function MarkdownFile({
+  path = '',
+}) {
   const [content, setContent] = useState('');
 
   useEffect(() => {
@@ -24,10 +18,8 @@ export default function Test() {
   });
 
   return (
-    <div>
+    <div id="MarkdownFile">
       <ReactMarkdown>{content}</ReactMarkdown>
-
     </div >
-
   );
 }
