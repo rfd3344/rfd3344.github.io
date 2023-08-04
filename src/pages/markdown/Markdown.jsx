@@ -12,6 +12,7 @@ export default function Markdown() {
   const [content, setContent] = useState('');
 
   useEffect(() => {
+    if (!selectFile) return;
     const contentPath = `/markdown/${selectFile}`;
     fetch(contentPath)
       .then(resp => resp.text())
