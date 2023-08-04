@@ -20,8 +20,3 @@ export const omitRoot = (filePath = '') => {
 
   return _.slice(pathArr, 1).join('/');
 };
-
-
-export const getFileRawUrl = (repoPath = '', filePath = '') => {
-  return `${env().REACT_APP_GITHUB_RAW}/${repoPath}/master/${filePath}`;
-};

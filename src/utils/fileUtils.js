@@ -1,5 +1,6 @@
 import _ from 'lodash';
 
+import { env } from 'src/core/envManager';
 import { FileTypeEnum } from 'src/constants/fileConst';
 
 export const getFileTyle = (fileName = '') => {
@@ -15,4 +16,11 @@ export const getFileTyle = (fileName = '') => {
 
 
   return FileTypeEnum.others;
+};
+
+
+
+
+export const getGithubFileUrl = (repoPath = '', filePath = '') => {
+  return `${env().REACT_APP_GITHUB_RAW}/${repoPath}/master/${filePath}`;
 };
