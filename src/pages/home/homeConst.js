@@ -21,7 +21,7 @@ export const CloudLinks = {
 
 export const GithubLinks = {
   RepoFiles: PagePath.repo,
-  PageCode: 'https://github.com/rfd3344/rfd3344.github.io',
+  rfd3344GithubIo: 'https://github.com/rfd3344/rfd3344.github.io',
   StaticJH: 'https://github.com/rfd3344/staticJH',
   Storybook: 'https://rfd3344w.github.io',
 };
