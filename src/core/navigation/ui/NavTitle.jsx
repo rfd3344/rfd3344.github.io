@@ -18,6 +18,7 @@ import { updateGithubRepo } from 'src/pages/githubRepo/githubRepoSlice';
 import { WarningIcon } from 'src/core/Icons';
 
 import TitleGithubRepo from './TitleGithubRepo';
+import TitleMarkdown from './TitleMarkdown';
 import TitleWebpage from './TitleWebpage';
 
 export default function NavTitle() {
@@ -25,6 +26,7 @@ export default function NavTitle() {
   const getTitle = () => {
     if (pathname === PagePath.home) return '';
     if (pathname === PagePath.repo) return <TitleGithubRepo />;
+    if (pathname === PagePath.markdown) return <TitleMarkdown />;
     if (pathname === PagePath.webpage) return <TitleWebpage />;
   };
 
@@ -33,8 +35,6 @@ export default function NavTitle() {
       <Typography variant="subtitle1">
         {getTitle()}
       </Typography>
-
     </Box>
-
   );
 }

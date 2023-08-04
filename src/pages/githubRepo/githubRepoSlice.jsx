@@ -18,13 +18,10 @@ const slice = createSlice({
   name: 'githubRepo',
   initialState,
   reducers: {
-    updateGithubRepo: (state, action) => {
-      const { payload } = action;
-      return {
-        ...state,
-        ...payload,
-      };
-    },
+    updateGithubRepo: (state, action) => ({
+      ...state,
+      ...action.payload,
+    })
   },
   extraReducers: ({ addCase }) => {
     addCase(fetchMasterTree.fulfilled, (state, action) => {

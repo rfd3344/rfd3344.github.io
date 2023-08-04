@@ -2,57 +2,25 @@ import React, { useState, useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import {
   Container,
-  Grid,
-  Box,
-  Select,
-  MenuItem,
 } from '@mui/material';
-
-
-// import markdownPath from './contents/test.md';
-import ContentMD from './ui/ContentMD';
-
-import { fetchMarkdownFiles } from './markdownSlice';
+import ReactMarkdown from 'react-markdown';
 
 export default function Markdown() {
-  const dispatch = useDispatch();
-
-  // const [content, setContent] = useState('');
-  const [fileUrl, setFileUrl] = useState('');
-
   const {
-    files = []
+    selectFile = '',
   } = useSelector(state => state.markdown);
-  useEffect(() => {
-    // console.warn('markdownPath', markdownPath);
-    // fetch(markdownPath).then(resp => resp.text()).then(text => {
-    //   console.warn(text);
-    //   setContent(text);
-    //   // this.setState({ terms: text });
-    // });
-    dispatch(fetchMarkdownFiles());
-  }, []);
+  const [content, setContent] = useState('');
 
-  const handleChange = (e) => {
-    setFileUrl(e.target.value);
-  };
+  useEffect(() => {
+    const contentPath = `/markdown/${selectFile}`;
+    fetch(contentPath)
+      .then(resp => resp.text())
+      .then(text => setContent(text));
+  }, [selectFile]);
 
   return (
-    <Grid id="Markdown" container>
-      <Grid item>
-
-        <Select
-          value={fileUrl}
-          onChange={handleChange}
-        >
-          {files.map(item => (
-            <MenuItem value={item.url} key={item.path}>{item.path}</MenuItem>
-          ))}
-        </Select>
-      </Grid>
-      <Grid item>
-        {/* <ContentMD path={fileUrl} /> */}
-      </Grid>
-    </Grid>
+    <Container id="Markdown">
+      <ReactMarkdown>{content}</ReactMarkdown>
+    </Container>
   );
 }
