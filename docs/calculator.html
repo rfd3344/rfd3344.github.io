@@ -1,0 +1,66 @@
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="HHRef" content="3456!" />
+  <meta name="MMQwe" content="33455" />
+  <meta name="LLQwe" content="3456!" />
+  <meta name="CC1" content="(Qwe?@3$5)" />
+  <title>calculator ♏</title>
+</head>
+
+<section id="calculator">
+  <textarea onkeyup="handleKeyPress(this)">a = 10</textarea>
+  <div id="result">a = 10</div>
+</section>
+
+
+<style type="text/css">
+  section {
+    display: flex;
+    margin-top: 10px;
+  }
+
+  section * {
+    width: 50%;
+    font-size: 20px;
+    font-family: monospace;
+  }
+
+  textarea {
+    height: 90vh;
+    background: #d4eddb;
+
+  }
+
+  #result {
+    padding: 8px;
+    background: #FBF0D9;
+  }
+</style>
+<script type="text/javascript">
+
+  var textareaDom = document.querySelector('textarea');
+  var resultDom = document.querySelector('#result');
+
+
+  function handleKeyPress(dom) {
+    var value = dom.value;
+    var lines = value.split(String.fromCharCode(10));
+
+    var displayArea = lines.map((item) => {
+      if (!item.trim()) return '';
+      var [variable] = item.split('=');
+
+      try {
+        var evalRes = eval(item);
+        return `${variable} = ${evalRes}`;
+      } catch (e) { }
+
+    });
+
+    resultDom.innerHTML = displayArea.join('<br/>');
+
+  }
+
+</script>
