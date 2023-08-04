@@ -11,6 +11,7 @@ import {
 
 import { updateMarkdown } from 'src/pages/markdown/markdownSlice';
 
+const paths = require.context('src/../public/markdown', true).keys();
 
 export default function TitleMarkdown() {
   const dispatch = useDispatch();
@@ -20,7 +21,6 @@ export default function TitleMarkdown() {
   } = useSelector(state => state.markdown);
 
   useEffect(() => {
-    const paths = require.context('src/../public/markdown', true).keys();
     dispatch(updateMarkdown({
       selectFile: paths[0],
       filePaths: paths,
