@@ -16,3 +16,8 @@ export const getMasterTree = async (repoPath = '') => {
   const resp = await gitStaticApi().get(`${repoPath}/git/trees/master?recursive=1`);
   return resp;
 };
+
+export const getMarkdownFiles = async (repoPath = '') => {
+  const resp = await gitStaticApi().get(`${repoPath}/git/trees/master?recursive=1`);
+  return resp;
+};

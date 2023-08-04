@@ -5,6 +5,7 @@ import { PagePath } from 'src/constants/routerConst';
 
 import Home from 'src/pages/home/Home';
 import GithubRepo from 'src/pages/githubRepo/GithubRepo';
+import Markdown from 'src/pages/markdown/Markdown';
 import Webpage from 'src/pages/webpage/Webpage';
 
 import Test from 'src/pages/test/Test';
@@ -14,6 +15,7 @@ export default function Router() {
     <Routes>
       <Route path={PagePath.home} element={<Home />} />
       <Route path={PagePath.repo} element={<GithubRepo />} />
+      <Route path={PagePath.markdown} element={<Markdown />} />
       <Route path={PagePath.webpage} element={<Webpage />} />
 
       <Route path={PagePath.test} element={<Test />} />

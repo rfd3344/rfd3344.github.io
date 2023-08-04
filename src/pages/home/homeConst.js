@@ -15,6 +15,7 @@ export const ToolsLinks = {
 export const CloudLinks = {
   GoogleKeep: 'https://keep.google.com',
   DriveNotes: 'https://drive.google.com/drive/folders/1XA8VemDb4wW-kstLImPOuOEW9Qi6g02J',
+  Markdown: PagePath.markdown,
   Skype: 'https://web.skype.com',
 };
 
