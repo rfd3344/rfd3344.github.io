@@ -52,10 +52,10 @@ export default function FielItem({
             />
           }
           {fileType === FileTypeEnum.pdf &&
-            <img src="./fileType/pdfIcon.png" height="50" />
+            <img src="./icons/pdf.png" height="50" />
           }
           {fileType === FileTypeEnum.md &&
-            <img src="./fileType/markdownIcon.jpg" height="50" />
+            <img src="./icons/markdown.jpg" height="50" />
           }
           {fileType === FileTypeEnum.others &&
             <DescriptionIcon sx={{ fontSize: 50 }} />
