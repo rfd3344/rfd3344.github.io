@@ -1,12 +1,14 @@
 {
   "files": {
-    "main.js": "/static/js/main.870860bf.js",
-    "static/media/demo.md": "/static/media/demo.ee837d5e779ebf2175ac.md",
+    "main.js": "/static/js/main.a35c7c89.js",
+    "static/media/game.md": "/static/media/game.7440a9a4a15a88cf5fda.md",
+    "static/media/demo.md": "/static/media/demo.ec8e5a7fc3252e204dfc.md",
+    "static/media/cocktail.md": "/static/media/cocktail.e5fcd232ee6de4d28034.md",
     "index.html": "/index.html",
-    "static/media/test3.md": "/static/media/test3.b22c6915d38f015e8775.md",
+    "static/media/envSetup.md": "/static/media/envSetup.4c5d3a59b17cb705738f.md",
     "static/media/test.md": "/static/media/test.bcd81654976de6fb52b0.md"
   },
   "entrypoints": [
-    "static/js/main.870860bf.js"
+    "static/js/main.a35c7c89.js"
   ]
 }
