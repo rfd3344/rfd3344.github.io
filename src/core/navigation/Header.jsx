@@ -1,6 +1,6 @@
 import React from 'react';
 import _ from 'lodash';
-import { useNavigate, useLocation } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import {
   AppBar,
   IconButton,
@@ -18,11 +18,9 @@ import Clock from './ui/Clock';
 import NavTitle from './ui/NavTitle';
 
 export default function Header() {
-  const nav = useNavigate();
   const { pathname } = useLocation();
 
-
-  if (pathname === PagePath.test) return '';
+  if (pathname === PagePath.test) return null;
 
   return (
     <AppBar position="static">
@@ -39,11 +37,10 @@ export default function Header() {
           <Grid item sx={{ mr: { xs: 0, md: 10 } }}>
             <IconButton
               color="inherit"
-              onClick={() => nav('/')}
+              component={Link}
+              to="/"
             >
               <Avatar alt="" src="./image/zhongli3.png" />
-              {/* <Avatar alt="" src="https://raw.githubusercontent.com/rfd3344/staticJH/master/starRail/qingque1.jpeg" /> */}
-
             </IconButton>
           </Grid>
         </Grid>

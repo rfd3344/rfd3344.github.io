@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/static/js/main.b8da617c.js",
+    "main.js": "/static/js/main.8b3a642d.js",
     "static/media/game.md": "/static/media/game.7497b256f845fee15b01.md",
     "static/media/coding.md": "/static/media/coding.01634309a72184540fe7.md",
     "static/media/_demo.md": "/static/media/_demo.ec8e5a7fc3252e204dfc.md",
@@ -11,6 +11,6 @@
     "static/media/aws.md": "/static/media/aws.f165f8577f353383b91f.md"
   },
   "entrypoints": [
-    "static/js/main.b8da617c.js"
+    "static/js/main.8b3a642d.js"
   ]
 }

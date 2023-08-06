@@ -66,9 +66,8 @@ export default function LinkButton({
         component={linkType === LinkTypes.singlePage ? Link : LinkMui}
         to={to}
         href={to}
-        target={linkType === LinkTypes.html ? '_self' : '_blank'}
+        target={linkType === LinkTypes.external ? '_blank' : '_self'}
         color={linkType === LinkTypes.external ? 'primary' : 'secondary'}
-
         {...rest}
       >{text}</Button>
     </Grid>
