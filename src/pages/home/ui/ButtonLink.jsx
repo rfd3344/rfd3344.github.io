@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import _ from 'lodash';
-import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import {
   Box,
   Grid,
   Button,
+  Link as LinkMui,
 } from '@mui/material';
 
 import { PagePath } from 'src/constants/routerConst';
-import { openLink } from 'src/utils/browserUtils';
 import {
   CalculateIcon,
   ColorIcon,
@@ -42,8 +42,6 @@ export default function LinkButton({
   text = '',
   ...rest
 }) {
-  const nav = useNavigate();
-
   const linkType = getLinkType(to);
   const getStartIcon = () => {
     if (_.includes(to, 'keep.google.com')) return <NoteIcon />;
@@ -60,20 +58,17 @@ export default function LinkButton({
   };
 
 
-  const handleClick = () => {
-    if (linkType === LinkTypes.html) openLink(to);
-    else if (linkType === LinkTypes.singlePage) nav(to);
-    else openLink(to, true);
-  };
-
-
   return (
     <Grid item>
       <Button
-        color={linkType === LinkTypes.external ? 'primary' : 'secondary'}
         variant="contained"
-        onClick={handleClick}
         startIcon={getStartIcon()}
+        component={linkType === LinkTypes.singlePage ? Link : LinkMui}
+        to={to}
+        href={to}
+        target={linkType === LinkTypes.html ? '_self' : '_blank'}
+        color={linkType === LinkTypes.external ? 'primary' : 'secondary'}
+
         {...rest}
       >{text}</Button>
     </Grid>

@@ -14,13 +14,5 @@ export const getFileTyle = (fileName = '') => {
     return FileTypeEnum.image;
   }
 
-
   return FileTypeEnum.others;
-};
-
-
-
-
-export const getGithubFileUrl = (repoPath = '', filePath = '') => {
-  return `${env().REACT_APP_GITHUB_RAW}/${repoPath}/master/${filePath}`;
 };

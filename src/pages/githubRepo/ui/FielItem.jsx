@@ -23,7 +23,7 @@ import {
 
 import {
   getGithubFileUrl,
-} from 'src/utils/fileUtils';
+} from '../githubRepoUtils';
 
 export default function FielItem({
   file = {},
