@@ -4,10 +4,11 @@ import { PagePath } from 'src/constants/routerConst';
 
 export const ToolsLinks = {
   Calculator: PagePath.calculator,
-  ColorTable: PagePath.colorTable,
+  ColorTable: PagePath.colorTables,
   Webpage: PagePath.webpage,
   PhotoshopOnline: 'https://photoshop.adobe.com',
-  FileConvert: 'https://photoshop.adobe.com',
+  // FileConvert: 'https://photoshop.adobe.com',
+  ImageOnline: 'https://www.imgonline.com.ua/eng',
   ILovePdf: 'https://www.ilovepdf.com',
   PayCalculator: 'https://paycalculator.com.au',
 };
