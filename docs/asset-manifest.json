@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.js": "/static/js/main.8b3a642d.js",
-    "static/media/game.md": "/static/media/game.7497b256f845fee15b01.md",
-    "static/media/coding.md": "/static/media/coding.01634309a72184540fe7.md",
-    "static/media/_demo.md": "/static/media/_demo.ec8e5a7fc3252e204dfc.md",
-    "static/media/cocktail.md": "/static/media/cocktail.e5fcd232ee6de4d28034.md",
+    "main.js": "/static/js/main.5f37d14c.js",
+    "static/media/game.md": "/static/media/game.6173f913af6d14d4f227.md",
+    "static/media/coding.md": "/static/media/coding.ad05f257141e6aa97004.md",
+    "static/media/_demo.md": "/static/media/_demo.4bb4a836562c250a027b.md",
+    "static/media/cocktail.md": "/static/media/cocktail.23482a99e90f90ee9e1e.md",
+    "static/media/aws.md": "/static/media/aws.bba83c8b8826631434c3.md",
     "index.html": "/index.html",
-    "static/media/envSetup.md": "/static/media/envSetup.4c5d3a59b17cb705738f.md",
-    "static/media/test.md": "/static/media/test.bcd81654976de6fb52b0.md",
-    "static/media/aws.md": "/static/media/aws.f165f8577f353383b91f.md"
+    "static/media/envSetup.md": "/static/media/envSetup.cfa2f40d2430931a41d5.md",
+    "static/media/test.md": "/static/media/test.2548e8182789dcbf8e28.md"
   },
   "entrypoints": [
-    "static/js/main.8b3a642d.js"
+    "static/js/main.5f37d14c.js"
   ]
 }
