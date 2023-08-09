@@ -42,11 +42,17 @@
 
 #### Lambda
 
+- Serverless, FaaS
+
 ## Application Integration
 
 #### SQS (Amazon Simple Queue Service)
 
+- Serverless, PubSub, Fan-out
+
 #### SNS (Amazon Simple Notification Service)
+
+- Serverless, Decoupled, Queue, Fan-out
 
 #### Amazon MQ
 
@@ -54,11 +60,17 @@
 
 #### S3 (Simple Storage Service)
 
+- Serverless, Block Storage - Photos & Videos, Website Hosting
+
 #### Instance Store
 
 #### EBS (Elastic Block Store)
 
+- Block Storage Volume for EC2
+
 #### EFS (Elastic File System)
+
+- Network File System for EC2, Concurrent access
 
 #### FSx for Windows
 
@@ -137,3 +149,13 @@
 #### AWS OpsWorks
 
 #### AWS Glue
+
+## Containers
+
+#### Elastic Container Registry (ECR)
+
+#### Elastic Container Service (ECS)
+
+#### Fargate
+
+#### AWS X-Ray
