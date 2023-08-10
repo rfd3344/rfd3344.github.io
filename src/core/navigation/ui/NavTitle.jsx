@@ -18,7 +18,7 @@ import { updateGithubRepo } from 'src/pages/githubRepo/githubRepoSlice';
 import { WarningIcon } from 'src/core/Icons';
 
 import TitleGithubRepo from './TitleGithubRepo';
-import TitleMarkdown from './TitleMarkdown';
+import TitleMarkdown from './TitleFolder';
 import TitleWebpage from './TitleWebpage';
 
 export default function NavTitle() {

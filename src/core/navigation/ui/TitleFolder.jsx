@@ -10,10 +10,15 @@ import {
 } from '@mui/material';
 
 import { updateMarkdown } from 'src/pages/markdown/markdownSlice';
+import {
+  getFolderFiles
+} from 'src/core/nodeMethods';
 
-const paths = require.context('src/../public/markdown', true).keys();
+// const paths = require.context('src/../public/markdown', true).keys();
 
-export default function TitleMarkdown() {
+export default function TitleFolder({
+  folderName = ''
+}) {
   const dispatch = useDispatch();
   const {
     selectFile = '',
@@ -21,6 +26,7 @@ export default function TitleMarkdown() {
   } = useSelector(state => state.markdown);
 
   useEffect(() => {
+    const paths = getFolderFiles('markdown');
     dispatch(updateMarkdown({
       selectFile: paths[0],
       filePaths: paths,
@@ -36,14 +42,14 @@ export default function TitleMarkdown() {
   return (
     <Box>
       <FormControl variant="standard" sx={{ m: 1, minWidth: 200 }}>
-      <Select
-        value={selectFile}
-        onChange={handleChange}
-      >
-        {filePaths.map(item => (
-          <MenuItem value={item} key={item}>{item}</MenuItem>
-        ))}
-      </Select>
+        <Select
+          value={selectFile}
+          onChange={handleChange}
+        >
+          {filePaths.map(item => (
+            <MenuItem value={item} key={item}>{item}</MenuItem>
+          ))}
+        </Select>
       </FormControl>
 
     </Box>
