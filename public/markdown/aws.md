@@ -1,161 +1,161 @@
 ## AWS Infrastructure
 
-#### AWS Region
+### AWS Region
 
-#### AZ (Availability zones)
+### AZ (Availability zones)
 
 ## Security, Identity & Compliance
 
-#### IAM (Identity and Access Management)
+### IAM (Identity and Access Management)
 
-#### Access AWS programmatically
+### Access AWS programmatically
 
-#### Access AWS for Non-IAM users
+### Access AWS for Non-IAM users
 
-#### Amazon Cognito
+### Amazon Cognito
 
-#### AWS Key Management Service (KMS)
+### AWS Key Management Service (KMS)
 
-#### AWS CloudHSM
+### AWS CloudHSM
 
-#### AWS Systems Manager
+### AWS Systems Manager
 
-#### AWS Secrets Manager
+### AWS Secrets Manager
 
-#### AWS Shield
+### AWS Shield
 
-#### AWS WAF
+### AWS WAF
 
-#### AWS Firewall Manager
+### AWS Firewall Manager
 
-#### AWS GuardDuty
+### AWS GuardDuty
 
-#### Amazon Inspector
+### Amazon Inspector
 
-#### Amazon Macie
+### Amazon Macie
 
-#### AWS Config
+### AWS Config
 
 ## Compute
 
-#### EC2 (Elastic Compute Cloud)
+### EC2 (Elastic Compute Cloud)
 
-#### Lambda
+### Lambda
 
 - Serverless, FaaS
 
 ## Application Integration
 
-#### SQS (Amazon Simple Queue Service)
+### SQS (Amazon Simple Queue Service)
 
 - Serverless, PubSub, Fan-out
 
-#### SNS (Amazon Simple Notification Service)
+### SNS (Amazon Simple Notification Service)
 
 - Serverless, Decoupled, Queue, Fan-out
 
-#### Amazon MQ
+### Amazon MQ
 
 ## Storage
 
-#### S3 (Simple Storage Service)
+### S3 (Simple Storage Service)
 
 - Serverless, Block Storage - Photos & Videos, Website Hosting
 
-#### Instance Store
+### Instance Store
 
-#### EBS (Elastic Block Store)
+### EBS (Elastic Block Store)
 
 - Block Storage Volume for EC2
 
-#### EFS (Elastic File System)
+### EFS (Elastic File System)
 
 - Network File System for EC2, Concurrent access
 
-#### FSx for Windows
+### FSx for Windows
 
-#### FSx for Lustre
+### FSx for Lustre
 
 ## Database
 
-#### RDS (Relational Database Service)
+### RDS (Relational Database Service)
 
-#### Amazon Aurora
+### Amazon Aurora
 
-#### DynamoDB
+### DynamoDB
 
-#### ElastiCache
+### ElastiCache
 
-#### Redshift
+### Redshift
 
-#### Amazon Kinesis
+### Amazon Kinesis
 
-#### Amazon EMR
+### Amazon EMR
 
-#### Neptune
+### Neptune
 
-#### ElasticSearch
+### ElasticSearch
 
 ## Migration
 
-#### AWS Snow Family
+### AWS Snow Family
 
-#### AWS Storage Gateway
+### AWS Storage Gateway
 
-#### AWS DataSync
+### AWS DataSync
 
-#### AWS Backup
+### AWS Backup
 
-#### Database Migration Service (DMS)
+### Database Migration Service (DMS)
 
-#### AWS Application Migration Service (MGN)
+### AWS Application Migration Service (MGN)
 
 ## Networking & Content Delivery
 
-#### Amazon VPC
+### Amazon VPC
 
-#### VPC endpoints
+### VPC endpoints
 
-#### AWS VPN
+### AWS VPN
 
-#### AWS Direct Connect
+### AWS Direct Connect
 
-#### Amazon API Gateway
+### Amazon API Gateway
 
-#### Amazon CloudFront
+### Amazon CloudFront
 
-#### Amazon Route 53
+### Amazon Route 53
 
-#### AWS Global Accelerator
+### AWS Global Accelerator
 
 ## Management & Governance
 
-#### Amazon CloudWatch
+### Amazon CloudWatch
 
-#### AWS CloudTrail
+### AWS CloudTrail
 
-#### AWS CloudFormation
+### AWS CloudFormation
 
-#### AWS Elastic Beanstalk
+### AWS Elastic Beanstalk
 
-#### AWS ParallelCluster
+### AWS ParallelCluster
 
-#### AWS Step Functions (SF)
+### AWS Step Functions (SF)
 
-#### AWS Simple Workflow Service (SWF)
+### AWS Simple Workflow Service (SWF)
 
-#### AWS Organization
+### AWS Organization
 
-#### AWS OpsWorks
+### AWS OpsWorks
 
-#### AWS Glue
+### AWS Glue
 
 ## Containers
 
-#### Elastic Container Registry (ECR)
+### Elastic Container Registry (ECR)
 
-#### Elastic Container Service (ECS)
+### Elastic Container Service (ECS)
 
-#### Fargate
+### Fargate
 
-#### AWS X-Ray
+### AWS X-Ray
