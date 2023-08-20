@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/static/js/main.1cfd6223.js",
+    "main.js": "/static/js/main.eb63e484.js",
     "static/media/AWSStorage.pdf": "/static/media/AWSStorage.9384aa63f4d04ee4162e.pdf",
     "static/media/CheatSheet.pdf": "/static/media/CheatSheet.8a12fcc17ab4b4336d89.pdf",
     "static/media/game.md": "/static/media/game.7497b256f845fee15b01.md",
@@ -14,6 +14,6 @@
     "static/media/test.md": "/static/media/test.bcd81654976de6fb52b0.md"
   },
   "entrypoints": [
-    "static/js/main.1cfd6223.js"
+    "static/js/main.eb63e484.js"
   ]
 }
