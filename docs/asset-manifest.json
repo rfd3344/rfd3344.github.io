@@ -1,16 +1,19 @@
 {
   "files": {
-    "main.js": "/static/js/main.7305ba10.js",
+    "main.js": "/static/js/main.eb63e484.js",
+    "static/media/AWSStorage.pdf": "/static/media/AWSStorage.9384aa63f4d04ee4162e.pdf",
+    "static/media/CheatSheet.pdf": "/static/media/CheatSheet.8a12fcc17ab4b4336d89.pdf",
     "static/media/game.md": "/static/media/game.7497b256f845fee15b01.md",
     "static/media/coding.md": "/static/media/coding.01634309a72184540fe7.md",
     "static/media/aaa.md": "/static/media/aaa.ec8e5a7fc3252e204dfc.md",
     "static/media/cocktail.md": "/static/media/cocktail.e5fcd232ee6de4d28034.md",
-    "static/media/aws.md": "/static/media/aws.68b6830eb3b1cd39eecc.md",
+    "static/media/aws.md": "/static/media/aws.6243f432ca9182bb2d4d.md",
+    "static/media/awsMostUsed.md": "/static/media/awsMostUsed.30f95f8168c93644f524.md",
     "index.html": "/index.html",
-    "static/media/envSetup.md": "/static/media/envSetup.4c5d3a59b17cb705738f.md",
+    "static/media/envSetup.md": "/static/media/envSetup.05067466796880f61dcc.md",
     "static/media/test.md": "/static/media/test.bcd81654976de6fb52b0.md"
   },
   "entrypoints": [
-    "static/js/main.7305ba10.js"
+    "static/js/main.eb63e484.js"
   ]
 }
