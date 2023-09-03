@@ -44,6 +44,10 @@ export const WorkLinks = {
   CalendarGoogle: 'https://calendar.google.com/calendar/u/1/r',
 };
 
+export const HomeLinks = {
+  HillTennisCourt: 'https://hills.bookable.net.au/#!/search?venueTypeId=3&activityTypeId=17',
+};
+
 export const GameLinks = {
   Genshin: 'https://wiki.biligame.com/ys',
   StarRail: 'https://wiki.biligame.com/sr',
