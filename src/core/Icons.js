@@ -14,9 +14,9 @@ import {
   PermMedia,
   Link,
   Warning,
-  OpenInNew
+  OpenInNew,
+  Mms,
 } from '@mui/icons-material';
-
 
 export const SourceIcon = Source;
 export const CalculateIcon = Calculate;
@@ -33,3 +33,4 @@ export const ImageFolderIcon = PermMedia;
 export const LinkIcon = Link;
 export const WarningIcon = Warning;
 export const OpenInNewIcon = OpenInNew;
+export const MessageImgIcon = Mms;

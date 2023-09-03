@@ -17,6 +17,7 @@ import {
   DriveIcon,
   ImageFolderIcon,
   OpenInNewIcon,
+  MessageImgIcon,
 } from 'src/core/Icons';
 
 import ImgIcon from './ImgIcon';
@@ -48,7 +49,7 @@ export default function LinkButton({
     if (_.includes(to, 'drive.google.com')) return <DriveIcon />;
     if (_.includes(to, 'github.com')) return <GitHubIcon />;
     if (_.includes(to, 'aws')) return <ImgIcon src="./icons/aws.png" />;
-    if (_.includes(to, 'skype.com')) return <ImgIcon src="./icons/skype.svg" />;
+    if (_.includes(to, 'messenger.com')) return <MessageImgIcon />;
     if (_.includes(to, 'rfd3344w.github.io')) return <ImgIcon src="./icons/storybook.png" />;
     if (linkType === LinkTypes.external) return <OpenInNewIcon />;
     if (to === PagePath.calculator) return <CalculateIcon />;
