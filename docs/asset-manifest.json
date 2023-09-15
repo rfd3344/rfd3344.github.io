@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.js": "/static/js/main.2f6e5f95.js",
+    "main.js": "/static/js/main.14629ad5.js",
     "static/media/AWSStorage.pdf": "/static/media/AWSStorage.9384aa63f4d04ee4162e.pdf",
     "static/media/CheatSheet.pdf": "/static/media/CheatSheet.8a12fcc17ab4b4336d89.pdf",
-    "static/media/game.md": "/static/media/game.6173f913af6d14d4f227.md",
-    "static/media/coding.md": "/static/media/coding.ad05f257141e6aa97004.md",
-    "static/media/aaa.md": "/static/media/aaa.4bb4a836562c250a027b.md",
-    "static/media/cocktail.md": "/static/media/cocktail.23482a99e90f90ee9e1e.md",
-    "static/media/aws.md": "/static/media/aws.f0d2c7532e5309689fc0.md",
-    "static/media/awsMostUsed.md": "/static/media/awsMostUsed.bee09b3f4f9c8989bb34.md",
+    "static/media/game.md": "/static/media/game.7497b256f845fee15b01.md",
+    "static/media/coding.md": "/static/media/coding.01634309a72184540fe7.md",
+    "static/media/aaa.md": "/static/media/aaa.ec8e5a7fc3252e204dfc.md",
+    "static/media/cocktail.md": "/static/media/cocktail.e5fcd232ee6de4d28034.md",
+    "static/media/aws.md": "/static/media/aws.6243f432ca9182bb2d4d.md",
+    "static/media/awsUsed.md": "/static/media/awsUsed.30f95f8168c93644f524.md",
     "index.html": "/index.html",
-    "static/media/envSetup.md": "/static/media/envSetup.1c8f702f2254e4d2861f.md",
-    "static/media/test.md": "/static/media/test.2548e8182789dcbf8e28.md"
+    "static/media/envSetup.md": "/static/media/envSetup.05067466796880f61dcc.md",
+    "static/media/test.md": "/static/media/test.bcd81654976de6fb52b0.md"
   },
   "entrypoints": [
-    "static/js/main.2f6e5f95.js"
+    "static/js/main.14629ad5.js"
   ]
 }
