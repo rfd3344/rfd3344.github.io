@@ -11,3 +11,8 @@
 - SourceTree, GithubDesk
 - VScode, Sublime,
 - Anydesk
+
+
+### slow-deps
+npm install -g slow-deps
+slow-deps
