@@ -46,6 +46,8 @@ export const WorkLinks = {
 
 export const HomeLinks = {
   HillTennisCourt: 'https://hills.bookable.net.au/#!/search?venueTypeId=3&activityTypeId=17',
+  KerbsideCleanUp: 'https://www.thehills.nsw.gov.au/Services/For-Residents/Waste-Recycling/Clean-Up-Collection',
+  StrataFee: 'denise.greene@bcssm.com.au'
 };
 
 export const GameLinks = {
