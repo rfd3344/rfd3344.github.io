@@ -13,6 +13,10 @@
 - Anydesk
 
 
+
+
 ### slow-deps
-npm install -g slow-deps
-slow-deps
+
+- check dependencies install time and size
+- npm install -g slow-deps
+- slow-deps
