@@ -12,7 +12,9 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      padding: 20px;
+      padding: 10px;
+      background-color: #030712;
+      font-size: 18px;
     }
 
     .category {
@@ -20,23 +22,43 @@
     }
 
     .category-title {
-      font-size: 1.2em;
+      font-size: 1.4em;
       font-weight: bold;
       margin-bottom: 10px;
+      padding-left: 5px;
+      color: #e1e7ef;
     }
 
-    .button-list button {
+    .button-list a {
       margin: 5px;
       padding: 8px 12px;
-      border: none;
-      background-color: #007bff;
-      color: white;
+      /* background-color: #155e75; */
+      color: #e1e7ef;
       border-radius: 5px;
-      cursor: pointer;
+      text-decoration: none;
     }
 
-    .button-list button:hover {
-      background-color: #0056b3;
+
+
+
+
+
+    .button-list a:nth-child(3n+1) {
+      background-color: #007bff;
+    }
+
+    .button-list a:nth-child(3n+2) {
+      background-color: #155e75;
+    }
+
+    .button-list a:nth-child(3n+3) {
+      background-color: #d97708;
+    }
+
+
+
+    .button-list a:hover {
+      opacity: 0.8;
     }
   </style>
 </head>
@@ -44,14 +66,8 @@
 <body>
 
   <div id="container"></div>
+  <script src="./index.js"></script>
 
-  <script>
-    // Your categories and buttons
-
-  </script>
-
-  <!-- <script src="./index.js"></script> -->
-  <!-- <script src="./index.js?v=<script>document.write(Date.now())</script>"></script> -->
 </body>
 
 </html>
