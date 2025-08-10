@@ -25,7 +25,7 @@ const homeLinks = [
       { text: 'tinyTools', url: 'https://tinywow.com/' },
       { text: 'snap-drop', url: 'https://www.snap-drop.net/' },
       { text: 'skylinewebcams', url: 'https://www.skylinewebcams.com/en.html' },
-      { text: 'Demanualslibmo', url: 'https://www.manualslib.com/' },
+      { text: 'manualslib', url: 'https://www.manualslib.com/' },
     ],
   },
   {
