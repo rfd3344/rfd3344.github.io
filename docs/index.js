@@ -5,19 +5,19 @@ const homeLinks = [
   {
     categoryTitle: 'Notes & Files',
     links: [
-      { text: 'LocalNotes', url: '/html/localNotes.html?notes=2' },
+      { text: 'LocalNotes', url: 'https://rfd3344.github.io/pages/localNotes.html?notes=2' },
       { text: 'DailyNote', url: 'https://rfd3344.atlassian.net/wiki/spaces/estelspace/pages/edit-v2/20480026' },
       { text: 'DriveDocs', url: 'https://drive.google.com/drive/folders/1XA8VemDb4wW-kstLImPOuOEW9Qi6g02J' },
       { text: 'slack', url: 'https://app.slack.com/client/T07BG5VAJTS/C08Q2LDL7BR' },
       { text: 'teams', url: 'https://teams.live.com/v2' },
-      { text: 'StaticFiles', url: '/github-repo' },
+      { text: 'StaticFiles', url: 'https://rfd3344.vercel.app/github-repo' },
       { text: 'GithubRepo', url: 'https://github.com/rfd3344?tab=repositories' },
     ],
   },
   {
     categoryTitle: 'Tools',
     links: [
-      { text: 'Calculator', url: '/html/calculator.html' },
+      { text: 'Calculator', url: 'https://rfd3344.github.io/pages/calculator.html' },
       { text: 'ChatGPT', url: 'https://chat.openai.com' },
       { text: 'DeepSeek', url: 'https://chat.deepseek.com/' },
       { text: 'PayCalculator', url: 'https://paycalculator.com.au' },
@@ -31,7 +31,7 @@ const homeLinks = [
   {
     categoryTitle: 'Image',
     links: [
-      { text: 'ColorTable', url: '/html/colorTable.html' },
+      { text: 'ColorTable', url: 'https://rfd3344.github.io/pages/colorTable.html' },
       { text: 'PhotoPea', url: 'https://photopea.com' },
       { text: 'ImageOnline', url: 'https://www.imgonline.com.ua/eng' },
       { text: 'ExcaliDraw', url: 'https://excalidraw.com/' },
@@ -135,9 +135,9 @@ const homeLinks = [
   {
     categoryTitle: 'Others',
     links: [
-      { text: 'Demo', url: '/demo' },
+      { text: 'Demo', url: 'https://rfd3344.vercel.app/demo' },
 
-      { text: 'Demo', url: '/demo' },
+      { text: 'Demo', url: 'https://rfd3344.vercel.app/demo' },
     ],
   },
 ];
