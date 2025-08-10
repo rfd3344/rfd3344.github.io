@@ -88,11 +88,12 @@ const homeLinks = [
   {
     categoryTitle: 'Fun',
     links: [
-      { text: 'GenShin', url: 'https://wiki.biligame.com/ys' },
-      { text: 'StarRail', url: 'https://wiki.biligame.com/sr' },
-      { text: '虎牙直播', url: 'https://www.huya.com/g/wzry' },
       { text: '爱壹帆', url: 'https://www.google.com/search?q=yfsp' },
       { text: 'BiLiBiLi', url: 'https://www.bilibili.com' },
+      { text: 'Youtube', url: 'https://www.youtube.com/' },
+      { text: '虎牙直播', url: 'https://www.huya.com/g/wzry' },
+      { text: 'GenShin', url: 'https://wiki.biligame.com/ys' },
+      { text: 'StarRail', url: 'https://wiki.biligame.com/sr' },
       { text: 'Poki', url: 'https://poki.com/' },
       { text: '红警2', url: 'https://ra2web.com' },
       { text: 'CS-Online', url: ' https://play-cs.com/en/servers' },
