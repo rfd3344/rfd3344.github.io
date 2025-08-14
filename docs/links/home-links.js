@@ -81,6 +81,7 @@ const homeLinks = [
       { text: 'EToll', url: 'https://account.myetoll.transport.nsw.gov.au/login' },
       { text: 'NRMA', url: 'https://connect.nrma.com.au/welcome/login/username' },
       { text: 'ServiceNSW', url: 'https://account.service.nsw.gov.au/overview' },
+      { text: 'Bupa', url: 'https://my.bupa.com.au/' },
       { text: 'ColesMobile', url: 'https://colesmobile.com.au/pages/dashboard/service/84870' },
 
     ],
