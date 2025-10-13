@@ -18,6 +18,8 @@ const homeLinks = [
     categoryTitle: 'Tools',
     links: [
       { text: 'Calculator', url: 'https://rfd3344.github.io/pages/calculator.html' },
+      { text: 'AUD_CNY', url: 'https://share.google/xlYoiO4BStMaEFTGE' },
+
       { text: 'ChatGPT', url: 'https://chat.openai.com' },
       { text: 'DeepSeek', url: 'https://chat.deepseek.com/' },
       { text: 'PayCalculator', url: 'https://paycalculator.com.au' },
