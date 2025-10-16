@@ -100,6 +100,7 @@ const homeLinks = [
       { text: 'Poki', url: 'https://poki.com/' },
       { text: '红警2', url: 'https://ra2web.com' },
       { text: 'CS-Online', url: ' https://play-cs.com/en/servers' },
+      { text: '桌游合集', url: ' https://game.hullqin.cn/' },
     ],
   },
   {
