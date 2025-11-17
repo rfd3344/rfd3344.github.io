@@ -5,7 +5,7 @@ const homeLinks = [
   {
     categoryTitle: 'Notes & Files',
     links: [
-      { text: 'LocalNotes', url: 'https://rfd3344.github.io/pages/localNotes.html?notes=2' },
+      { text: 'LocalNotes', url: 'https://rfd3344.github.io/pages/local-notes.html?notes=2' },
       { text: 'DailyNote', url: 'https://rfd3344.atlassian.net/wiki/spaces/estelspace/pages/20480026/DailyNotes' },
       { text: 'DriveDocs', url: 'https://drive.google.com/drive/folders/1XA8VemDb4wW-kstLImPOuOEW9Qi6g02J' },
       { text: 'slack', url: 'https://app.slack.com/client/T07BG5VAJTS/C08Q2LDL7BR' },
@@ -33,7 +33,7 @@ const homeLinks = [
   {
     categoryTitle: 'Image',
     links: [
-      { text: 'ColorTable', url: 'https://rfd3344.github.io/pages/colorTable.html' },
+      { text: 'ColorTable', url: 'https://rfd3344.github.io/pages/color-table.html' },
       { text: 'PhotoPea', url: 'https://photopea.com' },
       { text: 'ImageOnline', url: 'https://www.imgonline.com.ua/eng' },
       { text: 'ExcaliDraw', url: 'https://excalidraw.com/' },
@@ -95,8 +95,8 @@ const homeLinks = [
       { text: 'BiLiBiLi', url: 'https://www.bilibili.com' },
       { text: 'Youtube', url: 'https://www.youtube.com/' },
       { text: '虎牙直播', url: 'https://www.huya.com/g/wzry' },
-      { text: 'GenShin', url: 'https://wiki.biligame.com/ys' },
-      { text: 'StarRail', url: 'https://wiki.biligame.com/sr' },
+      // { text: 'GenShin', url: 'https://wiki.biligame.com/ys' },
+      // { text: 'StarRail', url: 'https://wiki.biligame.com/sr' },
       { text: 'Poki', url: 'https://poki.com/' },
       { text: '红警2', url: 'https://ra2web.com' },
       { text: 'CS-Online', url: ' https://play-cs.com/en/servers' },
