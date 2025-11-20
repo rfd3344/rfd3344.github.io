@@ -95,6 +95,8 @@ const homeLinks = [
       { text: 'BiLiBiLi', url: 'https://www.bilibili.com' },
       { text: 'Youtube', url: 'https://www.youtube.com/' },
       { text: '虎牙直播', url: 'https://www.huya.com/g/wzry' },
+      { text: '鸣潮', url: 'https://wiki.kurobbs.com/mc/catalogue/list?fid=1099&sid=1105' },
+
       // { text: 'GenShin', url: 'https://wiki.biligame.com/ys' },
       // { text: 'StarRail', url: 'https://wiki.biligame.com/sr' },
       { text: 'Poki', url: 'https://poki.com/' },
