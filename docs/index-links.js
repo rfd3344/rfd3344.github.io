@@ -95,8 +95,10 @@ const homeLinks = [
       { text: '爱壹帆', url: 'https://www.google.com/search?q=yfsp' },
       { text: 'BiLiBiLi', url: 'https://www.bilibili.com' },
       { text: 'Youtube', url: 'https://www.youtube.com/' },
+
       { text: '虎牙直播', url: 'https://www.huya.com/g/wzry' },
-      { text: '鸣潮', url: 'https://wiki.kurobbs.com/mc/catalogue/list?fid=1099&sid=1105' },
+      { text: 'ClashOfClans', url: 'https://clashpost.com/upgrade/category/home' },
+      // { text: '鸣潮', url: 'https://wiki.kurobbs.com/mc/catalogue/list?fid=1099&sid=1105' },
 
       // { text: 'GenShin', url: 'https://wiki.biligame.com/ys' },
       // { text: 'StarRail', url: 'https://wiki.biligame.com/sr' },
