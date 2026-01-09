@@ -39,15 +39,15 @@
 
   var text = localStorage.getItem(STORAGE) || 'a = 10';
   document.querySelector('textarea').innerHTML = text;
-  caculate(text);
+  calculate(text);
 
   function handleKeyPress(dom) {
     var value = dom.value;
-    caculate(value);
+    calculate(value);
     localStorage.setItem(STORAGE, value);
   }
 
-  function caculate(value) {
+  function calculate(value) {
     var lines = value.split(String.fromCharCode(10));
 
     var displayArea = lines.map((item) => {
