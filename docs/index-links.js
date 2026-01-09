@@ -1,6 +1,3 @@
-
-
-
 const homeLinks = [
   {
     categoryTitle: 'Notes & Files',
