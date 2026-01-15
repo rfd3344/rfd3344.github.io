@@ -1,6 +1,6 @@
 const homeLinks = [
   {
-    categoryTitle: 'Notes & Files',
+    categoryTitle: 'Notes',
     links: [
       { text: 'LocalNotes', url: 'https://rfd3344.github.io/pages/local-notes.html?notes=2' },
       { text: 'DailyNote', url: 'https://rfd3344.atlassian.net/wiki/spaces/estelspace/pages/20480026/DailyNotes' },
