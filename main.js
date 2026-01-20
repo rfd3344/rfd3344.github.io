@@ -6,8 +6,8 @@ const homeLinks = [
       { text: 'DailyNote', url: 'https://rfd3344.atlassian.net/wiki/spaces/estelspace/pages/20480026/DailyNotes' },
       { text: 'DriveDocs', url: 'https://drive.google.com/drive/folders/1XA8VemDb4wW-kstLImPOuOEW9Qi6g02J' },
       { text: 'VoidChat', url: 'https://voidchat.org/v/rfd3344' },
-      { text: 'slack', url: 'https://app.slack.com/client/T07BG5VAJTS/C08Q2LDL7BR' },
-      { text: 'teams', url: 'https://teams.live.com/v2' },
+      // { text: 'slack', url: 'https://app.slack.com/client/T07BG5VAJTS/C08Q2LDL7BR' },
+      // { text: 'teams', url: 'https://teams.live.com/v2' },
       { text: 'StaticFiles', url: 'https://rfd3344.vercel.app/github-repo' },
       { text: 'GithubRepo', url: 'https://github.com/rfd3344?tab=repositories' },
     ],
@@ -25,7 +25,6 @@ const homeLinks = [
       { text: 'ILovePdf', url: 'https://www.ilovepdf.com' },
       { text: 'tinyTools', url: 'https://tinywow.com/' },
       { text: 'snap-drop', url: 'https://www.snap-drop.net/' },
-      { text: 'skylinewebcams', url: 'https://www.skylinewebcams.com/en.html' },
       { text: 'manualslib', url: 'https://www.manualslib.com/' },
     ],
   },
@@ -105,6 +104,8 @@ const homeLinks = [
       { text: 'CS-Online', url: ' https://play-cs.com/en/servers' },
       { text: 'Dos游戏', url: '  https://dos.zczc.cz/' },
       { text: '桌游合集', url: ' https://game.hullqin.cn/' },
+
+      { text: 'skylinewebcams', url: 'https://www.skylinewebcams.com/en.html' },
 
     ],
   },
