@@ -5,6 +5,7 @@ const homeLinks = [
       { text: 'LocalNotes', url: 'https://rfd3344.github.io/pages/local-notes.html?notes=2' },
       { text: 'DailyNote', url: 'https://rfd3344.atlassian.net/wiki/spaces/estelspace/pages/20480026/DailyNotes' },
       { text: 'DriveDocs', url: 'https://drive.google.com/drive/folders/1XA8VemDb4wW-kstLImPOuOEW9Qi6g02J' },
+      { text: 'VoidChat', url: 'https://voidchat.org/v/rfd3344' },
       { text: 'slack', url: 'https://app.slack.com/client/T07BG5VAJTS/C08Q2LDL7BR' },
       { text: 'teams', url: 'https://teams.live.com/v2' },
       { text: 'StaticFiles', url: 'https://rfd3344.vercel.app/github-repo' },
