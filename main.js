@@ -25,7 +25,9 @@ const homeLinks = [
       { text: 'ILovePdf', url: 'https://www.ilovepdf.com' },
       { text: 'tinyTools', url: 'https://tinywow.com/' },
       { text: 'snap-drop', url: 'https://www.snap-drop.net/' },
-      { text: 'manualslib', url: 'https://www.manualslib.com/' },
+      { text: 'ManualsLib', url: 'https://www.manualslib.com/' },
+      { text: 'WebsiteInChina', url: 'https://www.app2china.com/tool/test-website' },
+
     ],
   },
   {
