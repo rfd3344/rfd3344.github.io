@@ -4,11 +4,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="manifest" href="/manifest.json">
+  <link rel="manifest" href="./manifest.json">
   <meta name="theme-color" content="#000000">
-  <link rel="icon" href="/assets/favicon.ico">
+  <link rel="icon" href="./assets/favicon.ico">
 
-  <link rel="apple-touch-icon" href="/assets/icon-192.jpg">
+  <link rel="apple-touch-icon" href="./assets/icon-192.jpg">
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
@@ -16,49 +16,81 @@
   <title>RFD3344</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      padding: 10px;
+      font-family: -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+      padding: 16px;
       background-color: #030712;
+      color: #e5e7eb;
     }
 
+    /* 🟦 Category spacing */
     .category {
-      margin-bottom: 10px;
+      margin-bottom: 18px;
     }
 
+    /* 🟩 Title (cleaner + subtle) */
     .category-title {
-      font-size: 1.4em;
-      font-weight: bold;
-      padding-left: 5px;
-      color: #e1e7ef;
+      font-size: 13px;
+      font-weight: 600;
+      padding-left: 4px;
+      margin-bottom: 8px;
+      color: #9ca3af;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
     }
 
+    /* 🟨 Button container */
     .button-list {
       display: flex;
       flex-wrap: wrap;
+      gap: 8px;
+      /* replaces margin on buttons */
     }
 
+    /* 🟧 Buttons */
     .button-list a {
-      margin: 5px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+
       padding: 8px 12px;
-      color: #e1e7ef;
-      border-radius: 5px;
+      font-size: 13px;
+      font-weight: 500;
+
+      color: #e5e7eb;
       text-decoration: none;
+
+      border-radius: 8px;
+      background: #1f2937;
+
+      transition: all 0.15s ease;
     }
 
-    .button-list a:nth-child(3n+1) {
-      background-color: #007bff;
+    /* 🎨 Softer color system (instead of harsh random) */
+    .button-list a:nth-child(4n+1) {
+      background: #1d4ed8;
     }
 
-    .button-list a:nth-child(3n+2) {
-      background-color: #155e75;
+    .button-list a:nth-child(4n+2) {
+      background: #0f766e;
     }
 
-    .button-list a:nth-child(3n+3) {
-      background-color: #d97708;
+    .button-list a:nth-child(4n+3) {
+      background: #c2410c;
     }
 
+    .button-list a:nth-child(4n+4) {
+      background: #7c3aed;
+    }
+
+    /* ✨ Hover effect (much nicer) */
     .button-list a:hover {
-      opacity: 0.8;
+      transform: translateY(-1px);
+      filter: brightness(1.15);
+    }
+
+    /* 🧠 Active click feedback */
+    .button-list a:active {
+      transform: scale(0.96);
     }
   </style>
 </head>
@@ -66,7 +98,7 @@
 <body>
 
   <div id="container"></div>
-  <script src="/main.js"></script>
+  <script src="./category-links.js"></script>
 
 </body>
 
