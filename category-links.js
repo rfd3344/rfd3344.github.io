@@ -175,10 +175,10 @@ const categoryLinks = [
 
 
 
-const renderCategoryList = (categoryList) => {
+const renderCategoryList = (categoryLinks) => {
   const container = document.getElementById("container");
 
-  categoryList.forEach(category => {
+  categoryLinks.forEach(category => {
     const categoryDiv = document.createElement("div");
     categoryDiv.className = "category";
 
@@ -203,4 +203,4 @@ const renderCategoryList = (categoryList) => {
   });
 };
 
-renderCategoryList(homeLinks);
+renderCategoryList(categoryLinks);
