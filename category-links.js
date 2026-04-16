@@ -13,10 +13,10 @@ const categoryLinks = [
     ],
   },
   {
-    categoryTitle: 'Cardiex',
+    categoryTitle: 'www.com',
     links: [
       { text: 'GoogleDrive', url: 'https://drive.google.com/drive/folders/1SPa-puKlt5b8IE8JcvkCiwv8u2WK6F8M' },
-      { text: "outlook", url: 'https://outlook.office365.com/mail/' },
+      { text: "Mail", url: 'https://outlook.office365.com/mail/' },
       { text: 'Jira', url: 'https://cardiex.atlassian.net/jira/software/c/projects/CCA/boards/191?assignee=712020%3A44d493fb-32ce-4106-808e-5cc38ee4746f' },
       { text: 'Confluence', url: 'https://cardiex.atlassian.net/wiki/spaces/NB/overview' },
       { text: 'Github', url: 'https://github.com/orgs/CardieX/repositories?type=all' },
@@ -72,10 +72,8 @@ const categoryLinks = [
     ],
   },
   {
-    categoryTitle: 'Work',
+    categoryTitle: 'Tech',
     links: [
-      // { text: 'PostmanJH', url: 'https://rfd3344.postman.co/workspace/JH~57a4fc2b-3943-4488-a483-ba3b6d21e6cd/request/10631940-8df98a7f-bdd9-4e8f-a9b4-b9715a86a108' },
-      // { text: 'Figma', url: 'https://www.figma.com/files/' },
       { text: 'SeekReact', url: 'https://www.seek.com.au/react-jobs/in-Sydney-NSW-2000' },
       { text: 'WNote', url: 'https://rfd3344.atlassian.net/wiki/spaces/rfd3344/pages/edit-v2/18055186' },
 
@@ -109,24 +107,18 @@ const categoryLinks = [
       { text: 'BiLiBiLi', url: 'https://www.bilibili.com' },
       { text: 'Youtube', url: 'https://www.youtube.com/' },
       { text: '虎牙直播', url: 'https://www.huya.com/g/wzry' },
-
-      // { text: '鸣潮', url: 'https://wiki.kurobbs.com/mc/catalogue/list?fid=1099&sid=1105' },
-
-      // { text: 'GenShin', url: 'https://wiki.biligame.com/ys' },
-      // { text: 'StarRail', url: 'https://wiki.biligame.com/sr' },
       { text: 'ClashOfClans', url: 'https://clashpost.com/upgrade/category/home' },
       { text: 'Poki', url: 'https://poki.com/' },
-      { text: '红警2', url: 'https://ra2web.com' },
+      { text: 'RedAlert2', url: 'https://ra2web.com' },
       { text: 'CS-Online', url: ' https://play-cs.com/en/servers' },
-      { text: 'Dos游戏', url: '  https://dos.zczc.cz/' },
-      { text: '桌游合集', url: ' https://game.hullqin.cn/' },
-
+      { text: 'DosGame', url: '  https://dos.zczc.cz/' },
+      { text: 'BoardGame', url: ' https://game.hullqin.cn/' },
       { text: 'skylinewebcams', url: 'https://www.skylinewebcams.com/en.html' },
 
     ],
   },
   {
-    categoryTitle: 'Sport',
+    categoryTitle: 'Health',
     links: [
       { text: 'tennis.com.au', url: 'https://www.tennis.com.au/book/court-hire/kellyville-ridge-nsw-2155' },
 
@@ -137,6 +129,7 @@ const categoryLinks = [
 
       { text: 'PerisherSki', url: 'https://www.epicaustraliapass.com.au/' },
       { text: 'HillsLeague', url: 'https://my.gloryleague.basketball/games' },
+      { text: 'InstantScript', url: 'https://www.instantscripts.com.au/' },
     ],
   },
   {
@@ -149,24 +142,13 @@ const categoryLinks = [
       { text: 'Shein', url: 'https://au.shein.com/' },
       { text: 'MSY', url: 'https://www.msy.com.au/' },
       { text: 'MVave', url: 'https://www.mwave.com.au/' },
-      // { text: 'FlowerBloomex', url: 'https://bloomex.com.au/' },
-      // { text: 'FlowerWynyard', url: 'https://www.cbdflowerswynyard.com.au/' },
-      // { text: 'FlowerForEveryone', url: 'https://www.flowersforeveryone.com.au/' },
-      // { text: 'GiftDoll', url: 'https://omgstation.com.au/' },
       { text: 'Groupon', url: 'https://www.groupon.com.au/' },
-    ],
-  },
-  {
-    categoryTitle: 'Health',
-    links: [
-      { text: 'InstantScript', url: 'https://www.instantscripts.com.au/' },
     ],
   },
   {
     categoryTitle: 'Others',
     links: [
       { text: 'Demo', url: 'https://rfd3344.vercel.app/demo' },
-
       { text: 'Demo', url: 'https://rfd3344.vercel.app/demo' },
     ],
   },
