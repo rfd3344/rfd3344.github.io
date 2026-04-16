@@ -1,18 +1,5 @@
 const categoryLinks = [
   {
-    categoryTitle: 'Notes',
-    links: [
-      { text: 'LocalNotes', url: 'https://rfd3344.github.io/pages/local-notes.html?notes=2' },
-      { text: 'DailyNote', url: 'https://rfd3344.atlassian.net/wiki/spaces/estelspace/pages/20480026/DailyNotes' },
-      { text: 'DriveDocs', url: 'https://drive.google.com/drive/folders/1XA8VemDb4wW-kstLImPOuOEW9Qi6g02J' },
-      { text: 'VoidChat', url: 'https://voidchat.org/v/rfd3344' },
-      // { text: 'slack', url: 'https://app.slack.com/client/T07BG5VAJTS/C08Q2LDL7BR' },
-      // { text: 'teams', url: 'https://teams.live.com/v2' },
-      { text: 'StaticFiles', url: 'https://rfd3344.vercel.app/github-repo' },
-      { text: 'GithubRepo', url: 'https://github.com/rfd3344?tab=repositories' },
-    ],
-  },
-  {
     categoryTitle: 'www.com',
     links: [
       { text: 'GoogleDrive', url: 'https://drive.google.com/drive/folders/1SPa-puKlt5b8IE8JcvkCiwv8u2WK6F8M' },
@@ -27,14 +14,25 @@ const categoryLinks = [
     ],
   },
   {
+    categoryTitle: 'Notes',
+    links: [
+      { text: 'LocalNotes', url: 'https://rfd3344.github.io/pages/local-notes.html?notes=2' },
+      { text: 'DailyNote', url: 'https://rfd3344.atlassian.net/wiki/spaces/estelspace/pages/20480026/DailyNotes' },
+      { text: 'WNote', url: 'https://rfd3344.atlassian.net/wiki/spaces/rfd3344/pages/edit-v2/18055186' },
+      { text: 'DriveDocs', url: 'https://drive.google.com/drive/folders/1XA8VemDb4wW-kstLImPOuOEW9Qi6g02J' },
+      { text: 'VoidChat', url: 'https://voidchat.org/v/rfd3344' },
+      { text: 'StaticFiles', url: 'https://rfd3344.vercel.app/github-repo' },
+      { text: 'GithubRepo', url: 'https://github.com/rfd3344?tab=repositories' },
+    ],
+  },
+  {
     categoryTitle: 'Tools',
     links: [
       { text: 'Calculator', url: 'https://rfd3344.github.io/pages/calculator.html' },
-      { text: 'AUD_CNY', url: 'https://share.google/xlYoiO4BStMaEFTGE' },
-
+      { text: 'Google', url: 'https://www.google.com/' },
       { text: 'ChatGPT', url: 'https://chat.openai.com' },
       { text: 'Qwen', url: 'https://chat.qwen.ai/' },
-
+      { text: 'AUD-CNY', url: 'https://share.google/xlYoiO4BStMaEFTGE' },
       { text: 'PayCalculator', url: 'https://paycalculator.com.au' },
       { text: 'ILovePdf', url: 'https://www.ilovepdf.com' },
       { text: 'tinyTools', url: 'https://tinywow.com/' },
@@ -59,7 +57,7 @@ const categoryLinks = [
   },
 
   {
-    categoryTitle: 'Tech',
+    categoryTitle: 'Software',
     links: [
       { text: 'APIGenerator', url: 'https://retool.com/api-generator' },
       { text: 'DBDiagram', url: 'https://dbdiagram.io/d/demo-6724a1c7b1b39dd8582997d4' },
@@ -69,20 +67,6 @@ const categoryLinks = [
       { text: '算法总结', url: 'https://github.com/youngyangyang04/leetcode-master/tree/master/problems' },
       { text: 'LeetCode', url: 'https://leetcode.com/problemset/all/' },
       { text: 'ReactNativeSample', url: 'https://github.com/ReactNativeNews/React-Native-Apps' },
-    ],
-  },
-  {
-    categoryTitle: 'Tech',
-    links: [
-      { text: 'SeekReact', url: 'https://www.seek.com.au/react-jobs/in-Sydney-NSW-2000' },
-      { text: 'WNote', url: 'https://rfd3344.atlassian.net/wiki/spaces/rfd3344/pages/edit-v2/18055186' },
-
-      { text: 'GoogleDrive', url: 'https://drive.google.com/drive/folders/1SPa-puKlt5b8IE8JcvkCiwv8u2WK6F8M' },
-      { text: 'Jira', url: 'https://cardiex.atlassian.net/jira/software/c/projects/SR/boards/27/backlog?assignee=712020%3A44d493fb-32ce-4106-808e-5cc38ee4746f' },
-
-      { text: 'Confluence', url: 'https://cardiex.atlassian.net/wiki/spaces/NB/overview' },
-      { text: 'Github', url: 'https://github.com/orgs/CardieX/repositories?type=all' },
-      { text: 'AWSPortal', url: 'https://d-9067cf9945.awsapps.com/start/#/?tab=accounts' },
     ],
   },
   {
@@ -118,7 +102,20 @@ const categoryLinks = [
     ],
   },
   {
-    categoryTitle: 'Health',
+    categoryTitle: 'Shopping',
+    links: [
+      { text: 'StockX', url: 'https://stockx.com/' },
+      { text: 'OzBargain', url: 'https://www.ozbargain.com.au/' },
+      { text: '澳洲省钱快报', url: 'https://www.dealmoon.com.au/' },
+      { text: 'Temu', url: 'https://www.temu.com/au' },
+      { text: 'Shein', url: 'https://au.shein.com/' },
+      { text: 'MSY', url: 'https://www.msy.com.au/' },
+      { text: 'MVave', url: 'https://www.mwave.com.au/' },
+      { text: 'Groupon', url: 'https://www.groupon.com.au/' },
+    ],
+  },
+  {
+    categoryTitle: 'Sports & Health',
     links: [
       { text: 'tennis.com.au', url: 'https://www.tennis.com.au/book/court-hire/kellyville-ridge-nsw-2155' },
 
@@ -130,19 +127,6 @@ const categoryLinks = [
       { text: 'PerisherSki', url: 'https://www.epicaustraliapass.com.au/' },
       { text: 'HillsLeague', url: 'https://my.gloryleague.basketball/games' },
       { text: 'InstantScript', url: 'https://www.instantscripts.com.au/' },
-    ],
-  },
-  {
-    categoryTitle: 'Shopping',
-    links: [
-      { text: 'StockX', url: 'https://stockx.com/' },
-      { text: 'OzBargain', url: 'https://www.ozbargain.com.au/' },
-      { text: '澳洲省钱快报', url: 'https://www.dealmoon.com.au/' },
-      { text: 'Temu', url: 'https://www.temu.com/au' },
-      { text: 'Shein', url: 'https://au.shein.com/' },
-      { text: 'MSY', url: 'https://www.msy.com.au/' },
-      { text: 'MVave', url: 'https://www.mwave.com.au/' },
-      { text: 'Groupon', url: 'https://www.groupon.com.au/' },
     ],
   },
   {
