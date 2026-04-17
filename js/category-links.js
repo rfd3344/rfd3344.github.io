@@ -56,7 +56,7 @@ const categoryLinks = [
     ],
   },
   {
-    categoryTitle: '------------------------------ WWW.COM ------------------------------',
+    categoryTitle: 'WWWWWWWWWWWWWWWWWWWWWWWWWWWWWW',
     links: [
       { text: 'GoogleDrive', url: 'https://drive.google.com/drive/folders/1SPa-puKlt5b8IE8JcvkCiwv8u2WK6F8M' },
       { text: "Mail", url: 'https://outlook.office365.com/mail/' },
@@ -69,10 +69,7 @@ const categoryLinks = [
       { text: 'Firebase', url: 'https://console.firebase.google.com/u/2/project/dev-bp-conneqt/overview' },
     ],
   },
-  {
-    categoryTitle: '----------------------------------------------------------------------',
-    links: [],
-  },
+
 
   {
     categoryTitle: 'Bill',
@@ -161,7 +158,7 @@ const renderCategoryList = (categoryLinks) => {
     const buttonList = document.createElement("div");
     buttonList.className = "button-list";
 
-    category.links.forEach(item => {
+    category.links?.forEach(item => {
       const link = document.createElement("a");
       link.href = item.url;
       link.textContent = item.text;
