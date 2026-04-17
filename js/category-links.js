@@ -1,19 +1,5 @@
 const categoryLinks = [
   {
-    categoryTitle: 'www.com',
-    links: [
-      { text: 'GoogleDrive', url: 'https://drive.google.com/drive/folders/1SPa-puKlt5b8IE8JcvkCiwv8u2WK6F8M' },
-      { text: "Mail", url: 'https://outlook.office365.com/mail/' },
-      { text: 'Jira', url: 'https://cardiex.atlassian.net/jira/software/c/projects/CCA/boards/191?assignee=712020%3A44d493fb-32ce-4106-808e-5cc38ee4746f' },
-      { text: 'Confluence', url: 'https://cardiex.atlassian.net/wiki/spaces/NB/overview' },
-      { text: 'Github', url: 'https://github.com/orgs/CardieX/repositories?type=all' },
-      { text: 'AWS', url: 'https://us-east-1.console.aws.amazon.com/console/home?region=us-east-1#' },
-      { text: 'AWS Portal', url: 'https://d-9067cf9945.awsapps.com/start/#/?tab=accounts' },
-      { text: 'Vercel', url: 'https://vercel.com/conneqthealth' },
-      { text: 'Firebase', url: 'https://console.firebase.google.com/u/2/project/dev-bp-conneqt/overview' },
-    ],
-  },
-  {
     categoryTitle: 'Notes',
     links: [
       { text: 'LocalNotes', url: 'https://rfd3344.github.io/pages/local-notes.html?notes=2' },
@@ -43,7 +29,21 @@ const categoryLinks = [
     ],
   },
   {
-    categoryTitle: 'Image',
+    categoryTitle: 'WWW.COM',
+    links: [
+      { text: 'GoogleDrive', url: 'https://drive.google.com/drive/folders/1SPa-puKlt5b8IE8JcvkCiwv8u2WK6F8M' },
+      { text: "Mail", url: 'https://outlook.office365.com/mail/' },
+      { text: 'Jira', url: 'https://cardiex.atlassian.net/jira/software/c/projects/CCA/boards/191?assignee=712020%3A44d493fb-32ce-4106-808e-5cc38ee4746f' },
+      { text: 'Confluence', url: 'https://cardiex.atlassian.net/wiki/spaces/NB/overview' },
+      { text: 'Github', url: 'https://github.com/orgs/CardieX/repositories?type=all' },
+      { text: 'AWS', url: 'https://us-east-1.console.aws.amazon.com/console/home?region=us-east-1#' },
+      { text: 'AWS Portal', url: 'https://d-9067cf9945.awsapps.com/start/#/?tab=accounts' },
+      { text: 'Vercel', url: 'https://vercel.com/conneqthealth' },
+      { text: 'Firebase', url: 'https://console.firebase.google.com/u/2/project/dev-bp-conneqt/overview' },
+    ],
+  },
+  {
+    categoryTitle: 'UI/UX Design',
     links: [
       { text: 'ColorTable', url: 'https://rfd3344.github.io/pages/color-table.html' },
       { text: 'PhotoPea', url: 'https://photopea.com' },
@@ -55,7 +55,6 @@ const categoryLinks = [
       { text: 'Pexels', url: 'https://www.pexels.com' },
     ],
   },
-
   {
     categoryTitle: 'Software',
     links: [
@@ -69,6 +68,8 @@ const categoryLinks = [
       { text: 'ReactNativeSample', url: 'https://github.com/ReactNativeNews/React-Native-Apps' },
     ],
   },
+
+
   {
     categoryTitle: 'Bill',
     links: [
