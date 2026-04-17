@@ -1,9 +1,10 @@
 const CACHE_NAME = 'offline-demo-v1';
 
 const FILES_TO_CACHE = [
-  './',
-  './index.html',
-  './app.js'
+  '/',
+  '/index.html',
+  '/js/app.js',
+  '/js/category-links.js'
 ];
 
 // Install → cache files
