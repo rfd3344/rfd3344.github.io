@@ -71,7 +71,7 @@ const categoryLinks = [
   },
   {
     categoryTitle: '----------------------------------------------------------------------',
-  }
+  },
 
   {
     categoryTitle: 'Bill',
