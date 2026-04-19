@@ -56,7 +56,7 @@ const categoryLinks = [
     ],
   },
   {
-    categoryTitle: 'WWWWWWWWWWWWWWWWWWWWWWWWWWWWWW',
+    categoryTitle: 'WWWWWWWWWW',
     links: [
       { text: 'GoogleDrive', url: 'https://drive.google.com/drive/folders/1SPa-puKlt5b8IE8JcvkCiwv8u2WK6F8M' },
       { text: "Mail", url: 'https://outlook.office365.com/mail/' },
