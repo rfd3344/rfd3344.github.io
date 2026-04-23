@@ -52,6 +52,7 @@ const categoryLinks = [
       { text: 'ToolFKDevTools', url: 'https://www.toolfk.com' },
       { text: '算法总结', url: 'https://github.com/youngyangyang04/leetcode-master/tree/master/problems' },
       { text: 'LeetCode', url: 'https://leetcode.com/problemset/all/' },
+      { text: 'SystemDesignSchool', url: 'https://systemdesignschool.io/problems/url-shortener/solution' },
       { text: 'ReactNativeSample', url: 'https://github.com/ReactNativeNews/React-Native-Apps' },
     ],
   },
