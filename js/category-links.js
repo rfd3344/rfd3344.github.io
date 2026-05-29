@@ -7,8 +7,9 @@ const categoryLinks = [
       { text: 'WNote', url: 'https://rfd3344.atlassian.net/wiki/spaces/rfd3344/pages/edit-v2/18055186' },
       { text: 'DriveDocs', url: 'https://drive.google.com/drive/folders/1XA8VemDb4wW-kstLImPOuOEW9Qi6g02J' },
       { text: 'VoidChat', url: 'https://voidchat.org/v/rfd3344' },
-      { text: 'StaticFiles', url: 'https://rfd3344.vercel.app/github-repo' },
-      { text: 'GithubRepo', url: 'https://github.com/rfd3344?tab=repositories' },
+      { text: 'StaticDocs', url: 'https://rfd3344.vercel.app/static-docs' },
+      { text: 'StaticPictures', url: 'https://rfd3344.vercel.app/static-pictures' },
+      { text: 'GithubRepo', url: 'https://github.com/orgs/rfd3344org/repositories?q=sort%3Aname-asc' },
     ],
   },
   {
@@ -57,7 +58,7 @@ const categoryLinks = [
     ],
   },
   {
-    categoryTitle: 'WWWWWWWWWW',
+    categoryTitle: 'WWWWWWWWWWWWW',
     links: [
       { text: 'GoogleDrive', url: 'https://drive.google.com/drive/folders/1SPa-puKlt5b8IE8JcvkCiwv8u2WK6F8M' },
       { text: "Mail", url: 'https://outlook.office365.com/mail/' },
