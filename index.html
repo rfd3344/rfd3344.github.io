@@ -15,100 +15,68 @@
   <title>RFD3344</title>
 
   <style>
+    :root {
+      --bg: #030712;
+      --text: #e5e7eb;
+      --heading: #dfe4ec;
+    }
+
     body {
-      font-family: -apple-system, BlinkMacSystemFont, Arial, sans-serif;
-      padding: 4px;
-      background-color: #030712;
+      margin: 0 auto;
       max-width: 1280px;
-      margin:auto;
+      padding: 4px;
+      font-family: -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+      background: var(--bg);
+      font-weight: 500;
     }
 
-    /* 🟦 Category spacing */
     .category {
-      margin-bottom: 18px;
+      margin-bottom: 16px;
     }
 
-    /* 🟩 Title (cleaner + subtle) */
     .category-title {
-      font-size: 24px;
-      font-weight: 600;
+      margin: 0 0 8px;
       padding-left: 4px;
-      margin-bottom: 8px;
-      color: #dfe4ec;
-      letter-spacing: 0.5px;
+      font-size: 24px;
+      color: var(--heading);
     }
 
-    /* 🟨 Button container */
     .button-list {
       display: flex;
       flex-wrap: wrap;
       gap: 8px;
-      /* replaces margin on buttons */
     }
 
-    /* 🟧 Buttons */
     .button-list a {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
+      padding: 8px ;
+      text-align: center;
       min-width: 80px;
-      padding: 8px 10px;
-      font-size: 18px;
-      font-weight: 500;
-
-      color: #e5e7eb;
-      text-decoration: none;
-
       border-radius: 8px;
-   
-
-      transition: all 0.15s ease;
+      color: var(--text);
+      font-size: 18px;
+      text-decoration: none;
+      transition: transform 0.15s ease, filter 0.15s ease;
     }
 
-    /* 🎨 Softer color system (instead of harsh random) */
-    .button-list a:nth-child(4n+1) {
+    .button-list a:nth-child(4n + 1) {
       background: #1d4ed8;
     }
 
-    .button-list a:nth-child(4n+2) {
+    .button-list a:nth-child(4n + 2) {
       background: #0f766e;
     }
 
-    .button-list a:nth-child(4n+3) {
+    .button-list a:nth-child(4n + 3) {
       background: #c2410c;
     }
 
-    .button-list a:nth-child(4n+4) {
+    .button-list a:nth-child(4n + 4) {
       background: #7c3aed;
     }
 
-
-    /* ✨ Hover effect (much nicer) */
     .button-list a:hover {
       transform: translateY(-1px);
       filter: brightness(1.15);
-    }
-
-    /* 🧠 Active click feedback */
-    .button-list a:active {
-      transform: scale(0.96);
-    }
-
-    .version-badge {
-      position: fixed;
-      bottom: 8px;
-
-      right: 10px;
-
-      font-size: 12px;
-      color: #9ca3af;
-      background: rgba(31, 41, 55, 0.7);
-
-      padding: 4px 8px;
-      border-radius: 6px;
-
-      backdrop-filter: blur(4px);
-      pointer-events: none;
     }
   </style>
 </head>
@@ -120,7 +88,6 @@
   <script src="./js/offline-available.js"></script>
 
 
-  <div class="version-badge"> v2.12 </div>
 </body>
 
 </html>

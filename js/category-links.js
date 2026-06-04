@@ -1,6 +1,6 @@
 const categoryLinks = [
   {
-    categoryTitle: 'Notes',
+    categoryTitle: 'v2.12',
     links: [
       { text: 'LocalNotes', url: 'https://rfd3344.github.io/pages/local-notes.html?notes=2' },
       { text: 'DailyNote', url: 'https://rfd3344.atlassian.net/wiki/spaces/estelspace/pages/20480026/DailyNotes' },
@@ -31,7 +31,7 @@ const categoryLinks = [
   },
 
   {
-    categoryTitle: 'UI/UX Design',
+    categoryTitle: 'UI Design',
     links: [
       { text: 'ColorTable', url: 'https://rfd3344.github.io/pages/color-table.html' },
       { text: 'PhotoPea', url: 'https://photopea.com' },
