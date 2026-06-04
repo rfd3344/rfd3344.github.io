@@ -51,14 +51,13 @@ const categoryLinks = [
       { text: 'AWSCheatSheets', url: 'https://digitalcloud.training/aws-cheat-sheets' },
       { text: 'CodingNConcepts', url: 'https://codingnconcepts.com/aws/aws-certified-solutions-architect-associate' },
       { text: 'ToolFKDevTools', url: 'https://www.toolfk.com' },
-      { text: '算法总结', url: 'https://github.com/youngyangyang04/leetcode-master/tree/master/problems' },
       { text: 'LeetCode', url: 'https://leetcode.com/problemset/all/' },
       { text: 'SystemDesigner', url: 'https://www.systemdesigner.net/practice/url-shortener' },
       { text: 'ReactNativeSample', url: 'https://github.com/ReactNativeNews/React-Native-Apps' },
     ],
   },
   {
-    categoryTitle: 'WWWWWWWWWWWWW',
+    categoryTitle: '🌐 🌐 🌐 🌐 🌐 🌐 🌐 🌐',
     links: [
       { text: 'GoogleDrive', url: 'https://drive.google.com/drive/folders/1SPa-puKlt5b8IE8JcvkCiwv8u2WK6F8M' },
       { text: "Mail", url: 'https://outlook.office365.com/mail/' },
@@ -89,23 +88,6 @@ const categoryLinks = [
     ],
   },
   {
-    categoryTitle: 'Fun',
-    links: [
-      { text: '爱壹帆', url: 'https://www.google.com/search?q=yfsp' },
-      { text: 'BiLiBiLi', url: 'https://www.bilibili.com' },
-      { text: 'Youtube', url: 'https://www.youtube.com/' },
-      { text: '虎牙直播', url: 'https://www.huya.com/g/wzry' },
-      { text: 'ClashOfClans', url: 'https://clashpost.com/upgrade/category/home' },
-      { text: 'Poki', url: 'https://poki.com/' },
-      { text: 'RedAlert2', url: 'https://ra2web.com' },
-      { text: 'CS-Online', url: ' https://play-cs.com/en/servers' },
-      { text: 'DosGame', url: '  https://dos.zczc.cz/' },
-      { text: 'BoardGame', url: ' https://game.hullqin.cn/' },
-      { text: 'skylinewebcams', url: 'https://www.skylinewebcams.com/en.html' },
-
-    ],
-  },
-  {
     categoryTitle: 'Shopping',
     links: [
       { text: 'StockX', url: 'https://stockx.com/' },
@@ -119,8 +101,28 @@ const categoryLinks = [
     ],
   },
   {
+    categoryTitle: 'Fun',
+    links: [
+      { text: '爱壹帆', url: 'https://www.google.com/search?q=yfsp' },
+      { text: 'BiLiBiLi', url: 'https://www.bilibili.com' },
+      { text: 'Youtube', url: 'https://www.youtube.com/' },
+      { text: '虎牙直播', url: 'https://www.huya.com/g/wzry' },
+      { text: 'ClashOfClans', url: 'https://clashpost.com/upgrade/category/home' },
+      { text: 'Poki', url: 'https://poki.com/' },
+      { text: 'RedAlert2', url: 'https://ra2web.com' },
+      { text: 'CS-Online', url: ' https://play-cs.com/en/servers' },
+      { text: 'DosGame', url: '  https://dos.zczc.cz/' },
+      { text: 'BoardGame', url: ' https://game.hullqin.cn/' },
+      { text: 'xi-you-ji', url: 'https://ctext.org/xiyouji/zhs' },
+
+    ],
+  },
+
+  {
     categoryTitle: 'Sports & Health',
     links: [
+      { text: 'NBA-Live', url: 'https://kafeizhibo.cc/pc/schedule' },
+
       { text: 'tennis.com.au', url: 'https://www.tennis.com.au/book/court-hire/kellyville-ridge-nsw-2155' },
 
       { text: 'CastleHillTennis', url: 'https://www.tennisvenues.com.au/booking/hdta-caterson-tc' },
