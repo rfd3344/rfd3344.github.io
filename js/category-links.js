@@ -21,6 +21,7 @@ const categoryLinks = [
       { text: 'Qwen', url: 'https://chat.qwen.ai/' },
       { text: 'AUD-CNY', url: 'https://share.google/xlYoiO4BStMaEFTGE' },
       { text: 'PayCalculator', url: 'https://paycalculator.com.au' },
+      { text: 'YouGlish', url: 'https://youglish.com/' },
       { text: 'ILovePdf', url: 'https://www.ilovepdf.com' },
       { text: 'tinyTools', url: 'https://tinywow.com/' },
       { text: 'snap-drop', url: 'https://www.snap-drop.net/' },
