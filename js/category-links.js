@@ -10,6 +10,8 @@ const categoryLinks = [
       { text: 'StaticDocs', url: 'https://rfd3344.vercel.app/static-docs' },
       { text: 'StaticPictures', url: 'https://rfd3344.vercel.app/static-pictures' },
       { text: 'GithubRepo', url: 'https://github.com/orgs/rfd3344org/repositories?q=sort%3Aname-asc' },
+      { text: 'EditGitPage', url: 'https://github.com/rfd3344/rfd3344.github.io/edit/main/js/category-links.js' },Ï
+      
     ],
   },
   {
