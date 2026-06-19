@@ -1,6 +1,6 @@
 const categoryLinks = [
   {
-    categoryTitle: 'v2.13',
+    categoryTitle: 'v2.14',
     links: [
       { text: 'LocalNotes', url: 'https://rfd3344.github.io/pages/local-notes.html?notes=2' },
       { text: 'DailyNote', url: 'https://rfd3344.atlassian.net/wiki/spaces/estelspace/pages/20480026/DailyNotes' },
@@ -11,7 +11,7 @@ const categoryLinks = [
       { text: 'StaticPictures', url: 'https://rfd3344.vercel.app/static-pictures' },
       { text: 'GithubRepo', url: 'https://github.com/orgs/rfd3344org/repositories?q=sort%3Aname-asc' },
       { text: 'EditGitPage', url: 'https://github.com/rfd3344/rfd3344.github.io/edit/main/js/category-links.js' },
-      
+
     ],
   },
   {
@@ -150,32 +150,32 @@ const categoryLinks = [
 
 
 
-const renderCategoryList = (categoryLinks) => {
-  const container = document.getElementById("container");
+// const renderCategoryList = (categoryLinks) => {
+//   const container = document.getElementById("container");
 
-  categoryLinks.forEach(category => {
-    const categoryDiv = document.createElement("div");
-    categoryDiv.className = "category";
+//   categoryLinks.forEach(category => {
+//     const categoryDiv = document.createElement("div");
+//     categoryDiv.className = "category";
 
-    const titleEl = document.createElement("div");
-    titleEl.className = "category-title";
-    titleEl.textContent = category.categoryTitle;
-    categoryDiv.appendChild(titleEl);
+//     const titleEl = document.createElement("div");
+//     titleEl.className = "category-title";
+//     titleEl.textContent = category.categoryTitle;
+//     categoryDiv.appendChild(titleEl);
 
-    const buttonList = document.createElement("div");
-    buttonList.className = "button-list";
+//     const buttonList = document.createElement("div");
+//     buttonList.className = "button-list";
 
-    category.links?.forEach(item => {
-      const link = document.createElement("a");
-      link.href = item.url;
-      link.textContent = item.text;
-      // link.target = "_blank"; // Open in new tab
-      buttonList.appendChild(link);
-    });
+//     category.links?.forEach(item => {
+//       const link = document.createElement("a");
+//       link.href = item.url;
+//       link.textContent = item.text;
+//       // link.target = "_blank"; // Open in new tab
+//       buttonList.appendChild(link);
+//     });
 
-    categoryDiv.appendChild(buttonList);
-    container.appendChild(categoryDiv);
-  });
-};
+//     categoryDiv.appendChild(buttonList);
+//     container.appendChild(categoryDiv);
+//   });
+// };
 
-renderCategoryList(categoryLinks);
+// renderCategoryList(categoryLinks);
