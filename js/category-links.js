@@ -146,36 +146,3 @@ const categoryLinks = [
     ],
   },
 ];
-
-
-
-
-// const renderCategoryList = (categoryLinks) => {
-//   const container = document.getElementById("container");
-
-//   categoryLinks.forEach(category => {
-//     const categoryDiv = document.createElement("div");
-//     categoryDiv.className = "category";
-
-//     const titleEl = document.createElement("div");
-//     titleEl.className = "category-title";
-//     titleEl.textContent = category.categoryTitle;
-//     categoryDiv.appendChild(titleEl);
-
-//     const buttonList = document.createElement("div");
-//     buttonList.className = "button-list";
-
-//     category.links?.forEach(item => {
-//       const link = document.createElement("a");
-//       link.href = item.url;
-//       link.textContent = item.text;
-//       // link.target = "_blank"; // Open in new tab
-//       buttonList.appendChild(link);
-//     });
-
-//     categoryDiv.appendChild(buttonList);
-//     container.appendChild(categoryDiv);
-//   });
-// };
-
-// renderCategoryList(categoryLinks);
