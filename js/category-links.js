@@ -56,6 +56,7 @@ const categoryLinks = [
       { text: 'ToolFKDevTools', url: 'https://www.toolfk.com' },
       { text: 'LeetCode', url: 'https://leetcode.com/problemset/all/' },
       { text: 'SystemDesigner', url: 'https://www.systemdesigner.net/practice/url-shortener' },
+      { text: 'SystemdesignSchool', url: 'https://systemdesignschool.io/problems/url-shortener/solution' },
       { text: 'ReactNativeSample', url: 'https://github.com/ReactNativeNews/React-Native-Apps' },
     ],
   },
