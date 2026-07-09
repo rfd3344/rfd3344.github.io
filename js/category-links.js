@@ -5,7 +5,7 @@ const categoryLinks = [
       { text: 'LocalNotes', url: 'https://rfd3344.github.io/pages/local-notes.html?notes=2' },
       { text: 'DailyNote', url: 'https://rfd3344.atlassian.net/wiki/spaces/estelspace/pages/20480026/DailyNotes' },
       { text: 'WNote', url: 'https://rfd3344.atlassian.net/wiki/spaces/rfd3344/pages/edit-v2/18055186' },
-      { text: 'DriveDocs', url: 'https://drive.google.com/drive/folders/1XA8VemDb4wW-kstLImPOuOEW9Qi6g02J' },
+      { text: 'GoogleDrive', url: 'https://drive.google.com/drive/folders/1XA8VemDb4wW-kstLImPOuOEW9Qi6g02J' },
       { text: 'VoidChat', url: 'https://voidchat.org/v/rfd3344' },
       { text: 'StaticDocs', url: 'https://rfd3344.vercel.app/static-docs' },
       { text: 'StaticPictures', url: 'https://rfd3344.vercel.app/static-pictures' },
