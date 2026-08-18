@@ -1,6 +1,6 @@
 const categoryLinks = [
   {
-    categoryTitle: 'v2.15',
+    categoryTitle: 'v2.16',
     links: [
       { text: 'LocalNotes', url: 'https://rfd3344.github.io/pages/local-notes.html?notes=2' },
       { text: 'DailyNote', url: 'https://rfd3344.atlassian.net/wiki/spaces/estelspace/pages/20480026/DailyNotes' },
@@ -26,7 +26,7 @@ const categoryLinks = [
       { text: 'YouGlish', url: 'https://youglish.com/' },
       { text: 'ILovePdf', url: 'https://www.ilovepdf.com' },
       { text: 'tinyTools', url: 'https://tinywow.com/' },
-      { text: 'snap-drop', url: 'https://www.snap-drop.net/' },
+      { text: 'LocalSend', url: 'https://web.localsend.org/' },
       { text: 'ManualsLib', url: 'https://www.manualslib.com/' },
       { text: 'WebsiteInChina', url: 'https://www.app2china.com/tool/test-website' },
 
