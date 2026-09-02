@@ -1,6 +1,6 @@
 const categoryLinks = [
   {
-    categoryTitle: 'v2.16',
+    categoryTitle: 'v2.17',
     links: [
       { text: 'LocalNotes', url: 'https://rfd3344.github.io/pages/local-notes.html?notes=2' },
       { text: 'DailyNote', url: 'https://rfd3344.atlassian.net/wiki/spaces/estelspace/pages/20480026/DailyNotes' },
@@ -65,7 +65,7 @@ const categoryLinks = [
     links: [
       { text: 'GoogleDrive', url: 'https://drive.google.com/drive/folders/1SPa-puKlt5b8IE8JcvkCiwv8u2WK6F8M' },
       { text: "Mail", url: 'https://outlook.office365.com/mail/' },
-      { text: 'Jira', url: 'https://cardiex.atlassian.net/jira/software/c/projects/CCA/boards/191?assignee=712020%3A44d493fb-32ce-4106-808e-5cc38ee4746f' },
+      { text: 'Jira', url: 'https://cardiex.atlassian.net/jira/software/c/projects/CCA/boards/226?assignee=712020%3A44d493fb-32ce-4106-808e-5cc38ee4746f' },
       { text: 'Confluence', url: 'https://cardiex.atlassian.net/wiki/spaces/NB/overview' },
       { text: 'Github', url: 'https://github.com/orgs/CardieX/repositories?type=all' },
       { text: 'AWS', url: 'https://us-east-1.console.aws.amazon.com/console/home?region=us-east-1#' },
