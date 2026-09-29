@@ -112,12 +112,14 @@ const categoryLinks = [
       { text: 'Youtube', url: 'https://www.youtube.com/' },
       { text: '虎牙直播', url: 'https://www.huya.com/g/wzry' },
       { text: 'ClashOfClans', url: 'https://clashpost.com/upgrade/category/home' },
+      { text: 'PC游戏下载', url: 'https://www.jidiyouxi.com/' },
       { text: 'Poki', url: 'https://poki.com/' },
       { text: 'RedAlert2', url: 'https://ra2web.com' },
       { text: 'CS-Online', url: ' https://play-cs.com/en/servers' },
       { text: 'DosGame', url: '  https://dos.zczc.cz/' },
       { text: 'BoardGame', url: ' https://game.hullqin.cn/' },
       { text: 'xi-you-ji', url: 'https://ctext.org/xiyouji/zhs' },
+     
 
     ],
   },
