@@ -63,7 +63,7 @@ const categoryLinks = [
   {
     categoryTitle: '🌐 🌐 🌐 🌐 🌐 🌐 🌐 🌐',
     links: [
-      { text: 'GoogleDrive', url: 'https://drive.google.com/drive/folders/1SPa-puKlt5b8IE8JcvkCiwv8u2WK6F8M' },
+      { text: 'GoogleDrive', url: 'https://drive.google.com/drive/folders/1XA8VemDb4wW-kstLImPOuOEW9Qi6g02J' },
       { text: "Mail", url: 'https://outlook.office365.com/mail/' },
       { text: 'Jira', url: 'https://cardiex.atlassian.net/jira/software/c/projects/CCA/boards/226?assignee=712020%3A44d493fb-32ce-4106-808e-5cc38ee4746f' },
       { text: 'Confluence', url: 'https://cardiex.atlassian.net/wiki/spaces/NB/overview' },
