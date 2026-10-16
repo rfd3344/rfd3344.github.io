@@ -111,7 +111,8 @@ const categoryLinks = [
       { text: 'BiLiBiLi', url: 'https://www.bilibili.com' },
       { text: 'Youtube', url: 'https://www.youtube.com/' },
       { text: '虎牙直播', url: 'https://www.huya.com/g/wzry' },
-      { text: 'ClashOfClans', url: 'https://clashpost.com/upgrade/category/home' },
+     
+      { text: '暗黑2', url: 'https://wiki.d.163.com/index.php?title=%E5%88%86%E7%B1%BB:%E6%9A%97%E9%BB%912_%E7%89%A9%E5%93%81' },
       { text: 'PC游戏下载', url: 'https://www.jidiyouxi.com/' },
       { text: 'Poki', url: 'https://poki.com/' },
       { text: 'RedAlert2', url: 'https://ra2web.com' },
