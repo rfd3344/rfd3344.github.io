@@ -81,7 +81,7 @@ const categoryLinks = [
     links: [
       { text: 'CleanUpCollection', url: 'https://www.thehills.nsw.gov.au/Services/For-Residents/Waste-Recycling/Clean-Up-Collection' },
       { text: 'SydneyWater', url: 'https://myaccount.sydneywater.com.au/Portal/Dashboard.aspx' },
-      { text: 'HillsCouncilInvoice', url: 'https://thehills.enotices.com.au/login?email=rfd3344@gmail.com' },
+      { text: 'HillsCouncilInvoice', url: 'https://pay.thehills.nsw.gov.au/biller/the-hills-shire-council/dashboard' },
       { text: 'DEFTLevy', url: 'https://personal.deft.com.au/#/payer/dashboard/transactions' },
       { text: 'EToll', url: 'https://account.myetoll.transport.nsw.gov.au/login' },
       { text: 'NRMA', url: 'https://connect.nrma.com.au/welcome/login/username' },
